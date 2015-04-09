@@ -373,7 +373,6 @@ table.table th {
 	margin: 8px 0;
 	font-size: 16px;
 	border-bottom: 1px solid;
-	border-width: 
 }
 
 .linklist dd {
@@ -390,6 +389,16 @@ table.table th {
 .news dt,dd {
   display:inline-block;
   margin:5px 10px
+}
+
+.part dd {
+	display: block;
+	margin-left: 350px;
+}
+
+.part dt {
+	margin: 8px 0;
+	text-decoration: underline;
 }
 
 /*************
@@ -551,6 +560,12 @@ table.table th {
 	}
 
 	/* サブコンテンツ + フッター グリッド(3カラム) */
+	#gallery .grid {
+	  width:140px;
+	  margin-left:60px;
+	  text-align: center;
+	}
+
 	#sub .grid,#footer .grid {
 	  width:298px
 	}
@@ -823,9 +838,6 @@ table.table th {
 	}
 }
 
-.news {
-}
-
 .news-title {
   padding:3px 0;
   margin-bottom:15px;
@@ -900,4 +912,8 @@ table.table th {
 .list-inline li {
   display:inline-block;
   margin:5px 10px
+}
+
+.plain {
+	margin-left: 10px;
 }
