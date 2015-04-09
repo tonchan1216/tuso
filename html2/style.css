@@ -226,10 +226,11 @@ font-size:14px;
 section.content p{margin-bottom:5px;}
 
 h3.heading{
-padding:3px 0;
+padding:3px 10px;
 margin-bottom:15px;
-font-size:16px;
-border-bottom:2px solid #FF9B54;
+font-size:20px;
+border-left:7px solid #FF9B54;
+border-bottom:3px solid #FF9B54;
 }
 
 section.content img{
@@ -243,7 +244,9 @@ img.frame,#gallery img{
 border:3px solid #FF9B54;
 }
 
-#gallery .grid{margin-bottom:10px;}
+#gallery .grid{margin-bottom:30px;}
+
+#gallery
 
 .alignleft{
 float:left;
@@ -283,8 +286,27 @@ background:#FF513B;
 border-left:#FF9B54 5px solid
 }
 
+.concert dt{
+	margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
+.concert dd{
+	margin-left: 45px; 
+}
 
+.concert table{
+	border-collapse:collapse;
+	margin:0;
+}
+
+.concert td{
+	padding: 5px;
+	border: 1px solid;
+	text-align:center;
+}
 
 /*************
 サブ（フッター前）コンテンツ
@@ -325,15 +347,6 @@ font-size:12px;
 line-height:1.35;
 }
 
-#facebook {
-	overflow: visible;
-	border: none;
-	overflow: hidden;
-	margin: 10px 0;
-}
-#facebook iframe {
-
-}
 
 /*************
 /* フッター

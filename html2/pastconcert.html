@@ -32,7 +32,7 @@
          <ul>
             <li><a href="news.html">ニュース<br><span>News</span></a></li>
             <li><a href="concert.html">最新の演奏会<br><span>Concert</span></a></li>
-            <li><a href="pastconcert.html">過去の演奏会<br><span>Past Concert</span></a></li>
+            <li class="active"><a href="pastconcert.html">過去の演奏会<br><span>Past Concert</span></a></li>
             <li><a href="join.html">団員募集<br><span>Joinus</span></a></li>
             <li><a href="about.html">当団について<br><span>About</span></a></li>
             <li><a href="contact.html">お問い合わせ<br><span>Contact</span></a></li>
@@ -48,55 +48,43 @@
 
 <!-- サブ画像 -->
 <div id="mainBanner" class="subImg">
-		<img src="images/image02.jpg" alt="" width="100%">
+      <img src="images/image02.jpg" alt="" width="100%">
     <div class="slogan">
-			<h2>テキストが入ります。テキストが入ります。</h2>
-			<h3>テキストが入ります。テキストが入ります。テキストが入ります。</h3>
-		</div>
+         <h2>タイトルが入ります。</h2>
+         <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
+      </div>
 </div>
 <!-- / サブ画像 -->
 
 <div id="wrapper">
 
-	<!-- サブコンテンツ -->
-  <aside id="sub" class="gridWrapper">
+   <!-- コンテンツ -->
+   <section id="main">
 
-  	<section class="grid">
-			<h3>タイトルが入ります。</h3>
-      <ul class="list">
-				<li><a href="subpage.html"><img src="images/icon01.png" width="50" height="50" alt=""></a>テキストが入ります。テキストが入ります。テキストが入ります。</li>
-				<li><a href="subpage.html"><img src="images/icon02.png" width="50" height="50" alt=""></a>テキストが入ります。テキストが入ります。テキストが入ります。</li>
-				<li><a href="subpage.html"><img src="images/icon03.png" width="50" height="50" alt=""></a>テキストが入ります。テキストが入ります。テキストが入ります。</li>
-        <li><a href="subpage.html"><img src="images/icon04.png" width="50" height="50" alt=""></a>テキストが入ります。テキストが入ります。テキストが入ります。</li>
-      </ul>
-		</section>
+      <section class="content">
+         <h3 class="heading">過去の演奏会一覧</h3>
+            <article class="gridWrapper" id="gallery">
+               <figure class="grid"><a href="images/image06.jpg" title="sample"><img src="images/image06.jpg" width="140" height="210" alt=""><br>第163回定期演奏会</a></figure>
+               
+               <figure class="grid"><a href="images/image06.jpg" title="sample"><img src="images/image06.jpg" width="140" height="210" alt=""><br>第163回定期演奏会</a></figure>
+               
+               <figure class="grid"><a href="images/image06.jpg" title="sample"><img src="images/image06.jpg" width="140" height="210" alt=""><br>第163回定期演奏会</a></figure>
+               
+               <figure class="grid"><a href="images/image06.jpg" title="sample"><img src="images/image06.jpg" width="140" height="210" alt=""><br>第163回定期演奏会</a></figure>
+               
+               <figure class="grid"><a href="images/image06.jpg" title="sample"><img src="images/image06.jpg" width="140" height="210" alt=""><br>第163回定期演奏会</a></figure>
+               
+               <figure class="grid"><a href="images/image06.jpg" title="sample"><img src="images/image06.jpg" width="140" height="210" alt=""><br>第163回定期演奏会</a></figure>
+               
+               <figure class="grid"><a href="images/image06.jpg" title="sample"><img src="images/image06.jpg" width="140" height="210" alt=""><br>第163回定期演奏会</a></figure>
+               
+               <figure class="grid"><a href="images/image06.jpg" title="sample"><img src="images/image06.jpg" width="140" height="210" alt=""><br>第163回定期演奏会</a></figure>
+            </article>
+      </section>
 
-    <section class="grid">
-			<h3>タイトルが入ります。</h3>
-			<ul>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-			</ul>
-    </section>
+   </section>
+   <!-- / コンテンツ -->
 
-    <section class="grid">
-			<h3>タイトルが入ります。</h3>
-			<ul>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-				<li><a href="subpage.html">テキストが入ります。テキストが入ります。</a></li>
-			</ul>
-		</section>
-
-	</aside>
-	<!-- / サブコンテンツ -->
 
 </div>
 <!-- / WRAPPER -->
@@ -145,6 +133,20 @@
    </div>
 </div>
 <!-- / フッター -->
+
+  <script src="js/jquery1.7.2.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.lightbox-0.5.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('a[rel*=lightbox]').lightBox({
+      imageLoading            : 'images/bx_loader.gif',
+      imageBtnClose           : 'images/close.gif',
+      imageBtnPrev            : 'images/prev.gif',
+      imageBtnNext            : 'images/next.gif'
+    });
+  });
+  </script>
 
 </body>
 </html>
