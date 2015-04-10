@@ -1,110 +1,230 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html dir="ltr" lang="ja">
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta content="text/css" http-equiv="Content-Style-Type">
-    <meta content="text/javascript" http-equiv="Content-Script-Type">
-    <meta content="東北大学交響楽団" name="description">
-    <meta content="東北,大学,学友会,交響楽,オケ,オーケストラ" name="keywords">
-    <link href="base.css" media="screen,tv,projection" rel="stylesheet" type="text/css">
-    <link href="print.css" media="print" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta content="東北大学交響楽団" name="description">
+  <meta content="東北,大学,学友会,交響楽,オケ,オーケストラ" name="keywords">
 
-    <title>Tohoku University Symphony Orchestra</title>
+  <title>Tohoku University Symphony Orchestra</title>
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+  <script src="js/html5.js"></script>
+  <script src="js/css3-mediaqueries.js"></script>
+  <![endif]-->
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <h1><a href="index.html"><img alt="東北大学交響楽団 Official Web Site" height="156" src="images/title.png" width="930"></a></h1>
-            <hr>
-            <!--end div#header-->
+  <!-- ヘッダー -->
+
+  <div id="header">
+    <div class="inner">
+      <!-- ロゴ -->
+
+      <div class="logo">
+        <a href="index.html">会社ロゴ<br>
+        <span>会社名が入ります</span></a>
+
+        <h1>東北大学交響楽団</h1>
+      </div><!-- / ロゴ -->
+      <!-- メインナビゲーション -->
+
+      <nav id="mainNav">
+        <a class="menu" id="menu"><span>MENU</span></a>
+
+        <div class="panel">
+          <ul>
+            <li>
+              <a href="news.html">ニュース<br>
+              <span>News</span></a>
+            </li>
+
+            <li>
+              <a href="concert.html">最新の演奏会<br>
+              <span>Concert</span></a>
+            </li>
+
+            <li>
+              <a href="pastconcert.html">過去の演奏会<br>
+              <span>Past Concert</span></a>
+            </li>
+
+            <li>
+              <a href="join.html">団員募集<br>
+              <span>Joinus</span></a>
+            </li>
+
+            <li>
+              <a href="about.html">当団について<br>
+              <span>About</span></a>
+            </li>
+
+            <li>
+              <a href="contact.html">お問い合わせ<br>
+              <span>Contact</span></a>
+            </li>
+
+            <li>
+              <a href="link.html">リンク<br>
+              <span>Link</span></a>
+            </li>
+          </ul>
         </div>
-
-        <div id="sidebar">
-            <p><img alt="menu" class="menu" height="81" src="images/menu.png" width="167"><br>
-            <script src="javascript/docwrite.js" type="text/javascript"></script> <img alt="menuend" class="menuend" height="200" src="images/menuend.png" width="167"></p><!--end div#sidebar-->
-        </div>
-
-        <div id="main">
-            <p><a href="concert.html"><img alt="最新の演奏会情報へ" height="280" id="topImg" name="topImg" src="images/162ndconcert.jpg" width="407"></a></p>
-            <hr>
-
-            <div id="news">
-                <h3><!--この度の震災により、被害を受けられた皆様に心よりお見舞い申し上げます。<br> 
- 
-当団におきましては、指揮者団・現役団員全員の無事が確認されました。<br> 
- 
-被災地の一日も早い復興をお祈り致します。<br>--> <!--<b>※東北大学交響楽団同窓生・関係者の皆様</b><br>
-<b>東北大学交響楽団の近況報告と片平第四ホール取り壊しについて<a href="dai4hall.pdf"target="_blank" title="リンク先はpdfファイルです">こちら</a>をご覧ください</b><br>
-<b>片平第四ホール取り壊しの具体的な日取りについて<a href="tsuiki.pdf"target="_blank" title="リンク先はpdfファイルです">こちら</a>をご覧ください</b>-->
-                <!--<b>※東北大学交響楽団×京都大学交響楽団ジョイントコンサートのチケットは<br><a href="http://jc.kyodaioke.com/">こちら</a>で注文を受け付けております。</b></dd>-->
-                <br></h3>
-
-                <h2>新着情報</h2>
-
-                <ul>
-                    <!--<li>・10/18　プレイガイドにて<a href="concert.html">第163回定期演奏会</a>のチケット販売を開始しました。</li>-->
-
-                    <li>・03/01 　<a href="concert.html">第164回定期演奏会</a>の情報を更新しました。
-                    </li>
-
-                    <li>・11/29 　<a href="concerts/163rd.html">第163回定期演奏会</a>を行いました。ご来場ありがとうございました。
-                    </li><!--<li>・<a href="sinkan.html">今年度の新入生歓迎行事の情報</a>を掲載いたしました。新入生の方々はぜひご覧ください。</li>-->
-                    <!--<li>・12/7　<a href="concerts/161st.html">第161回定期演奏会</a>を行いました。ご来場ありがとうございました。</li>
-
-<li>・08/18　<a href="concerts/2013_joint.html">東北大学交響楽団×京都大学交響楽団ジョイントコンサート</a>を行いました。ご来場ありがとうございました。</li>-->
-                    <!--<li>・07/08　<a href="concert.html">東北大学交響楽団×京都大学交響楽団ジョイントコンサート</a>の情報を記載しました。</li>-->
-                    <!--<li>・04/08　当団の最新情報をお伝えする<a href="https://twitter.com/#!/UnivTohoku_orch">東北大学交響楽団公式Twitter</a>を開設しました。-->
-                    <!--<li>・04/07　<a href="H24sinkan.html">平成24年度新歓情報のページ</a>を更新しました。</li>-->
-                    <!--<li>・12/10　<a href="concerts/157th.html">第157回定期演奏会</a>を行いました。ご来場ありがとうございました。</li>-->
-                    <!--<li>・11/10　プレイガイドにて<a href="concerts/157th.html">第157回定期演奏会</a>のチケット販売を開始しました。</li>-->
-                    <!--<li>・11/05　東北大学大学祭にて<a href="concerts/festival2011.html">特別演奏会</a>を行いました。ご来場ありがとうございました。</li>-->
-                    <!--<li>・11/01　<a href="concerts/festival2011.html">本年度の大学祭での演奏会</a>の情報を記載しました。</li>-->
-                    <!--<li>・10/01　<a href="concerts/157th.html">第157回定期演奏会</a>の情報を記載しました。</li>-->
-                    <!--<li>・09/19　<a href="concerts/tour2011.html">特別演奏会山形公演</a>を行いました。ご来場ありがとうございました。</li>-->
-                    <!--<li>・08/19　全プレイガイドで<a href="concerts/tour2011.html">特別演奏会山形公演</a>のチケット販売を開始しました。</li>-->
-                    <!--<li>・08/11　<a href="concerts/tour2011.html">特別演奏会山形公演のページ</a>を更新しました。演奏会の印刷物に関して訂正とお詫びがございます。</li>-->
-                    <!--<li>・06/26　<a href="concerts/tour2011.html">特別演奏会山形公演のページ</a>をアップしました。</li>-->
-                    <!--<li>・02/05　平成22年度PTA文化活動を行いました。ご来場ありがとうございました。</li>-->
-                    <!--<li>・02/01　<a href="concerts/H22PTA.html">平成22年度PTA文化活動のページ</a>をアップしました。</li>-->
-                </ul>
-                <hr>
-                <!--end div#news-->
-            </div><!--end div#main-->
-        </div>
-
-        <div id="footer">
-            <p><a href="http://validator.w3.org/check?uri=referer"><img alt="Valid XHTML 1.0 Transitional" height="31" src="http://www.w3.org/Icons/valid-xhtml10" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border:0;width:88px;height:31px"></a></p>
-
-            <ul>
-                <li>
-                    <!-- FC2カウンター ここから --><script language="JavaScript" src="http://counter1.fc2.com/counter.php?id=2160762" type="text/javascript"></script> <noscript><img alt="counter" src="http://counter1.fc2.com/counter_img.php?id=2160762"><br>
-                    <strong><a href="http://flowerfan.com/">ギフト</a></strong></noscript> <!-- FC2カウンター ここまで -->
-                </li>
-
-                <li>
-                    <a href="sitemap.html">サイトマップ</a>
-                </li>
-
-                <li>
-                    <a href="privacypolicy.html">プライバシーポリシー</a>
-                </li>
-
-                <li>
-                    <a href="idemnity.html">免責事項</a>
-                </li>
-
-                <li>
-                    <a href="entrance.html">団員専用ページへ</a>
-                </li>
-            </ul>
-            <hr>
-
-            <address>
-                (C) Copyright 東北大学交響楽団／東北大学学友会交響楽部　2015 All rights reserved.
-            </address><!--end div#footer-->
-        </div><!--end div#wrapper-->
+      </nav><!-- メインナビゲーション -->
     </div>
+  </div><!-- / ヘッダー -->
+  <!-- メイン画像 -->
+
+  <div class="mainImg" id="mainBanner">
+    <ul class="bxslider">
+      <li>
+        <img alt="" height="300" src="images/top-image.jpg" width="100%">
+
+        <div class="slogan">
+          <h2>タイトルが入ります</h2>
+
+          <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
+        </div>
+      </li>
+
+      <li>
+        <img alt="" height="300" src="images/top-image.jpg" width="100%">
+
+        <div class="slogan">
+          <h2>タイトルが入ります</h2>
+
+          <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
+        </div>
+      </li>
+
+      <li>
+        <img alt="" height="300" src="images/top-image.jpg" width="100%">
+
+        <div class="slogan">
+          <h2>タイトルが入ります</h2>
+
+          <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
+        </div>
+      </li>
+    </ul>
+  </div><!-- / メイン画像 -->
+
+  <div id="wrapper">
+    <section class="content">
+      <h3 class="heading">ニュース</h3>
+
+      <article class="news">
+        <dl>
+          <dt>
+            <a href="news2.html">2015/1/1</a>
+          </dt>
+
+          <dd>
+            <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            <a href="news2.html">2015/1/1</a>
+          </dt>
+
+          <dd>
+            <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            <a href="news2.html">2015/1/1</a>
+          </dt>
+
+          <dd>
+            <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
+          </dd>
+        </dl>
+      </article>
+    </section>
+
+    <section class="content">
+      <h3 class="heading">タイトルが入ります。</h3>
+
+      <article>
+        <img alt="" class="alignleft frame" height="240" src="images/image03.jpg" width="320">
+
+        <div class="pdtb-10">
+          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+          <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div>
+      </article>
+    </section>
+  </div><!-- / WRAPPER -->
+  <!-- フッター -->
+
+  <div id="footer">
+    <div class="inner">
+      <!-- 3カラム -->
+
+      <section class="gridWrapper">
+        <article class="grid">
+          <!-- ロゴ -->
+
+          <p class="logo"><a href="index.html">会社名・ロゴ<br>
+          <span>キャッチコピーが入ります。</span></a></p><!-- / ロゴ -->
+        </article>
+
+        <article class="grid">
+          <ul class="list-inline text-a-c">
+            <li>
+              <a href="sitemap.html">サイトマップ</a>
+            </li>
+
+            <li>
+              <a href="privacypolicy.html">プライバシーポリシー</a>
+            </li>
+
+            <li>
+              <a href="idemnity.html">免責事項</a>
+            </li>
+
+            <li>
+              <a href="menber.html">団員専用ページへ</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="f-right grid text-a-r">
+          <!-- 電話番号+受付時間 -->
+
+          <p class="tel">電話: <strong>0000-0000-0000</strong></p>
+
+          <p><a href="http://validator.w3.org/check?uri=referer"><img alt="Valid XHTML 1.0 Transitional" height="31" src="http://www.w3.org/Icons/valid-xhtml10" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border:0;width:88px;height:31px"></a></p>
+
+          <p><!-- FC2カウンター ここから --><script language="JavaScript" src="http://counter1.fc2.com/counter.php?id=2160762" type="text/javascript"></script> <noscript><img alt="counter" src="http://counter1.fc2.com/counter_img.php?id=2160762"><br>
+          <strong><a href="http://flowerfan.com/">ギフト</a></strong></noscript> <!-- FC2カウンター ここまで --></p><!-- / 電話番号+受付時間 -->
+        </article>
+      </section><!-- / 3カラム -->
+    </div>
+
+    <div class="copyright">
+      (C) Copyright 東北大学交響楽団／東北大学学友会交響楽部　2015 All rights reserved.
+    </div>
+  </div><!-- / フッター -->
+  <script src="js/jquery1.7.2.min.js"></script> 
+  <script src="js/script.js"></script> 
+  <script src="js/jquery.bxslider.js"></script> 
+  <script>
+    $(function(){
+      $('.bxslider').bxSlider({
+        auto: true
+      });
+    });
+  </script>
 </body>
 </html>

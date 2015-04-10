@@ -401,6 +401,15 @@ table.table th {
 	text-decoration: underline;
 }
 
+.conductor dt {
+	font-size: 105%;
+	font-weight: bold;
+}
+
+.conductor dd {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
 /*************
 サブ（フッター前）コンテンツ
 *************/
