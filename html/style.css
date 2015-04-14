@@ -608,7 +608,7 @@ table.table th {
 	/* サブコンテンツ + フッター グリッド(3カラム) */
 	#gallery .grid {
 	  width:140px;
-	  margin-left:60px;
+	  margin-left:80px;
 	  text-align: center;
 	}
 
@@ -734,8 +734,9 @@ table.table th {
 	}
 
 	#gallery .grid {
-	  width:30%;
-	  margin:0 2% 0 0;
+	  width:140px;
+	  margin-left:9%;
+	  margin-right: 0;
 	  padding:0
 	}
 
@@ -808,6 +809,13 @@ table.table th {
 
 	.grid p,#sub .grid li {
 	  text-align:left
+	}
+
+	#gallery .grid {
+	  width:140px;
+	  margin-left:18%;
+	  margin-right: 0;
+	  padding:0
 	}
 
 	.imgleft,.imgright {
