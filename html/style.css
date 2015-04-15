@@ -297,14 +297,12 @@ img.frame,#gallery img {
 }
 
 .imgleft {
-	width: 70%;
 	display: block;
   float:left;
   margin:3px 10px 10px 0
 }
 
 .imgright {
-	width: 70%;
 	display: block;
   float:right;
   margin:3px 0 10px 10px
@@ -312,6 +310,7 @@ img.frame,#gallery img {
 
 .textleft {
 	width: 60%;
+	min-width: 
 	float:left;
 }
 
