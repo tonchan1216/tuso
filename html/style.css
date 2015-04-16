@@ -106,9 +106,6 @@ a:active,a:focus {
 	width: 100%;
 }
 
-#header .logo h1 {
-  font-size:16px
-}
 
 /*************
 /* ヘッダー
@@ -147,10 +144,6 @@ a:active,a:focus {
   line-height:0;
   border-top:5px solid #FF9B54;
   border-bottom:5px solid #FF9B54
-}
-
-#mainBanner .inner {
-  position:relative
 }
 
 #mainBanner img {
@@ -226,7 +219,7 @@ a:active,a:focus {
   text-align:center
 }
 
-.readmore {
+/*.readmore {
   clear:both;
   text-align:center;
   padding:10px 15px;
@@ -238,7 +231,7 @@ a:active,a:focus {
 .readmore:hover {
   background:#FF513B;
   color:#FFF
-}
+}*/
 
 /* フッター内のグリッド(3カラム) */
 #footer .grid {
@@ -329,6 +322,10 @@ img.frame,#gallery img {
   float:right;
   clear: right;
   margin:60px 40px 10px 10px
+}
+
+.plain {
+	margin-left: 15px;
 }
 /*************
 テーブル
@@ -502,7 +499,7 @@ table.table th {
   height:1%
 }
 
-.tel strong {
+.mail strong {
   font-size:20px;
   font-weight:700
 }
@@ -617,6 +614,14 @@ table.table th {
 
 	#footer .grid {
 	  border:0
+	}
+
+	#footer .text-a-r {
+  	text-align:right
+	}
+
+	#footer .text-a-c {
+  	text-align:center
 	}
 }
 
@@ -764,12 +769,17 @@ table.table th {
 	  border:0
 	}
 
+	#footer	.grid img {
+	  float:none;
+	  margin:0 auto
+	}
+
 	#footer .grid:last-child {
 	  padding-top:20px
 	}
 }
 
-	/* iPad 縦 */
+/* iPad 縦 */
 @media only screen and (max-width:768px) {
 	#header {
 	  padding-bottom:0
@@ -887,10 +897,10 @@ table.table th {
 	  height:150px
 	}
 
-	.readmore {
+	/*.readmore {
 	  text-align:center;
 	  display:block
-	}
+	}*/
 
 	.bx-viewport {
 	  height:150px
@@ -964,19 +974,8 @@ table.table th {
   margin:5px 10px
 }
 
-.text-a-r {
-  text-align:right
-}
-
-.text-a-c {
-  text-align:center
-}
-
 .list-inline li {
   display:inline-block;
   margin:5px 10px
 }
 
-.plain {
-	margin-left: 15px;
-}
