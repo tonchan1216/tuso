@@ -424,6 +424,22 @@ table.table th {
 .jointable td {
 	padding-left: 15px;
 }
+
+#concertRecord {
+	margin-left: 30px;
+}
+
+#concertRecord tr:nth-child(2n){
+	background-color: #EFEFEF;
+}
+
+#concertRecord th {
+	text-align: right;
+}
+
+#concertRecord td {
+	padding-left: 20px;
+}
 /*************
 データリスト
 *************/
@@ -481,6 +497,7 @@ table.table th {
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
+
 /*************
 サブ（フッター前）コンテンツ
 *************/
