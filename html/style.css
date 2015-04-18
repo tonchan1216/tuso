@@ -943,6 +943,11 @@ table.table th {
 	  font-size:75%
 	}
 
+	#header .logo img {
+		width: 100%;
+		height: auto;
+	}
+
 	.subImg .slogan {
 	  right:-30px
 	}
