@@ -123,7 +123,12 @@ a:active,a:focus {
 /* ロゴ
 *************/
 #header .logo {
-	padding:10px 0 0
+	padding:10px 35px 0;
+}
+
+#footer .logo img {
+	width: 80px;
+	margin-left: 70px;
 }
 
 .logo a {
@@ -292,7 +297,7 @@ img.frame,#gallery img {
 .imgleft {
 	display: block;
   float:left;
-  margin:3px 10px 10px 50px;
+  margin:3px 10px 10px 30px;
 }
 
 .imgright {
@@ -678,9 +683,14 @@ table.table th {
 	}
 
 	#header .logo,#footer .logo {
-	  float:none;
 	  text-align:center;
 	  padding:10px 5px
+	}
+
+	#header .logo img{
+		height: 110px;
+		width: auto;
+
 	}
 
 	nav#mainNav {
@@ -835,6 +845,10 @@ table.table th {
 	  float:none;
 	  text-align:center;
 	  padding:10px 5px 20px
+	}
+
+	#header .logo .logoImg {
+		display: none;
 	}
 
 	.imgleft,.imgright {
