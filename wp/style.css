@@ -1,5 +1,11 @@
 @charset "utf-8";
-
+/*
+Theme Name: tuso-theme
+Description:東北大オケ用サイト
+Author: F.T
+Version: バージョン
+License: ライセンス
+*/
 /* =Reset default browser CSS.
 Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
@@ -101,9 +107,11 @@ a:active,a:focus {
   width:100%
 }
 
-#header .logo h1 {
-  font-size:16px
+.fullwrapper {
+	margin: 0 auto;
+	width: 100%;
 }
+
 
 /*************
 /* ヘッダー
@@ -121,7 +129,12 @@ a:active,a:focus {
 /* ロゴ
 *************/
 #header .logo {
-	padding:10px 0 0
+	padding:10px 35px 0;
+}
+
+#footer .logo img {
+	width: 80px;
+	margin-left: 70px;
 }
 
 .logo a {
@@ -140,12 +153,8 @@ a:active,a:focus {
   padding:0;
   width:100%;
   line-height:0;
-  border-top:3px solid #FF9B54;
-  border-bottom:3px solid #FF9B54
-}
-
-#mainBanner .inner {
-  position:relative
+  border-top:5px solid #FF9B54;
+  border-bottom:5px solid #FF9B54
 }
 
 #mainBanner img {
@@ -221,7 +230,7 @@ a:active,a:focus {
   text-align:center
 }
 
-.readmore {
+/*.readmore {
   clear:both;
   text-align:center;
   padding:10px 15px;
@@ -233,7 +242,7 @@ a:active,a:focus {
 .readmore:hover {
   background:#FF513B;
   color:#FFF
-}
+}*/
 
 /* フッター内のグリッド(3カラム) */
 #footer .grid {
@@ -288,30 +297,28 @@ img.frame,#gallery img {
 }
 
 #gallery .grid {
-  margin-bottom:30px
+  margin-bottom:50px
 }
 
 .imgleft {
-	width: 35%;
 	display: block;
   float:left;
-  margin:3px 10px 10px 0
+  margin:3px 10px 10px 30px;
 }
 
 .imgright {
-	width: 35%;
 	display: block;
   float:right;
   margin:3px 0 10px 10px
 }
 
 .textleft {
-	width: 60%;
+	width: 50%; 
 	float:left;
 }
 
 .textright {
-	width: 60%;
+	width: 50%;
 	float:right;
 	margin-right: 10px;
 }
@@ -325,6 +332,48 @@ img.frame,#gallery img {
   float:right;
   clear: right;
   margin:60px 40px 10px 10px
+}
+.contact {
+  width:60%;
+  margin:0 auto
+}
+
+.contact input,textarea {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:1px solid #DDD;
+  font-size:90%
+}
+
+.contact textarea {
+  width:100%;
+  height:100px;
+  resize:none;
+  border:1px solid #DDD
+}
+
+.contact button {
+  padding:10px 50px;
+  font-size:120%;
+  cursor:pointer;
+  background:#FF9B54;
+  color:#FFF;
+  letter-spacing:2px;
+  border:none;
+  -webkit-transition:all .25s ease;
+  -moz-transition:all .25s ease;
+  -ms-transition:all .25s ease;
+  -o-transition:all .25s ease;
+  transition:all .25s ease
+}
+
+.contact button:hover {
+  background:#FF513B
+}
+
+.plain {
+	margin-left: 15px;
 }
 /*************
 テーブル
@@ -364,6 +413,7 @@ table.table th {
 .jointable {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding-left: 15px;
 }
 
 .jointable caption {
@@ -372,13 +422,29 @@ table.table th {
 }
 
 .jointable th {
-	padding-left: 15px;
+	min-width: 50px;
   font-weight:bold;
   text-align: right;
 }
 
 .jointable td {
 	padding-left: 15px;
+}
+
+#concertRecord {
+	margin-left: 30px;
+}
+
+#concertRecord tr:nth-child(2n){
+	background-color: #EFEFEF;
+}
+
+#concertRecord th {
+	text-align: right;
+}
+
+#concertRecord td {
+	padding-left: 20px;
 }
 /*************
 データリスト
@@ -437,6 +503,7 @@ table.table th {
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
+
 /*************
 サブ（フッター前）コンテンツ
 *************/
@@ -498,7 +565,7 @@ table.table th {
   height:1%
 }
 
-.tel strong {
+.mail strong {
   font-size:20px;
   font-weight:700
 }
@@ -519,7 +586,7 @@ table.table th {
 }
 
 /* PC用 */
-@media only screen and (min-width:960px) {
+@media only screen and (min-width:940px) {
 	#wrapper,.inner {
 	  width:940px;
 	  padding:0
@@ -560,8 +627,9 @@ table.table th {
 	  font-size:15px;
 	  font-weight: bold;
 	  display:block;
+	  margin: auto;
 	  padding:35px 0;
-	  width:95px;
+	  width:100%;
 	  line-height:1.2;
 	}
 
@@ -602,16 +670,30 @@ table.table th {
 	/* サブコンテンツ + フッター グリッド(3カラム) */
 	#gallery .grid {
 	  width:140px;
-	  margin-left:60px;
+	  margin-left:80px;
 	  text-align: center;
 	}
 
-	#sub .grid,#footer .grid {
+	#sub .content {
+		width: 720px;
+		float:left;
+		overflow: hidden;
+	}
+
+	#footer .grid {
 	  width:298px
 	}
 
 	#footer .grid {
 	  border:0
+	}
+
+	#footer .text-a-r {
+  	text-align:right
+	}
+
+	#footer .text-a-c {
+  	text-align:center
 	}
 }
 
@@ -630,9 +712,14 @@ table.table th {
 	}
 
 	#header .logo,#footer .logo {
-	  float:none;
 	  text-align:center;
 	  padding:10px 5px
+	}
+
+	#header .logo img{
+		height: 110px;
+		width: auto;
+
 	}
 
 	nav#mainNav {
@@ -712,6 +799,10 @@ table.table th {
 	  float:none
 	}
 
+	.plain {
+		margin: 0 30px;
+	}
+
 	.grid {
 	  float:left;
 	  width:48%;
@@ -728,8 +819,9 @@ table.table th {
 	}
 
 	#gallery .grid {
-	  width:23%;
-	  margin:0 2% 0 0;
+	  width:140px;
+	  margin-left:9%;
+	  margin-right: 0;
 	  padding:0
 	}
 
@@ -739,7 +831,7 @@ table.table th {
 	}
 
 	#sub .grid {
-	  width:32%;
+	  width:30%;
 	  margin:10px 1%
 	}
 
@@ -758,12 +850,17 @@ table.table th {
 	  border:0
 	}
 
+	#footer	.grid img {
+	  float:none;
+	  margin:0 auto
+	}
+
 	#footer .grid:last-child {
 	  padding-top:20px
 	}
 }
 
-	/* iPad 縦 */
+/* iPad 縦 */
 @media only screen and (max-width:768px) {
 	#header {
 	  padding-bottom:0
@@ -779,6 +876,27 @@ table.table th {
 	  padding:10px 5px 20px
 	}
 
+	#header .logo .logoImg {
+		display: none;
+	}
+
+	.imgleft,.imgright {
+	  float:none;
+	  display:block;
+	  margin:0 auto 10px
+	}
+
+	.textleft,.textright {
+		width: 70%;
+	  float:none;
+	  margin:0 auto 10px
+	}
+
+	.map {
+		width: 60%;
+		margin: 0 auto;
+	}
+
 	#sub ul.list {
 	  padding:10px 10px 11px
 	}
@@ -787,6 +905,18 @@ table.table th {
 	  padding-bottom:10px;
 	  margin-bottom:8px
 	}
+
+	.linklist dd {
+		margin: 8px 20px 8px 20px;
+	}
+
+	#concertRecord {
+		margin-left: 5px;
+	}
+
+	#concertRecord td {
+		padding-left: 10px;
+}
 }
 
 	/* スマートフォン 横(ランドスケープ) */
@@ -804,15 +934,11 @@ table.table th {
 	  text-align:left
 	}
 
-	.imgleft,.imgright {
-	  float:none;
-	  display:block;
-	  margin:0 auto 10px
-	}
-
-	.textleft,.textright {
-	  float:none;
-	  margin:0 auto 10px
+	#gallery .grid {
+	  width:140px;
+	  margin-left:18%;
+	  margin-right: 0;
+	  padding:0
 	}
 
 	.posterimg {
@@ -820,8 +946,17 @@ table.table th {
 	  margin:0 auto 10px
 	}
 
+	.map {
+		width: 70%;
+	}
+
 	#mainBanner img {
 	  height:140px
+	}
+	
+	#sub .grid, #sub .content {
+	  float:none;
+	  width:98%
 	}
 
 	#sub ul.list li img {
@@ -835,8 +970,17 @@ table.table th {
 	  margin-left:1px
 	}
 
+	#mainBanner img {
+	  height:150px
+	}
+
 	#mainBanner h2,#mainBanner h3 {
 	  font-size:75%
+	}
+
+	#header .logo img {
+		width: 100%;
+		height: auto;
 	}
 
 	.subImg .slogan {
@@ -846,11 +990,6 @@ table.table th {
 	.grid img {
 	  max-width:90%;
 	  height:auto
-	}
-
-	#sub .grid {
-	  float:none;
-	  width:98%
 	}
 
 	#sub .grid h3 {
@@ -870,13 +1009,10 @@ table.table th {
 	  height:160px
 	}
 
-	#mainBanner img {
-	  height:150px
-	}
-
-	.readmore {
-	  text-align:center;
-	  display:block
+	#gallery .grid {
+		width: 70px;
+		height: auto;
+		margin-left:10%; 
 	}
 
 	.bx-viewport {
@@ -899,45 +1035,6 @@ table.table th {
   margin:5px 10px
 }
 
-.contact {
-  width:60%;
-  margin:0 auto
-}
-
-.contact input,textarea {
-  width:100%;
-  padding:10px;
-  margin:10px 0;
-  border:1px solid #DDD;
-  font-size:90%
-}
-
-.contact textarea {
-  width:100%;
-  height:100px;
-  resize:none;
-  border:1px solid #DDD
-}
-
-.contact button {
-  padding:10px 50px;
-  font-size:120%;
-  cursor:pointer;
-  background:#FF9B54;
-  color:#FFF;
-  letter-spacing:2px;
-  border:none;
-  -webkit-transition:all .25s ease;
-  -moz-transition:all .25s ease;
-  -ms-transition:all .25s ease;
-  -o-transition:all .25s ease;
-  transition:all .25s ease
-}
-
-.contact button:hover {
-  background:#FF513B
-}
-
 .pdtb-10 {
   padding:10px 0
 }
@@ -951,19 +1048,8 @@ table.table th {
   margin:5px 10px
 }
 
-.text-a-r {
-  text-align:right
-}
-
-.text-a-c {
-  text-align:center
-}
-
 .list-inline li {
   display:inline-block;
   margin:5px 10px
 }
 
-.plain {
-	margin-left: 15px;
-}
