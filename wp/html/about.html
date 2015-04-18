@@ -1,215 +1,85 @@
-<!DOCTYPE html>
+<!-- サブ画像 -->
 
-<html dir="ltr" lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-  <meta content="東北大学交響楽団" name="description">
-  <meta content="東北,大学,学友会,交響楽,オケ,オーケストラ" name="keywords">
+<div class="subImg" id="mainBanner">
+  <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image02.jpg" width="100%">
 
-  <title>Tohoku University Symphony Orchestra</title>
-  <link href="style.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
-  <script src="js/html5.js"></script>
-  <script src="js/css3-mediaqueries.js"></script>
-  <![endif]-->
-</head>
+  <div class="slogan">
+    <h2>タイトルが入ります。</h2>
 
-<body>
-  <!-- ヘッダー -->
+    <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
+  </div>
+</div><!-- / サブ画像 -->
 
-  <div id="header">
-    <div class="fullwrapper">
+<div id="wrapper">
+  <!-- コンテンツ -->
 
-      <!-- ロゴ -->
-      <div class="logo">
-        <a href="index.html"><img class="logoImg" src="images/logo.png"><img src="images/title.png"></a>
-      </div><!-- / ロゴ -->
+  <section id="main">
+    <section class="content">
+      <h3 class="heading">当団について</h3>
 
-      <!-- メインナビゲーション -->
-      <nav id="mainNav">
-        <a class="menu" id="menu"><span>MENU</span></a>
+      <article class="plain">
+        <p>東北大学交響楽団は1921（大正10）年に発足いたしました。 2011年に創立90周年を迎え、大学のオーケストラとしては日本有数の長い歴史を持っています。 1949（昭和24）年のベートーヴェン・第９番交響曲の東北初演、 1959（昭和34）年のブラームス・第1番交響曲仙台初演など、積極的な活動をしてきました。 団員は東北大学の学生のみならず、仙台市内の大学の学生や、東北大学の卒業生・大学職員など、 幅広い人員で構成されており、多くの団友とともに活動しています。</p>
 
-        <div class="panel">
-          <ul>
-            <li>
-              <a href="news.html">ニュース<br>
-              <span>News</span></a>
-            </li>
+        <p>演奏活動は年2回の定期演奏会が中心です。 これまで国内外から 著名な指揮者・ソリストを招き、常に音楽性の高いコンサートを目指してきました。 また、東北近県への演奏旅行，小中学校などでの演奏会など、地域に根ざした活動も行っています。</p>
+      </article>
 
-            <li>
-              <a href="concert.html">最新の演奏会<br>
-              <span>Concert</span></a>
-            </li>
+      <h3 class="heading">指揮者団</h3>
 
-            <li>
-              <a href="pastconcert.html">過去の演奏会<br>
-              <span>Past Concert</span></a>
-            </li>
+      <article class="plain conductor">
+        <dl>
+          <dt>常任指揮者　石川善美</dt>
 
-            <li>
-              <a href="join.html">団員募集<br>
-              <span>Joinus</span></a>
-            </li>
+          <dd>1968年東北大学交響楽団に入団、学生時代はコンサートマスターを務める。 卒業後は、東北大学工学部助手を経て東北工業大学教授の現在に至るまで多忙な研究生活を送る傍ら、 バイオリンおよびビオラ奏者として、 また普段の練習とともに数々の演奏会の指揮者として後進の指導に当たっている。<br>
+          東北大学交響楽団副指揮者を経て、1995年より当団常任指揮者。</dd>
 
-            <li>
-              <a href="about.html">当団について<br>
-              <span>About</span></a>
-            </li>
+          <dt>副指揮者　高橋信雄</dt>
 
-            <li>
-              <a href="contact.html">お問い合わせ<br>
-              <span>Contact</span></a>
-            </li>
+          <dd>1983年、東北大学入学とともに交響楽団に入団、のちに首席奏者として活躍。 卒団後に練習指揮者となり、定期演奏会や夏季合宿での練習指導のほか、入学式や演奏旅行で指揮を務める。<br>
+          団員の絶大な支持を受け、2007年より当団副指揮者に就任。</dd>
+        </dl>
+      </article>
+    </section>
 
-            <li>
-              <a href="link.html">リンク<br>
-              <span>Link</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav><!-- メインナビゲーション -->
-    </div>
-  </div><!-- / ヘッダー -->
-  <!-- メイン画像 -->
-  <!-- サブ画像 -->
+    <section class="content">
+      <h3 class="heading">団体概要</h3>
 
-  <div class="subImg" id="mainBanner">
-    <img alt="" src="images/image02.jpg" width="100%">
+      <table class="table">
+        <tr>
+          <th>団体名</th>
 
-    <div class="slogan">
-      <h2>タイトルが入ります。</h2>
+          <td>東北大学交響楽団／東北大学学友会交響楽部</td>
+        </tr>
 
-      <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
-    </div>
-  </div><!-- / サブ画像 -->
+        <tr>
+          <th>設立</th>
 
-  <div id="wrapper">
-    <!-- コンテンツ -->
+          <td>平成◯◯年◯◯月◯◯日</td>
+        </tr>
 
-    <section id="main">
-      <section class="content">
-        <h3 class="heading">当団について</h3>
+        <tr>
+          <th>事業内容</th>
 
-        <article class="plain">
-          <p>東北大学交響楽団は1921（大正10）年に発足いたしました。 2011年に創立90周年を迎え、大学のオーケストラとしては日本有数の長い歴史を持っています。 1949（昭和24）年のベートーヴェン・第９番交響曲の東北初演、 1959（昭和34）年のブラームス・第1番交響曲仙台初演など、積極的な活動をしてきました。 団員は東北大学の学生のみならず、仙台市内の大学の学生や、東北大学の卒業生・大学職員など、 幅広い人員で構成されており、多くの団友とともに活動しています。</p>
+          <td></td>
+        </tr>
 
-          <p>演奏活動は年2回の定期演奏会が中心です。 これまで国内外から 著名な指揮者・ソリストを招き、常に音楽性の高いコンサートを目指してきました。 また、東北近県への演奏旅行，小中学校などでの演奏会など、地域に根ざした活動も行っています。</p>
-        </article>
+        <tr>
+          <th>住所</th>
 
-        <h3 class="heading">指揮者団</h3>
+          <td>〒000-0000 東京都◯◯区◯◯◯◯1-2-3</td>
+        </tr>
 
-        <article class="plain conductor">
-          <dl>
-            <dt>常任指揮者　石川善美</dt>
+        <tr>
+          <th>電話番号</th>
 
-            <dd>1968年東北大学交響楽団に入団、学生時代はコンサートマスターを務める。 卒業後は、東北大学工学部助手を経て東北工業大学教授の現在に至るまで多忙な研究生活を送る傍ら、 バイオリンおよびビオラ奏者として、 また普段の練習とともに数々の演奏会の指揮者として後進の指導に当たっている。<br>
-            東北大学交響楽団副指揮者を経て、1995年より当団常任指揮者。</dd>
+          <td>0000-0000-0000</td>
+        </tr>
 
-            <dt>副指揮者　高橋信雄</dt>
+        <tr>
+          <th>メールアドレス</th>
 
-            <dd>1983年、東北大学入学とともに交響楽団に入団、のちに首席奏者として活躍。 卒団後に練習指揮者となり、定期演奏会や夏季合宿での練習指導のほか、入学式や演奏旅行で指揮を務める。<br>
-            団員の絶大な支持を受け、2007年より当団副指揮者に就任。</dd>
-          </dl>
-        </article>
-      </section>
-
-      <section class="content">
-        <h3 class="heading">団体概要</h3>
-
-        <table class="table">
-          <tr>
-            <th>団体名</th>
-
-            <td>東北大学交響楽団／東北大学学友会交響楽部</td>
-          </tr>
-
-          <tr>
-            <th>設立</th>
-
-            <td>平成◯◯年◯◯月◯◯日</td>
-          </tr>
-
-          <tr>
-            <th>事業内容</th>
-
-            <td></td>
-          </tr>
-
-          <tr>
-            <th>住所</th>
-
-            <td>〒000-0000 東京都◯◯区◯◯◯◯1-2-3</td>
-          </tr>
-
-          <tr>
-            <th>電話番号</th>
-
-            <td>0000-0000-0000</td>
-          </tr>
-
-          <tr>
-            <th>メールアドレス</th>
-
-            <td>info@◯◯◯◯.com</td>
-          </tr>
-        </table>
-      </section>
-    </section><!-- / コンテンツ -->
-  </div><!-- / WRAPPER -->
-  <!-- フッター -->
-
-  <div id="footer">
-    <div class="inner">
-      <!-- 3カラム -->
-
-      <section class="gridWrapper">
-        <article class="grid">
-          <!-- ロゴ -->
-          <p class="logo">
-            <a href="index.html"><img class="logoImg" src="images/logo.png"><br>
-            <span>東北大学学友会交響楽団</span></a>
-          </p><!-- / ロゴ -->
-        </article>
-
-        <article class="grid">
-          <ul class="list-inline text-a-c">
-            <li>
-              <a href="sitemap.html">サイトマップ</a>
-            </li>
-
-            <li>
-              <a href="privacypolicy.html">プライバシーポリシー</a>
-            </li>
-
-            <li>
-              <a href="idemnity.html">免責事項</a>
-            </li>
-
-            <li>
-              <a href="member.html">団員専用ページへ</a>
-            </li>
-          </ul>
-        </article>
-
-        <article class="grid f-right text-a-r">
-          <!-- 電話番号+受付時間 -->
-
-          <p class="mail">E-mail: <strong>abcde@ABC.com</strong></p>
-
-          <p><a href="http://validator.w3.org/check?uri=referer"><img alt="Valid XHTML 1.0 Transitional" height="31" src="http://www.w3.org/Icons/valid-xhtml10" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border:0;width:88px;height:31px"></a></p>
-
-          <p><!-- FC2カウンター ここから --><script language="JavaScript" src="http://counter1.fc2.com/counter.php?id=2160762" type="text/javascript"></script> <noscript><img alt="counter" src="http://counter1.fc2.com/counter_img.php?id=2160762"><br>
-          <strong><a href="http://flowerfan.com/">ギフト</a></strong></noscript> <!-- FC2カウンター ここまで --></p>
-        </article>
-      </section><!-- / 3カラム -->
-    </div>
-
-    <div class="copyright">
-      (C) Copyright 東北大学交響楽団／東北大学学友会交響楽部　2015 All rights reserved.
-    </div>
-  </div><!-- / フッター -->
-  <script src="js/jquery1.7.2.min.js"></script> 
-  <script src="js/script.js"></script> 
-</body>
-</html>
+          <td>info@◯◯◯◯.com</td>
+        </tr>
+      </table>
+    </section>
+  </section><!-- / コンテンツ -->
+</div><!-- / WRAPPER -->
