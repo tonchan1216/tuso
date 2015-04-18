@@ -903,6 +903,14 @@ table.table th {
 	.linklist dd {
 		margin: 8px 20px 8px 20px;
 	}
+
+	#concertRecord {
+		margin-left: 5px;
+	}
+
+	#concertRecord td {
+		padding-left: 10px;
+}
 }
 
 	/* スマートフォン 横(ランドスケープ) */
@@ -956,6 +964,10 @@ table.table th {
 	  margin-left:1px
 	}
 
+	#mainBanner img {
+	  height:150px
+	}
+
 	#mainBanner h2,#mainBanner h3 {
 	  font-size:75%
 	}
@@ -991,14 +1003,11 @@ table.table th {
 	  height:160px
 	}
 
-	#mainBanner img {
-	  height:150px
+	#gallery .grid {
+		width: 70px;
+		height: auto;
+		margin-left:10%; 
 	}
-
-	/*.readmore {
-	  text-align:center;
-	  display:block
-	}*/
 
 	.bx-viewport {
 	  height:150px
