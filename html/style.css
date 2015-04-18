@@ -651,7 +651,13 @@ table.table th {
 	  text-align: center;
 	}
 
-	#sub .grid,#footer .grid {
+	#sub .content {
+		width: 720px;
+		float:left;
+		overflow: hidden;
+	}
+
+	#footer .grid {
 	  width:298px
 	}
 
@@ -802,7 +808,7 @@ table.table th {
 	}
 
 	#sub .grid {
-	  width:32%;
+	  width:30%;
 	  margin:10px 1%
 	}
 
@@ -916,6 +922,11 @@ table.table th {
 	#mainBanner img {
 	  height:140px
 	}
+	
+	#sub .grid, #sub .content {
+	  float:none;
+	  width:98%
+	}
 
 	#sub ul.list li img {
 	  margin:0 5px 0 0
@@ -939,11 +950,6 @@ table.table th {
 	.grid img {
 	  max-width:90%;
 	  height:auto
-	}
-
-	#sub .grid {
-	  float:none;
-	  width:98%
 	}
 
 	#sub .grid h3 {
