@@ -50,6 +50,7 @@
       (C) Copyright 東北大学交響楽団／東北大学学友会交響楽部　2015 All rights reserved.
     </div>
   </div><!-- / フッター -->
+
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery1.7.2.min.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.js"></script> 

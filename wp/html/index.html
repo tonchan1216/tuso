@@ -36,39 +36,25 @@
 
   <div id="wrapper">
     <section class="content">
-      <h3 class="heading">ニュース</h3>
+      <h3 class="heading">新着情報</h3>
 
-      <article class="news">
-        <dl>
-          <dt>
-            <a href="news2.html">2015/1/1</a>
-          </dt>
+        <article class="news">
+          <?php query_posts('category_name=news,concert&showpost=5'); if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-          <dd>
-            <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
-          </dd>
-        </dl>
+            <dl>
+              <dt>
+                <a href="<?php the_permalink(); ?>"><?php the_time('Y/m/d'); ?></a>
+              </dt>
 
-        <dl>
-          <dt>
-            <a href="news2.html">2015/1/1</a>
-          </dt>
+              <dd>
+                <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
+              </dd>
+            </dl>
 
-          <dd>
-            <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
-          </dd>
-        </dl>
+          <?php endwhile; endif; ?>
+          <?php wp_reset_query(); ?>
 
-        <dl>
-          <dt>
-            <a href="news2.html">2015/1/1</a>
-          </dt>
-
-          <dd>
-            <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
-          </dd>
-        </dl>
-      </article>
+        </article>
     </section>
 
     <section class="content">

@@ -15,26 +15,27 @@
 
     <section id="main">
       <section class="content">
-        <h3 class="heading">第164回定期演奏会</h3>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <h3 class="heading"><?php the_title(); ?></h3>
 
         <article class="concert">
-          <img alt="" class="posterimg frame" src="<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="240" height="320">
+          <img alt="" class="posterimg frame" src="<?php the_post_thumbnail($post->ID); ?>" width="240" height="320">
           <dl>
             <dt>指揮</dt>
 
-            <dd>石川 善美 (当団常任指揮者)</dd>
+            <dd><?php the_field("指揮", $post->ID); ?></dd>
 
             <dt>日時</dt>
 
-            <dd>2015/06/20（土)　開場18:00　開演18:30</dd>
+            <dd><?php the_field("日時", $post->ID); ?></dd>
 
             <dt></dt>
 
             <dt>会場</dt>
 
             <dd>
-              東北大学百周年記念会館　川内萩ホール<br>
-              会場へのアクセスは<a href="http://www.bureau.tohoku.ac.jp/hagihall/institution/access.html">こちら</a>
+              <?php the_field("会場", $post->ID); ?><br>
+              会場へのアクセスは<a href="<?php the_field("アクセスリンク", $post->ID); ?>">こちら</a>
             </dd>
 
             <dt>曲目</dt>
@@ -68,7 +69,7 @@
 
             <dt>入場料<!--(チケット販売中 <a href="../ticket/ticket.html">オンラインチケット予約はこちら</a>)--></dt>
 
-            <dd>自由席　1,000円　　指定席　1,500円</dd>
+            <dd><?php the_field("入場料", $post->ID); ?></dd>
 
             <dt>プレイガイド　（販売中）</dt> 
 
@@ -80,11 +81,15 @@
             <dt>お問い合わせ</dt>
 
             <dd>
-              実行委員長　鈴木<br>
-              <a href="mailto:tuso.164@gmail.com">tuso.164@gmail.com</a>
+              実行委員長　<?php the_field("実行委員長", $post->ID); ?><br>
+              <a href="mailto:<?php the_field("gmail", $post->ID); ?>"><?php the_field("gmail", $post->ID); ?></a>
             </dd>
           </dl>
         </article>
+        <?php endwhile; else: ?>
+          <p><?php echo "お探しの記事、ページは見つかりませんでした。"; ?></p>
+        <?php endif; ?>
+        <?php wp_reset_query(); ?>
       </section>
     </section><!-- / コンテンツ -->
   </div><!-- / WRAPPER -->

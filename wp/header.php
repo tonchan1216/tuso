@@ -10,8 +10,8 @@
   <title>Tohoku University Symphony Orchestra</title>
   <link href="<?php echo get_template_directory_uri(); ?>/style.css" media="screen" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
-  <script src="js/html5.js"></script>
-  <script src="js/css3-mediaqueries.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>js/html5.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>js/css3-mediaqueries.js"></script>
   <![endif]-->
   <?php wp_footer(); ?>
 
@@ -35,37 +35,37 @@
         <div class="panel">
           <ul>
             <li>
-              <a href="<?php bloginfo('url'); ?>/news.html">ニュース<br>
+              <a href="<?php bloginfo('url'); ?>/news">ニュース<br>
               <span>News</span></a>
             </li>
 
             <li>
-              <a href="<?php bloginfo('url'); ?>/concert.html">最新の演奏会<br>
+              <a href="<?php bloginfo('url'); ?>/concert">最新の演奏会<br>
               <span>Concert</span></a>
             </li>
 
             <li>
-              <a href="<?php bloginfo('url'); ?>/pastconcert.html">過去の演奏会<br>
+              <a href="<?php bloginfo('url'); ?>/pastconcert">過去の演奏会<br>
               <span>Past Concert</span></a>
             </li>
 
             <li>
-              <a href="<?php bloginfo('url'); ?>/join.html">団員募集<br>
+              <a href="<?php bloginfo('url'); ?>/join">団員募集<br>
               <span>Joinus</span></a>
             </li>
 
             <li>
-              <a href="<?php bloginfo('url'); ?>/about.html">当団について<br>
+              <a href="<?php bloginfo('url'); ?>/about">当団について<br>
               <span>About</span></a>
             </li>
 
             <li>
-              <a href="<?php bloginfo('url'); ?>/contact.html">お問い合わせ<br>
+              <a href="<?php bloginfo('url'); ?>/contact">お問い合わせ<br>
               <span>Contact</span></a>
             </li>
 
             <li>
-              <a href="<?php bloginfo('url'); ?>/link.html">リンク<br>
+              <a href="<?php bloginfo('url'); ?>/link">リンク<br>
               <span>Link</span></a>
             </li>
           </ul>

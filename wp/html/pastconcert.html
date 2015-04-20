@@ -18,45 +18,14 @@
         <h3 class="heading">過去の演奏会一覧</h3>
 
         <article class="gridWrapper" id="gallery">
-          <figure class="grid">
-            <a href="images/image06.jpg" title="sample"><img alt="" height="210" src="<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="140"><br>
-            第163回定期演奏会</a>
-          </figure>
-
-<!--           <figure class="grid">
-            <a href="images/image06.jpg" title="sample"><img alt="" height="210" src="<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="140"><br>
-            第163回定期演奏会</a>
-          </figure>
-
-          <figure class="grid">
-            <a href="images/image06.jpg" title="sample"><img alt="" height="210" src="<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="140"><br>
-            第163回定期演奏会</a>
-          </figure>
-
-          <figure class="grid">
-            <a href="images/image06.jpg" title="sample"><img alt="" height="210" src="<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="140"><br>
-            第163回定期演奏会</a>
-          </figure>
-
-          <figure class="grid">
-            <a href="images/image06.jpg" title="sample"><img alt="" height="210" src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="140"><br>
-            第163回定期演奏会</a>
-          </figure>
-
-          <figure class="grid">
-            <a href="images/image06.jpg" title="sample"><img alt="" height="210" src="<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="140"><br>
-            第163回定期演奏会</a>
-          </figure>
-
-          <figure class="grid">
-            <a href="images/image06.jpg" title="sample"><img alt="" height="210" src="<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="140"><br>
-            第163回定期演奏会</a>
-          </figure>
-
-          <figure class="grid">
-            <a href="images/image06.jpg" title="sample"><img alt="" height="210" src="<?php echo get_template_directory_uri(); ?>/images/163poster.jpg" width="140"><br>
-            第163回定期演奏会</a>
-          </figure> -->
+          
+          <?php query_posts('category_name=news'); if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <figure class="grid">
+              <a href="images/image06.jpg" title="sample"><img alt="" src="<?php the_post_thumbnail($post->ID); ?>" class="posterimg frame" height="210" width="140"><br>
+              <?php the_title();?></a>
+            </figure>
+          <?php endwhile; endif; ?>
+          <?php wp_reset_query(); ?>
         </article>
 
       </section>
