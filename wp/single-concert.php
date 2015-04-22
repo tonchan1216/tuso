@@ -19,7 +19,7 @@
 
       <article class="concert">
         <?php echo "<p>".the_title()."は終了いたしました。ご来場ありがとうございました。</p>" ?>
-        <img alt="" class="posterimg frame" src="<?php the_post_thumbnail($post->ID); ?>" width="240" height="320">
+        <img alt="ポスター画像" class="posterimg frame" src="<?php the_post_thumbnail($post->ID); ?>" width="240" height="320">
         <dl>
           <dt>指揮</dt>
 

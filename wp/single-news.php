@@ -20,7 +20,7 @@
       <h3 class="news-title"><?php the_title();?></h3>
 
       <article class="news-content">
-        <?php //the_content(); ?>
+        <?php the_content(); ?>
       </article>
 
       <?php endwhile; else: ?>
@@ -31,4 +31,3 @@
     </section>
   </section><!-- / コンテンツ -->
 </div><!-- / WRAPPER -->
-
