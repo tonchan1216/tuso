@@ -504,6 +504,17 @@ table.table th {
 	margin-bottom: 20px;
 }
 
+.news-content dt {
+	font-weight: bold;
+	margin: 15px 20px;
+}
+
+.news-content dd {
+	display: block;
+	margin-left: 40px;
+}
+
+
 /*************
 サブ（フッター前）コンテンツ
 *************/
@@ -1032,7 +1043,7 @@ table.table th {
 }
 
 .news-content {
-  margin:5px 10px
+  margin:5px 20px
 }
 
 .pdtb-10 {

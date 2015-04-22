@@ -16,7 +16,7 @@
         <article class="grid">
           <ul class="list-inline text-a-c">
             <li>
-              <a href="<?php bloginfo('url'); ?>sitemap.html">サイトマップ</a>
+              <a href="<?php bloginfo('url'); ?>/sitemap.html">サイトマップ</a>
             </li>
 
             <li>
@@ -53,15 +53,18 @@
 
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery1.7.2.min.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script> 
-  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.js"></script> 
-  <script>
-    $(function(){
-      $('.bxslider').bxSlider({
-        auto: true,
-        mode: 'fade'
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.js"></script>
+  <?php echo <<< EOM 
+    <script>
+      $(function(){
+        $('.bxslider').bxSlider({
+          auto: true,
+          mode: 'fade'
+        });
       });
-    });
-  </script>
+    </script>
+    EOM; 
+  ?>
   <?php wp_footer(); ?>
 </body>
 </html>

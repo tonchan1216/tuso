@@ -39,6 +39,10 @@ caption,th,td {
   text-align:left
 }
 
+dt {
+	font-weight:400;
+}
+
 blockquote:before,blockquote:after,q:before,q:after {
   content:""
 }
@@ -502,6 +506,11 @@ table.table th {
 .conductor dd {
 	margin-left: 20px;
 	margin-bottom: 20px;
+}
+
+.news-content dt {
+	font-size: 105%;
+  font-weight: bold;
 }
 
 /*************
@@ -1032,8 +1041,10 @@ table.table th {
 }
 
 .news-content {
-  margin:5px 10px
+  margin:5px 20px
 }
+
+
 
 .pdtb-10 {
   padding:10px 0
