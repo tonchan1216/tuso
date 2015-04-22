@@ -39,10 +39,6 @@ caption,th,td {
   text-align:left
 }
 
-dt {
-	font-weight:400;
-}
-
 blockquote:before,blockquote:after,q:before,q:after {
   content:""
 }
@@ -509,9 +505,15 @@ table.table th {
 }
 
 .news-content dt {
-	font-size: 105%;
-  font-weight: bold;
+	font-weight: bold;
+	margin: 15px 20px;
 }
+
+.news-content dd {
+	display: block;
+	margin-left: 40px;
+}
+
 
 /*************
 サブ（フッター前）コンテンツ
@@ -1043,8 +1045,6 @@ table.table th {
 .news-content {
   margin:5px 20px
 }
-
-
 
 .pdtb-10 {
   padding:10px 0
