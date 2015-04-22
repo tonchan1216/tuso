@@ -54,17 +54,15 @@
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery1.7.2.min.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.js"></script>
-  <?php echo <<< EOM 
-    <script>
-      $(function(){
-        $('.bxslider').bxSlider({
-          auto: true,
-          mode: 'fade'
-        });
+  <script>
+    $(function(){
+      $('.bxslider').bxSlider({
+        auto: true,
+        mode: 'fade'
       });
-    </script>
-    EOM; 
-  ?>
+    });
+  </script>
+
   <?php wp_footer(); ?>
 </body>
 </html>
