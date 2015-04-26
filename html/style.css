@@ -64,19 +64,19 @@ body {
   color:#555;
   font:12px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN",メイリオ,Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
   line-height:1.5;
-  border-top:5px solid #FF9B54;
+  border-top:5px solid #E77E78;
   background:#fff;
   -webkit-text-size-adjust:none
 }
 
 html {
-  background:#FF9B54
+  background:#E77E78
 }
 
 /* リンク設定
 ------------------------------------------------------------*/
 a {
-  color:#FF9B54;
+  color:#E77E78;
   text-decoration:none;
   -webkit-transition:all .25s ease;
   -moz-transition:all .25s ease;
@@ -86,7 +86,7 @@ a {
 }
 
 a:hover {
-  color:#FF513B
+  color:#E20F04
 }
 
 a:active,a:focus {
@@ -153,8 +153,8 @@ a:active,a:focus {
   padding:0;
   width:100%;
   line-height:0;
-  border-top:5px solid #FF9B54;
-  border-bottom:5px solid #FF9B54
+  border-top:5px solid #E77E78;
+  border-bottom:5px solid #E77E78
 }
 
 #mainBanner img {
@@ -165,7 +165,7 @@ a:active,a:focus {
 .slogan {
   position:absolute;
   width:100%;
-  background:rgba(240,24,24,0.53);
+  background:rgba(126,231,120,0.50);
   padding:15px 0;
   line-height:1.4;
   z-index:100;
@@ -214,8 +214,8 @@ a:active,a:focus {
   margin-bottom:5px;
   font-size:110%;
   font-weight:700;
-  border-top:1px solid #FF9B54;
-  border-bottom:1px solid #FF9B54
+  border-top:1px solid #E77E78;
+  border-bottom:1px solid #E77E78
 }
 
 .grid p {
@@ -229,20 +229,6 @@ a:active,a:focus {
   height:70px;
   text-align:center
 }
-
-/*.readmore {
-  clear:both;
-  text-align:center;
-  padding:10px 15px;
-  border-radius:3px;
-  color:#fff;
-  background:#FF9B54
-}
-
-.readmore:hover {
-  background:#FF513B;
-  color:#FFF
-}*/
 
 /* フッター内のグリッド(3カラム) */
 #footer .grid {
@@ -279,8 +265,8 @@ h3.heading {
   padding:3px 10px;
   margin-bottom:15px;
   font-size:20px;
-  border-left:7px solid #FF9B54;
-  border-bottom:3px solid #FF9B54
+  border-left:7px solid #E77E78;
+  border-bottom:3px solid #E77E78
 }
 
 section.content img {
@@ -293,7 +279,7 @@ section.content #gallery .grid img {
 }
 
 img.frame,#gallery img {
-  border:3px solid #FF9B54
+  border:3px solid #E77E78
 }
 
 #gallery .grid {
@@ -357,7 +343,7 @@ img.frame,#gallery img {
   padding:10px 50px;
   font-size:120%;
   cursor:pointer;
-  background:#FF9B54;
+  background:#E77E78;
   color:#FFF;
   letter-spacing:2px;
   border:none;
@@ -369,7 +355,7 @@ img.frame,#gallery img {
 }
 
 .contact button:hover {
-  background:#FF513B
+  background:#E20F04
 }
 
 .plain {
@@ -386,7 +372,7 @@ table.table {
 
 table.table th,table.table td {
   padding:10px 5px;
-  border:1px solid #FF9B54
+  border:1px solid #E77E78
 }
 
 table.table th {
@@ -395,8 +381,8 @@ table.table th {
   letter-spacing:1px;
   white-space:nowrap;
   color:#fff;
-  background:#FF513B;
-  border-left:#FF9B54 5px solid
+  background:#FF8E88;
+  border-left:#E77E78 5px solid
 }
 
 .concert table {
@@ -569,7 +555,7 @@ table.table th {
   clear:both;
   padding:20px 0;
   overflow:hidden;
-  background:#FF9B54
+  background:#E77E78
 }
 
 * html #footer {
@@ -596,6 +582,15 @@ table.table th {
   color:#FFF
 }
 
+/*************
+/* 先頭へ移動
+*************/
+#page-up {
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+}
+
 /* PC用 */
 @media only screen and (min-width:940px) {
 	#wrapper,.inner {
@@ -620,7 +615,7 @@ table.table th {
 	  table-layout: fixed;
     width:100%;
 	  overflow:hidden;
-	  border-top:5px solid #FF9B54
+	  border-top:5px solid #E77E78
 	}
 
 	* html nav#mainNav ul {
@@ -738,12 +733,12 @@ table.table th {
 	  width:100%;
 	  margin:0 auto;
 	  padding:0;
-	  background:-webkit-gradient(linear,left top,left bottom,color-stop(1,#FF513B),color-stop(0.00,#FF9B54));
-	  background:-webkit-linear-gradient(top,#FF513B 0%,#FF9B54 100%);
-	  background:-moz-linear-gradient(top,#FF513B 0%,#FF9B54 100%);
-	  background:-o-linear-gradient(top,#FF513B 0%,#FF9B54 100%);
-	  background:-ms-linear-gradient(top,#FF513B 0%,#FF9B54 100%);
-	  background:linear-gradient(top,#FF513B 0%,#FF9B54 100%)
+	  background:-webkit-gradient(linear,left top,left bottom,color-stop(1,#FF513B),color-stop(0.00,#E77E78));
+	  background:-webkit-linear-gradient(top,#FF513B 0%,#E77E78 100%);
+	  background:-moz-linear-gradient(top,#FF513B 0%,#E77E78 100%);
+	  background:-o-linear-gradient(top,#FF513B 0%,#E77E78 100%);
+	  background:-ms-linear-gradient(top,#FF513B 0%,#E77E78 100%);
+	  background:linear-gradient(top,#FF513B 0%,#E77E78 100%)
 	}
 
 	nav#mainNav a.menu {
@@ -787,7 +782,7 @@ table.table th {
 	  text-align:left;
 	  border-bottom:1px solid #FFC4B6;
 	  color:#fff;
-	  background:#FF9B54
+	  background:#E77E78
 	}
 
 	nav#mainNav ul li a span {
@@ -1039,7 +1034,7 @@ table.table th {
   padding:3px 0;
   margin-bottom:15px;
   font-size:20px;
-  border-bottom:2px solid #FF9B54
+  border-bottom:2px solid #E77E78
 }
 
 .news-content {
