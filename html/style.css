@@ -64,19 +64,19 @@ body {
   color:#555;
   font:12px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN",メイリオ,Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
   line-height:1.5;
-  border-top:5px solid #E77E78;
-  background:#fff;
+  border-top:5px solid #FF5F64;
+  background:#f2f2f2;
   -webkit-text-size-adjust:none
 }
 
 html {
-  background:#E77E78
+  background:#FF5F64
 }
 
 /* リンク設定
 ------------------------------------------------------------*/
 a {
-  color:#E77E78;
+  color:#FF5F64;
   text-decoration:none;
   -webkit-transition:all .25s ease;
   -moz-transition:all .25s ease;
@@ -153,8 +153,8 @@ a:active,a:focus {
   padding:0;
   width:100%;
   line-height:0;
-  border-top:5px solid #E77E78;
-  border-bottom:5px solid #E77E78
+  border-top:5px solid #FF5F64;
+  border-bottom:5px solid #FF5F64
 }
 
 #mainBanner img {
@@ -214,8 +214,8 @@ a:active,a:focus {
   margin-bottom:5px;
   font-size:110%;
   font-weight:700;
-  border-top:1px solid #E77E78;
-  border-bottom:1px solid #E77E78
+  border-top:1px solid #FF5F64;
+  border-bottom:1px solid #FF5F64
 }
 
 .grid p {
@@ -265,8 +265,8 @@ h3.heading {
   padding:3px 10px;
   margin-bottom:15px;
   font-size:20px;
-  border-left:7px solid #E77E78;
-  border-bottom:3px solid #E77E78
+  border-left:7px solid #FF5F64;
+  border-bottom:3px solid #FF5F64
 }
 
 section.content img {
@@ -279,7 +279,7 @@ section.content #gallery .grid img {
 }
 
 img.frame,#gallery img {
-  border:3px solid #E77E78
+  border:3px solid #FF5F64
 }
 
 #gallery .grid {
@@ -343,7 +343,7 @@ img.frame,#gallery img {
   padding:10px 50px;
   font-size:120%;
   cursor:pointer;
-  background:#E77E78;
+  background:#FF5F64;
   color:#FFF;
   letter-spacing:2px;
   border:none;
@@ -372,7 +372,7 @@ table.table {
 
 table.table th,table.table td {
   padding:10px 5px;
-  border:1px solid #E77E78
+  border:1px solid #FF5F64
 }
 
 table.table th {
@@ -382,7 +382,7 @@ table.table th {
   white-space:nowrap;
   color:#fff;
   background:#FF8E88;
-  border-left:#E77E78 5px solid
+  border-left:#FF5F64 5px solid
 }
 
 .concert table {
@@ -500,6 +500,17 @@ table.table th {
 	margin-left: 40px;
 }
 
+#sitemap {
+	margin-left: 20px;
+}
+#sitemap ul,li {
+	margin-left: 10px;
+}
+
+#sitemap > ul {
+	list-style-type: square;
+}
+
 
 /*************
 サブ（フッター前）コンテンツ
@@ -555,7 +566,7 @@ table.table th {
   clear:both;
   padding:20px 0;
   overflow:hidden;
-  background:#E77E78
+  background:#333
 }
 
 * html #footer {
@@ -591,6 +602,37 @@ table.table th {
 	bottom: 5px;
 }
 
+#page-up img {
+	width: 45px;
+	height: 45px;
+}
+/*************
+/* tab
+*************/
+#tab-menu .active {
+	background-color: #333;
+}
+
+#tab1 {
+	border: 2px solid blue;
+	background-color: #ccffff; 
+}
+
+#tab2 { 
+	border: 2px solid #aaaa00; 
+	background-color: #ffffcc; 
+}
+
+#tab3 { 
+	border: 2px solid red;
+	background-color: #ffcccc;
+}
+
+.tabbox {
+	display: none;
+}
+
+
 /* PC用 */
 @media only screen and (min-width:940px) {
 	#wrapper,.inner {
@@ -615,7 +657,7 @@ table.table th {
 	  table-layout: fixed;
     width:100%;
 	  overflow:hidden;
-	  border-top:5px solid #E77E78
+	  border-top:5px solid #FF5F64
 	}
 
 	* html nav#mainNav ul {
@@ -634,7 +676,7 @@ table.table th {
 	  font-weight: bold;
 	  display:block;
 	  margin: auto;
-	  padding:35px 0;
+	  padding:25px 0;
 	  width:100%;
 	  line-height:1.2;
 	}
@@ -645,9 +687,9 @@ table.table th {
 	}
 
 	nav#mainNav ul li.active a,nav#mainNav ul a:hover {
-	  background:#f5f5f5;
+	  background:#333;
 	  border-color:#FF513B;
-	  color:#FF513B
+	  color:#f2f2f2
 	}
 
 	.slogan {
@@ -684,6 +726,7 @@ table.table th {
 		width: 720px;
 		float:left;
 		overflow: hidden;
+		margin-top: 40px;
 	}
 
 	#footer .grid {
@@ -733,12 +776,12 @@ table.table th {
 	  width:100%;
 	  margin:0 auto;
 	  padding:0;
-	  background:-webkit-gradient(linear,left top,left bottom,color-stop(1,#FF513B),color-stop(0.00,#E77E78));
-	  background:-webkit-linear-gradient(top,#FF513B 0%,#E77E78 100%);
-	  background:-moz-linear-gradient(top,#FF513B 0%,#E77E78 100%);
-	  background:-o-linear-gradient(top,#FF513B 0%,#E77E78 100%);
-	  background:-ms-linear-gradient(top,#FF513B 0%,#E77E78 100%);
-	  background:linear-gradient(top,#FF513B 0%,#E77E78 100%)
+	  background:-webkit-gradient(linear,left top,left bottom,color-stop(1,#FF513B),color-stop(0.00,#FF5F64));
+	  background:-webkit-linear-gradient(top,#FF513B 0%,#FF5F64 100%);
+	  background:-moz-linear-gradient(top,#FF513B 0%,#FF5F64 100%);
+	  background:-o-linear-gradient(top,#FF513B 0%,#FF5F64 100%);
+	  background:-ms-linear-gradient(top,#FF513B 0%,#FF5F64 100%);
+	  background:linear-gradient(top,#FF513B 0%,#FF5F64 100%)
 	}
 
 	nav#mainNav a.menu {
@@ -782,7 +825,7 @@ table.table th {
 	  text-align:left;
 	  border-bottom:1px solid #FFC4B6;
 	  color:#fff;
-	  background:#E77E78
+	  background:#FF5F64
 	}
 
 	nav#mainNav ul li a span {
@@ -837,16 +880,9 @@ table.table th {
 	}
 
 	#sub .grid {
-	  width:30%;
-	  margin:10px 1%
-	}
-
-	#sub .grid:first-child {
-	  margin-left:0
-	}
-
-	#sub .grid:last-child {
-	  margin-right:0
+		float: none;
+	  width:70%;
+	  margin:10px auto
 	}
 
 	#footer .grid,#footer .grid p {
@@ -863,6 +899,17 @@ table.table th {
 
 	#footer .grid:last-child {
 	  padding-top:20px
+	}
+
+	#tab-menu li {
+		width: 30%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.tabbox {
+		width: 70%;
+		margin: auto;
 	}
 }
 
@@ -1034,7 +1081,7 @@ table.table th {
   padding:3px 0;
   margin-bottom:15px;
   font-size:20px;
-  border-bottom:2px solid #E77E78
+  border-bottom:2px solid #FF5F64
 }
 
 .news-content {

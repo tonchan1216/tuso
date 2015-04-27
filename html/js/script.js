@@ -1,4 +1,5 @@
 $(function() {
+  //menu
  	$("div.panel").hide();
   $(".menu").click(function() {
     $(this).toggleClass("menuOpen").next().slideToggle();
@@ -9,6 +10,7 @@ $(function() {
   	$(".slideList").slideToggle(1000, "swing");
   });
 
+  //page-up
   $("#page-up").hide();
   $(window).scroll(function() {
   	if( $(this).scrollTop() > 60 ){
@@ -23,4 +25,15 @@ $(function() {
       },500);
       return false;
   })
+
+  //tab-change
+  $('.tabbox:first').show();
+  $('#tab-menu li:first').addClass('active');
+  $('#tab-menu li').click(function() {
+    $('#tab-menu li').removeClass('active');
+    $(this).addClass('active');
+    $('.tabbox').hide();
+    $($(this).find('a').attr('href')).fadeIn();
+    return false;
+  });
 })
