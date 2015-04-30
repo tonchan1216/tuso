@@ -1,7 +1,0 @@
-diff a/html/js/script.js b/html/js/script.js	(rejected hunks)
-@@ -1,5 +1,4 @@
- $(function() {
--  $(".slideList").hide();
-   //page-up
-   $("#page-up").hide();
-   $(window).scroll(function() {

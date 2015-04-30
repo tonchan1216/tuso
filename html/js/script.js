@@ -15,6 +15,13 @@ $(function() {
       return false;
   })
 
+  //slide on off
+  $(".slideList").hide();
+  $(".readmore").click(function(){
+    $(".slideList").slideToggle(1000,"swing");
+  })
+
+
   btnPc = 'swPc';
   btnSp = 'swSp';
   btnAcvClass = 'btnAcv';
