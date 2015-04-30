@@ -9,8 +9,9 @@
 
   <title>Tohoku University Symphony Orchestra</title>
   <link rel="shortcut icon" href="images/favicon.ico" >
-  <link href="style.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
   <script src="js/html5.js"></script>
   <script src="js/css3-mediaqueries.js"></script>
   <![endif]-->
@@ -32,7 +33,7 @@
         <a class="menu" id="menu"><span>MENU</span></a>
 
         <div class="panel">
-          <ul>
+          <ul class="list-inline text-center">
             <li>
               <a href="news.html">ニュース<br>
               <span>News</span></a>
@@ -77,7 +78,7 @@
   <div class="mainImg" id="mainBanner">
     <ul class="bxslider">
       <li>
-        <img alt="" height="300" src="images/top-image.jpg" width="100%">
+        <img alt="" height="400" src="images/top-image.jpg" width="100%">
 
         <div class="slogan">
           <h2>タイトルが入ります</h2>
@@ -87,7 +88,7 @@
       </li>
 
       <li>
-        <img alt="" height="300" src="images/top-image.jpg" width="100%">
+        <img alt="" height="400" src="images/top-image.jpg" width="100%">
 
         <div class="slogan">
           <h2>タイトルが入ります</h2>
@@ -97,7 +98,7 @@
       </li>
 
       <li>
-        <img alt="" height="300" src="images/top-image.jpg" width="100%">
+        <img alt="" height="400" src="images/image5.jpg" width="100%">
 
         <div class="slogan">
           <h2>タイトルが入ります</h2>
@@ -149,7 +150,7 @@
       <h3 class="heading">タイトルが入ります。</h3>
 
       <article>
-        <img alt="" class="imgleft frame" height="240" src="images/image03.jpg" width="320">
+        <img alt="" class="imgleft frame" height="240" src="images/image5.jpg" width="320">
 
         <div class="pdtb-10 plain">
           <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -163,7 +164,7 @@
       </article>
     </section>
 
-    <div id="page-up"><a href="#">↑↑↑</a></div>
+    <div id="page-up"><a href="#"><img src="images/arrow.png"></a></div>
   </div><!-- / WRAPPER -->
   <!-- フッター -->
 
@@ -217,8 +218,10 @@
       (C) Copyright 東北大学交響楽団／東北大学学友会交響楽部　2015 All rights reserved.
     </div>
   </div><!-- / フッター -->
-  <script src="js/jquery1.7.2.min.js"></script> 
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
   <script src="js/script.js"></script> 
+  <script src="js/jquery.cookie.js"></script>
   <script src="js/jquery.bxslider.js"></script> 
   <script>
     $(function(){

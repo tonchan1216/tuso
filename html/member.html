@@ -8,8 +8,10 @@
   <meta content="東北,大学,学友会,交響楽,オケ,オーケストラ" name="keywords">
 
   <title>Tohoku University Symphony Orchestra</title>
-  <link href="style.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+  <link rel="shortcut icon" href="images/favicon.ico" >
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
   <script src="js/html5.js"></script>
   <script src="js/css3-mediaqueries.js"></script>
   <![endif]-->
@@ -31,7 +33,7 @@
         <a class="menu" id="menu"><span>MENU</span></a>
 
         <div class="panel">
-          <ul>
+          <ul class="nav">
             <li>
               <a href="news.html">ニュース<br>
               <span>News</span></a>
@@ -87,71 +89,77 @@
   <div id="wrapper">
     <!-- コンテンツ -->
 
-    <section class="gridWrapper" id="sub">
-      <section class="grid">
-        <h3>団員専用メニュー</h3>
+    <section id="member">
+      <div class="row">
 
-        <ul id="tab-menu">
-          <li>
-            <a href="#tab1">ファイルダウンロード</a>
-          </li>
+        <div class="col-md-4">
+          <h3>団員専用メニュー</h3>
+          <ul id="tab-menu" class="nav nav-pills">
+            <li>
+              <a data-toggle="tab" href="#tab1">ファイル</a>
+            </li>
 
-          <li>
-            <a href="#tab2">スケジュール</a>
-          </li>
+            <li>
+              <a data-toggle="tab" href="#tab2">スケジュール</a>
+            </li>
 
-          <li>
-            <a href="#tab3">ギャラリー</a>
-          </li>
-        </ul>
-      </section>
+            <li>
+              <a data-toggle="tab" href="#tab3">ギャラリー</a>
+            </li>
+          </ul>
+        </div>
 
-      <article class="content">
-        <div id="tab1" class="tabbox">
+        <div class="col-md-8">
+          <article class="content">
+            <div id="tab1" class="tab-pane fade tabbox in active">
 
-          <article>
-            <dl>
-              <dt>
-                <a href="news2.html">2015/1/1</a>
-              </dt>
+              <article>
+                <dl>
+                  <dt>
+                    <a href="news2.html">2015/1/1</a>
+                  </dt>
 
-              <dd>
-                <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
-              </dd>
-            </dl>
+                  <dd>
+                    <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
+                  </dd>
+                </dl>
 
-            <dl>
-              <dt>
-                <a href="news2.html">2015/1/1</a>
-              </dt>
+                <dl>
+                  <dt>
+                    <a href="news2.html">2015/1/1</a>
+                  </dt>
 
-              <dd>
-                <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
-              </dd>
-            </dl>
+                  <dd>
+                    <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
+                  </dd>
+                </dl>
 
-            <dl>
-              <dt>
-                <a href="news2.html">2015/1/1</a>
-              </dt>
+                <dl>
+                  <dt>
+                    <a href="news2.html">2015/1/1</a>
+                  </dt>
 
-              <dd>
-                <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
-              </dd>
-            </dl>
+                  <dd>
+                    <a href="news2.html">タイトルが入ります。タイトルが入ります。</a>
+                  </dd>
+                </dl>
+              </article>
+
+            </div>
+
+            <div id="tab2" class="tab-pane fade tabbox">
+              スケジュール
+            </div>
+
+            <div id="tab3" class="tab-pane fade tabbox">
+              ギャラリー
+            </div>
           </article>
-
         </div>
 
-        <div id="tab2" class="tabbox">
-          スケジュール
-        </div>
-
-        <div id="tab3" class="tabbox">
-          ギャラリー
-        </div>
-      </article>
+      </div>
     </section><!-- / コンテンツ -->
+    <div id="page-up"><a href="#"><img src="images/arrow.png"></a></div>
   </div><!-- / WRAPPER -->
   <!-- フッター -->
 
@@ -205,8 +213,10 @@
       (C) Copyright 東北大学交響楽団／東北大学学友会交響楽部　2015 All rights reserved.
     </div>
   </div><!-- / フッター -->
-  <script src="js/jquery1.7.2.min.js"></script> 
-  <script src="js/script.js"></script>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/script.js"></script> 
+  <script src="js/jquery.cookie.js"></script>
 
 </body>
 </html>

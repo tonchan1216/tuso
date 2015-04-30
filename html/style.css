@@ -282,41 +282,12 @@ img.frame,#gallery img {
   border:3px solid #FF5F64
 }
 
-#gallery .grid {
+#gallery .elem {
   margin-bottom:50px
-}
-
-.imgleft {
-	display: block;
-  float:left;
-  margin:3px 10px 10px 30px;
-}
-
-.imgright {
-	display: block;
-  float:right;
-  margin:3px 0 10px 10px
-}
-
-.textleft {
-	width: 50%; 
-	float:left;
-}
-
-.textright {
-	width: 50%;
-	float:right;
-	margin-right: 10px;
-}
-
-.textfloat:after {
-	clear: both;
 }
 
 .posterimg {
 	display: block;
-  float:right;
-  clear: right;
   margin:60px 40px 10px 10px
 }
 .contact {
@@ -372,7 +343,6 @@ table.table {
 
 table.table th,table.table td {
   padding:10px 5px;
-  border:1px solid #FF5F64
 }
 
 table.table th {
@@ -380,9 +350,6 @@ table.table th {
   font-weight:700;
   letter-spacing:1px;
   white-space:nowrap;
-  color:#fff;
-  background:#FF8E88;
-  border-left:#FF5F64 5px solid
 }
 
 .concert table {
@@ -417,21 +384,6 @@ table.table th {
 	padding-left: 15px;
 }
 
-#concertRecord {
-	margin-left: 30px;
-}
-
-#concertRecord tr:nth-child(2n){
-	background-color: #EFEFEF;
-}
-
-#concertRecord th {
-	text-align: right;
-}
-
-#concertRecord td {
-	padding-left: 20px;
-}
 /*************
 データリスト
 *************/
@@ -511,54 +463,6 @@ table.table th {
 	list-style-type: square;
 }
 
-
-/*************
-サブ（フッター前）コンテンツ
-*************/
-#sub ul {
-  padding:10px
-}
-
-#sub li {
-  margin-bottom:10px;
-  padding-bottom:10px;
-  border-bottom:1px dashed #ebebeb
-}
-
-#sub li:last-child {
-  border:0;
-  margin-bottom:0
-}
-
-#sub li a {
-  display:block
-}
-
-#sub ul.list {
-  padding-bottom:7px
-}
-
-#sub ul.list li {
-  clear:both;
-  margin-bottom:4px;
-  padding:4px 0;
-  overflow:hidden
-}
-
-* html #sub ul.list li {
-  height:1%
-}
-
-#sub ul.list li img {
-  float:left;
-  margin:0 10px 0 0
-}
-
-#sub ul.list li {
-  font-size:12px;
-  line-height:1.35
-}
-
 /*************
 /* フッター
 *************/
@@ -607,10 +511,59 @@ table.table th {
 	height: 45px;
 }
 /*************
-/* tab
+/* Member Only
 *************/
-#tab-menu .active {
-	background-color: #333;
+#member h3 {
+  padding:8px 0;
+  margin-bottom:5px;
+  font-size:110%;
+  font-weight:700;
+  border-top:1px solid #FF5F64;
+  border-bottom:1px solid #FF5F64
+}
+
+#member ul {
+  padding:10px
+}
+
+#member li {
+  margin-bottom:10px;
+  padding-bottom:10px;
+  border-bottom:1px dashed #ebebeb
+}
+
+#member li:last-child {
+  border:0;
+  margin-bottom:0
+}
+
+#member li a {
+  display:block
+}
+
+#member ul.list {
+  padding-bottom:7px
+}
+
+#member ul.list li {
+  clear:both;
+  margin-bottom:4px;
+  padding:4px 0;
+  overflow:hidden
+}
+
+* html #member ul.list li {
+  height:1%
+}
+
+#member ul.list li img {
+  float:left;
+  margin:0 10px 0 0
+}
+
+#member ul.list li {
+  font-size:12px;
+  line-height:1.35
 }
 
 #tab1 {
@@ -627,11 +580,6 @@ table.table th {
 	border: 2px solid red;
 	background-color: #ffcccc;
 }
-
-.tabbox {
-	display: none;
-}
-
 
 /* PC用 */
 @media only screen and (min-width:940px) {
@@ -654,9 +602,9 @@ table.table th {
 
 	nav#mainNav ul {
 		display:table;
-	  table-layout: fixed;
-    width:100%;
-	  overflow:hidden;
+		table-layout: fixed;
+		width:100%;
+		overflow:hidden;
 	  border-top:5px solid #FF5F64
 	}
 
@@ -716,17 +664,8 @@ table.table th {
 	}
 
 	/* サブコンテンツ + フッター グリッド(3カラム) */
-	#gallery .grid {
-	  width:140px;
-	  margin-left:80px;
+	#gallery .elem {
 	  text-align: center;
-	}
-
-	#sub .content {
-		width: 720px;
-		float:left;
-		overflow: hidden;
-		margin-top: 40px;
 	}
 
 	#footer .grid {
@@ -863,28 +802,6 @@ table.table th {
 	  margin-right:5px
 	}
 
-	#gallery {
-	  padding-left:1px
-	}
-
-	#gallery .grid {
-	  width:140px;
-	  margin-left:9%;
-	  margin-right: 0;
-	  padding:0
-	}
-
-	#gallery .grid img {
-	  float:none;
-	  margin:0
-	}
-
-	#sub .grid {
-		float: none;
-	  width:70%;
-	  margin:10px auto
-	}
-
 	#footer .grid,#footer .grid p {
 	  float:none;
 	  width:100%;
@@ -933,28 +850,15 @@ table.table th {
 		display: none;
 	}
 
-	.imgleft,.imgright {
-	  float:none;
-	  display:block;
-	  margin:0 auto 10px
-	}
-
-	.textleft,.textright {
-		width: 70%;
-	  float:none;
-	  margin:0 auto 10px
-	}
-
 	.map {
-		width: 60%;
 		margin: 0 auto;
 	}
 
-	#sub ul.list {
+	#member ul.list {
 	  padding:10px 10px 11px
 	}
 
-	#sub ul.list li {
+	#member ul.list li {
 	  padding-bottom:10px;
 	  margin-bottom:8px
 	}
@@ -983,19 +887,11 @@ table.table th {
 	  margin:0 auto
 	}
 
-	.grid p,#sub .grid li {
+	.grid p,#member .grid li {
 	  text-align:left
 	}
 
-	#gallery .grid {
-	  width:140px;
-	  margin-left:18%;
-	  margin-right: 0;
-	  padding:0
-	}
-
 	.posterimg {
-	  float:none;
 	  margin:0 auto 10px
 	}
 
@@ -1007,12 +903,7 @@ table.table th {
 	  height:140px
 	}
 	
-	#sub .grid, #sub .content {
-	  float:none;
-	  width:98%
-	}
-
-	#sub ul.list li img {
+	#member ul.list li img {
 	  margin:0 5px 0 0
 	}
 }
@@ -1045,27 +936,21 @@ table.table th {
 	  height:auto
 	}
 
-	#sub .grid h3 {
+	#member .grid h3 {
 	  padding:10px 5px
 	}
 
-	#sub ul.list {
+	#member ul.list {
 	  padding:10px
 	}
 
-	#sub ul.list li {
+	#member ul.list li {
 	  padding-bottom:3px;
 	  margin-bottom:3px
 	}
 
 	.grid p {
 	  height:160px
-	}
-
-	#gallery .grid {
-		width: 70px;
-		height: auto;
-		margin-left:10%; 
 	}
 
 	.bx-viewport {
