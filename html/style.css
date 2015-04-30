@@ -134,12 +134,19 @@ a:active,a:focus {
 
 #footer .logo img {
 	width: 80px;
-	margin-left: 70px;
 }
 
-.logo a {
+#header .logo a {
   font-size:20px;
   font-weight:700;
+  line-height:1;
+  font-family:"Palatino Linotype","Book Antiqua",Palatino,serif
+}
+
+#footer .logo a {
+  font-size:17px;
+  font-weight:600;
+  text-align: center;
   line-height:1;
   font-family:"Palatino Linotype","Book Antiqua",Palatino,serif
 }
@@ -193,55 +200,6 @@ a:active,a:focus {
   right:0
 }
 
-/**************************
-/* グリッド
-**************************/
-.gridWrapper {
-  padding-bottom:20px;
-  overflow:hidden
-}
-
-* html .gridWrapper {
-  height:1%
-}
-
-.grid {
-  float:left
-}
-
-.grid h3 {
-  padding:8px 0;
-  margin-bottom:5px;
-  font-size:110%;
-  font-weight:700;
-  border-top:1px solid #FF5F64;
-  border-bottom:1px solid #FF5F64
-}
-
-.grid p {
-  padding:5px 0;
-  height:105px
-}
-
-.grid p.img {
-  margin:3px 5px 0;
-  width:100%;
-  height:70px;
-  text-align:center
-}
-
-/* フッター内のグリッド(3カラム) */
-#footer .grid {
-  color:#fff;
-  border:0;
-  background:transparent
-}
-
-#footer .grid p {
-  padding:0;
-  height:auto
-}
-
 /*************
 メイン コンテンツ
 *************/
@@ -274,7 +232,7 @@ section.content img {
   height:auto
 }
 
-section.content #gallery .grid img {
+section.content #gallery img {
   max-width:100%
 }
 
@@ -455,7 +413,7 @@ table.table th {
 #sitemap {
 	margin-left: 20px;
 }
-#sitemap ul,li {
+#sitemap ul, #sitemap li {
 	margin-left: 10px;
 }
 
@@ -471,10 +429,6 @@ table.table th {
   padding:20px 0;
   overflow:hidden;
   background:#333
-}
-
-* html #footer {
-  height:1%
 }
 
 .mail strong {
@@ -495,6 +449,21 @@ table.table th {
   font-size:11px;
   text-align:center;
   color:#FFF
+}
+
+#footer-grid {
+  color:#fff;
+  border:0;
+  margin-bottom: 30px;
+  background:transparent
+}
+
+#footer-grid p {
+  padding:5px 0;
+}
+
+#footer-grid p img {
+  margin:3px auto 10px;
 }
 
 /*************
@@ -592,30 +561,15 @@ table.table th {
 	  padding-bottom:20px
 	}
 
-	nav div.panel {
-	  display:block!important;
+	nav#mainNav {
+	  border-top:5px solid #FF5F64;
 	}
 
-	a#menu {
+	.navbar-brand {
 	  display:none
 	}
 
-	nav#mainNav ul {
-		display:table;
-		table-layout: fixed;
-		width:100%;
-		overflow:hidden;
-	  border-top:5px solid #FF5F64
-	}
-
-	* html nav#mainNav ul {
-	  height:1%
-	}
-
 	nav#mainNav ul li {
-	  margin: 0 auto;
-	  display:table-cell;
-	  vertical-align:middle;
     text-align:center
 	}
 
@@ -623,10 +577,6 @@ table.table th {
 	  font-size:15px;
 	  font-weight: bold;
 	  display:block;
-	  margin: auto;
-	  padding:25px 0;
-	  width:100%;
-	  line-height:1.2;
 	}
 
 	nav#mainNav ul span {
@@ -649,31 +599,13 @@ table.table th {
 	  top:70px
 	}
 
-	/* グリッド全体 */
-	.gridWrapper {
-	  width:960px;
-	  margin:0 0 0 -20px;
-	  padding-top:30px
-	}
-
-	/* グリッド共通 ベース:トップページ4カラム */
-	.grid {
-	  float:left;
-	  width:220px;
-	  margin-left:20px
-	}
-
 	/* サブコンテンツ + フッター グリッド(3カラム) */
 	#gallery .elem {
 	  text-align: center;
 	}
 
-	#footer .grid {
-	  width:298px
-	}
-
-	#footer .grid {
-	  border:0
+	#footer .logo img {
+  		margin:3px 60px 10px;
 	}
 
 	#footer .text-a-r {
@@ -710,112 +642,37 @@ table.table th {
 
 	}
 
-	nav#mainNav {
-	  clear:both;
-	  width:100%;
-	  margin:0 auto;
-	  padding:0;
-	  background:-webkit-gradient(linear,left top,left bottom,color-stop(1,#FF513B),color-stop(0.00,#FF5F64));
-	  background:-webkit-linear-gradient(top,#FF513B 0%,#FF5F64 100%);
-	  background:-moz-linear-gradient(top,#FF513B 0%,#FF5F64 100%);
-	  background:-o-linear-gradient(top,#FF513B 0%,#FF5F64 100%);
-	  background:-ms-linear-gradient(top,#FF513B 0%,#FF5F64 100%);
-	  background:linear-gradient(top,#FF513B 0%,#FF5F64 100%)
-	}
-
-	nav#mainNav a.menu {
-	  width:100%;
-	  display:block;
-	  height:40px;
-	  line-height:40px;
-	  font-weight:700;
-	  text-align:left;
-	  color:#fff
-	}
-
-	nav#mainNav a#menu span {
-	  padding-left:10px
-	}
-
-	nav#mainNav a#menu:hover {
-	  cursor:pointer
-	}
-
-	nav .panel {
-	  display:none;
-	  width:100%;
-	  position:relative;
-	  right:0;
-	  top:0;
-	  z-index:1
-	}
-
-	nav#mainNav ul li {
-	  float:none;
-	  clear:both;
-	  width:100%;
-	  height:auto;
-	  line-height:1.2
-	}
-
-	nav#mainNav ul li a,nav#mainNav ul li.current-menu-item li a {
-	  display:block;
-	  padding:15px 10px;
-	  text-align:left;
-	  border-bottom:1px solid #FFC4B6;
-	  color:#fff;
-	  background:#FF5F64
+	.navbar-brand {
+	  display:none
 	}
 
 	nav#mainNav ul li a span {
 	  padding-left:10px
 	}
 
-	nav#mainNav ul li:first-child a {
-	  border-top:1px solid #FFC4B6
-	}
-
-	nav#mainNav ul li:last-child a {
-	  border:0
-	}
-
 	nav#mainNav ul li.active a,nav#mainNav ul li a:hover {
 	  background:#FF513B
-	}
-
-	nav div.panel {
-	  float:none
 	}
 
 	.plain {
 		margin: 0 30px;
 	}
 
-	.grid {
-	  float:left;
-	  width:48%;
-	  margin:10px 2% 30px 0
-	}
-
-	.grid img {
-	  float:left;
-	  margin-right:5px
-	}
-
-	#footer .grid,#footer .grid p {
-	  float:none;
+	#footer-grid p {
 	  width:100%;
 	  text-align:center;
-	  border:0
 	}
 
-	#footer	.grid img {
-	  float:none;
+	#footer-grid img {
 	  margin:0 auto
 	}
 
-	#footer .grid:last-child {
+	#footer-grid:last-child {
 	  padding-top:20px
+	}
+
+	#footer-grid .text-a-c, #footer-grid .text-a-r{
+		text-align: center;
 	}
 
 	#tab-menu li {
@@ -832,6 +689,10 @@ table.table th {
 
 /* iPad 縦 */
 @media only screen and (max-width:768px) {
+	.navbar-brand {
+	  display:inline;
+	}
+
 	#header {
 	  padding-bottom:0
 	}
@@ -878,19 +739,6 @@ table.table th {
 
 	/* スマートフォン 横(ランドスケープ) */
 @media only screen and (max-width:640px) {
-	#footer .grid p {
-	  text-align:center
-	}
-
-	.grid img {
-	  float:none;
-	  margin:0 auto
-	}
-
-	.grid p,#member .grid li {
-	  text-align:left
-	}
-
 	.posterimg {
 	  margin:0 auto 10px
 	}
@@ -931,12 +779,7 @@ table.table th {
 	  right:-30px
 	}
 
-	.grid img {
-	  max-width:90%;
-	  height:auto
-	}
-
-	#member .grid h3 {
+	#member h3 {
 	  padding:10px 5px
 	}
 
@@ -947,10 +790,6 @@ table.table th {
 	#member ul.list li {
 	  padding-bottom:3px;
 	  margin-bottom:3px
-	}
-
-	.grid p {
-	  height:160px
 	}
 
 	.bx-viewport {
@@ -988,6 +827,6 @@ table.table th {
 
 .list-inline li {
   display:inline-block;
-  margin:5px 10px
+  margin:40px 8px
 }
 
