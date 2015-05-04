@@ -132,6 +132,10 @@ body {
 /*************
 /* ロゴ
 *************/
+#title-img {
+  max-width: 100%;
+}
+
 #footer .logo img {
 	width: 80px;
 }
@@ -639,16 +643,25 @@ table.table th {
 	  box-sizing:border-box
 	}
 
+  body {
+    padding-top: 50px;
+  }
+
 	#header {
 	  padding:10px 0 0
 	}
+
+  #title-img {
+    width: 280px;
+  }
 
 	nav#mainNav ul li a span {
 	  padding-left:10px
 	}
 
 	nav#mainNav ul li.active a, nav#mainNav ul li a:hover {
-	  background:#FF513B
+	  background:#333;
+    color:#f2f2f2
 	}
 
 	.plain {
@@ -694,6 +707,10 @@ table.table th {
 	#header {
 	  padding-bottom:0
 	}
+
+  .navbar-brand {
+    padding-top: 10px;
+  }
 
 	.map {
 		margin: 0 auto;
