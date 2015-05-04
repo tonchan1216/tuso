@@ -95,9 +95,13 @@ a:active,a:focus {
 
 /* 全体
 ------------------------------------------------------------*/
+body {
+  padding-top: 80px;
+}
+
 #wrapper {
   margin:0 auto;
-  padding:0 1%;
+  padding: 1% 0;
   width:98%;
   position:relative
 }
@@ -128,19 +132,8 @@ a:active,a:focus {
 /*************
 /* ロゴ
 *************/
-#header .logo {
-	padding:10px 35px 0;
-}
-
 #footer .logo img {
 	width: 80px;
-}
-
-#header .logo a {
-  font-size:20px;
-  font-weight:700;
-  line-height:1;
-  font-family:"Palatino Linotype","Book Antiqua",Palatino,serif
 }
 
 #footer .logo a {
@@ -154,23 +147,36 @@ a:active,a:focus {
 /**************************
 /* メイン画像（トップページ+サブページ）
 **************************/
-#mainBanner {
+#carousel img {
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+#carousel .item {
+	height: 500px;
+	overflow: hidden;
+}
+
+#banner {
   position:relative;
   margin:0 auto 30px;
-  padding:0;
-  width:100%;
-  line-height:0;
+  height: 280px;
+  overflow: hidden;
   border-top:5px solid #FF5F64;
-  border-bottom:5px solid #FF5F64
+  border-bottom:5px solid #FF5F64;
 }
 
-#mainBanner img {
-  max-width:100%;
-  height:auto
+#banner img {
+  position: relative;
+  width:100%;
+  height:auto;
+  top: -100px;
 }
 
+/* スローガン*/
 .slogan {
-  background:rgba(126,231,120,0.50);
+  background:rgba(255,255,255,0.50);
 }
 
 .slogan h2 {
@@ -185,19 +191,18 @@ a:active,a:focus {
   text-shadow:1px 1px 3px #333
 }
 
-/* サブページ スローガン*/
-.subImg .slogan {
+#banner .slogan {
 	position:absolute;
 	width:100%;
 	padding:15px 0;
 	line-height:1.4;
 	z-index:100;
-	top:10px
+	top:70px;
 	left:0;
 	right:0
 }
 
-.subImg .slogan h2 {
+#banner .slogan h2 {
   padding-bottom:5px;
   padding-left:15%;
   color:#FFF;
@@ -205,7 +210,7 @@ a:active,a:focus {
   text-shadow:1px 1px 3px #333
 }
 
-.subImg .slogan h3 {
+#banner .slogan h3 {
   font-size:16px;
   padding-left:15%;
   color:#FFF;
@@ -301,6 +306,17 @@ img.frame,#gallery img {
 
 .plain {
 	margin-left: 15px;
+}
+
+.news-title {
+  padding:3px 0;
+  margin-bottom:15px;
+  font-size:20px;
+  border-bottom:2px solid #FF5F64
+}
+
+.news-content {
+  margin:5px 20px
 }
 /*************
 テーブル
@@ -443,17 +459,17 @@ table.table th {
   background:#333
 }
 
-.mail strong {
-  font-size:20px;
-  font-weight:700
-}
-
 #footer a {
   color:#fff
 }
 
 #footer a:hover {
   color:#ccc
+}
+
+#footer .mail strong {
+  font-size:20px;
+  font-weight:700
 }
 
 #footer .copyright {
@@ -485,11 +501,7 @@ table.table th {
 	position: fixed;
 	right: 5px;
 	bottom: 5px;
-}
-
-#page-up img {
-	width: 45px;
-	height: 45px;
+	opacity: 0.7
 }
 /*************
 /* Member Only
@@ -570,15 +582,11 @@ table.table th {
 	}
 
 	#wrapper {
-	  padding-bottom:20px
+	  padding:20px 0;
 	}
 
 	nav#mainNav {
 	  border-top:5px solid #FF5F64;
-	}
-
-	.navbar-brand {
-	  display:none
 	}
 
 	nav#mainNav ul li {
@@ -587,7 +595,6 @@ table.table th {
 
 	nav#mainNav ul a {
 	  font-size:15px;
-	  font-weight: bold;
 	  display:block;
 	}
 
@@ -596,18 +603,11 @@ table.table th {
 	  color:#a5a5a5
 	}
 
-	nav#mainNav ul li.active a,nav#mainNav ul a:hover {
+	nav#mainNav ul li.active a, nav#mainNav ul a:hover {
 	  background:#333;
-	  border-color:#FF513B;
 	  color:#f2f2f2
 	}
 
-	.subImg .slogan {
-	  left:0;
-	  top:70px
-	}
-
-	/* サブコンテンツ + フッター グリッド(3カラム) */
 	#gallery .elem {
 	  text-align: center;
 	}
@@ -623,6 +623,10 @@ table.table th {
 	#footer .text-a-c {
   	text-align:center
 	}
+
+  .dropdown:hover > .dropdown-menu{
+    display: block;
+}
 }
 
 /* モニター幅940px以下 */
@@ -639,31 +643,21 @@ table.table th {
 	  padding:10px 0 0
 	}
 
-	#header .logo,#footer .logo {
-	  text-align:center;
-	  padding:10px 5px
-	}
-
-	#header .logo img{
-		height: 110px;
-		width: auto;
-
-	}
-
-	.navbar-brand {
-	  display:none
-	}
-
 	nav#mainNav ul li a span {
 	  padding-left:10px
 	}
 
-	nav#mainNav ul li.active a,nav#mainNav ul li a:hover {
+	nav#mainNav ul li.active a, nav#mainNav ul li a:hover {
 	  background:#FF513B
 	}
 
 	.plain {
 		margin: 0 30px;
+	}
+
+	#footer .logo {
+	  text-align:center;
+	  padding:10px 5px
 	}
 
 	#footer-grid p {
@@ -697,26 +691,8 @@ table.table th {
 
 /* iPad 縦 */
 @media only screen and (max-width:768px) {
-	.navbar-brand {
-	  display:inline;
-	}
-
 	#header {
 	  padding-bottom:0
-	}
-
-	#header h1 {
-	  text-align:center
-	}
-
-	#header .logo {
-	  float:none;
-	  text-align:center;
-	  padding:10px 5px 20px
-	}
-
-	#header .logo .logoImg {
-		display: none;
 	}
 
 	.map {
@@ -755,8 +731,8 @@ table.table th {
 		width: 70%;
 	}
 
-	#mainBanner img {
-	  height:140px
+	#carousel .item {
+	  height:200px
 	}
 	
 	#member ul.list li img {
@@ -766,24 +742,19 @@ table.table th {
 
 /* スマートフォン 縦(ポートレート) */
 @media only screen and (max-width:480px) {
-	#mainBanner {
+	#banner {
 	  margin-left:1px
 	}
 
-	#mainBanner img {
+	#carousel .item {
 	  height:150px
 	}
 
-	#mainBanner h2,#mainBanner h3 {
+	#banner h2,#banner h3 {
 	  font-size:75%
 	}
 
-	#header .logo img {
-		width: 100%;
-		height: auto;
-	}
-
-	.subImg .slogan {
+	#banner .slogan {
 	  right:-30px
 	}
 
@@ -799,38 +770,9 @@ table.table th {
 	  padding-bottom:3px;
 	  margin-bottom:3px
 	}
-
-	.bx-viewport {
-	  height:150px
-	}
-
-	.bx-wrapper {
-	  margin:0 auto
-	}
-}
-
-.news-title {
-  padding:3px 0;
-  margin-bottom:15px;
-  font-size:20px;
-  border-bottom:2px solid #FF5F64
-}
-
-.news-content {
-  margin:5px 20px
-}
-
-.f-right {
-  float:right
-}
-
-.list-float li {
-  float:left;
-  margin:5px 10px
 }
 
 .list-inline li {
   display:inline-block;
   margin:40px 8px
 }
-
