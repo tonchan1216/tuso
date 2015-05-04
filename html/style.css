@@ -760,7 +760,7 @@ table.table th {
 /* スマートフォン 縦(ポートレート) */
 @media only screen and (max-width:480px) {
 	#title-img {
-    width: 150px;
+    width: 250px;
   }
 
   #banner {
