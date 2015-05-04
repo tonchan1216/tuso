@@ -759,7 +759,11 @@ table.table th {
 
 /* スマートフォン 縦(ポートレート) */
 @media only screen and (max-width:480px) {
-	#banner {
+	#title-img {
+    width: 150px;
+  }
+
+  #banner {
 	  margin-left:1px
 	}
 
