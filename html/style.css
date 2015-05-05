@@ -257,7 +257,7 @@ section.content #gallery img {
   max-width:100%
 }
 
-img.frame,#gallery img {
+img.frame, #gallery img {
   border:3px solid #FF5F64
 }
 
@@ -523,44 +523,17 @@ table.table th {
   padding:10px
 }
 
-#member li {
-  margin-bottom:10px;
-  padding-bottom:10px;
-  border-bottom:1px dashed #ebebeb
+#member .tabbox {
+  display: none;
+  margin-top: 32px;
 }
 
-#member li:last-child {
-  border:0;
-  margin-bottom:0
+#member .content .active {
+  display: block;
 }
 
-#member li a {
-  display:block
-}
-
-#member ul.list {
-  padding-bottom:7px
-}
-
-#member ul.list li {
-  clear:both;
-  margin-bottom:4px;
-  padding:4px 0;
-  overflow:hidden
-}
-
-* html #member ul.list li {
-  height:1%
-}
-
-#member ul.list li img {
-  float:left;
-  margin:0 10px 0 0
-}
-
-#member ul.list li {
-  font-size:12px;
-  line-height:1.35
+.tabbox {
+  height: 900px;
 }
 
 #tab1 {
@@ -616,6 +589,11 @@ table.table th {
 	  text-align: center;
 	}
 
+  #tab-menu li {
+    text-align: center;
+    float: none;
+  }
+
 	#footer .logo img {
   		margin:3px 60px 10px;
 	}
@@ -630,7 +608,7 @@ table.table th {
 
   .dropdown:hover > .dropdown-menu{
     display: block;
-}
+  }
 }
 
 /* モニター幅940px以下 */
@@ -668,6 +646,19 @@ table.table th {
 		margin: 0 30px;
 	}
 
+  #tab-menu {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  #tab-menu li {
+    width: 30%;
+  }
+
+  #member .tabbox {
+    margin-top: 10px;
+  }
+
 	#footer .logo {
 	  text-align:center;
 	  padding:10px 5px
@@ -689,20 +680,9 @@ table.table th {
 	#footer-grid .text-a-c, #footer-grid .text-a-r{
 		text-align: center;
 	}
-
-	#tab-menu li {
-		width: 30%;
-		display: inline-block;
-		text-align: center;
-	}
-
-	.tabbox {
-		width: 70%;
-		margin: auto;
-	}
 }
 
-/* iPad 縦 */
+/* tablet 縦 */
 @media only screen and (max-width:768px) {
 	#header {
 	  padding-bottom:0
@@ -714,15 +694,6 @@ table.table th {
 
 	.map {
 		margin: 0 auto;
-	}
-
-	#member ul.list {
-	  padding:10px 10px 11px
-	}
-
-	#member ul.list li {
-	  padding-bottom:10px;
-	  margin-bottom:8px
 	}
 
 	.linklist dd {
@@ -751,10 +722,6 @@ table.table th {
 	#carousel .item {
 	  height:200px
 	}
-	
-	#member ul.list li img {
-	  margin:0 5px 0 0
-	}
 }
 
 /* スマートフォン 縦(ポートレート) */
@@ -781,15 +748,6 @@ table.table th {
 
 	#member h3 {
 	  padding:10px 5px
-	}
-
-	#member ul.list {
-	  padding:10px
-	}
-
-	#member ul.list li {
-	  padding-bottom:3px;
-	  margin-bottom:3px
 	}
 }
 
