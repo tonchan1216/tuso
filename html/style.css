@@ -646,6 +646,10 @@ table.table th {
 		margin: 0 30px;
 	}
 
+  .img-responsive {
+    margin: 0 auto 10px;
+  }
+
   #tab-menu {
     width: 400px;
     margin: 0 auto;
@@ -739,10 +743,11 @@ table.table th {
 	}
 
 	#banner h2,#banner h3 {
-	  font-size:75%
+	  font-size:70%
 	}
 
 	#banner .slogan {
+    top:20px;
 	  right:-30px
 	}
 
