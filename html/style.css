@@ -225,7 +225,6 @@ body {
 メイン コンテンツ
 *************/
 section.content {
-  padding:10px 0;
   margin-bottom:20px;
   border-radius:6px;
   overflow:hidden;
@@ -253,7 +252,7 @@ section.content img {
   height:auto
 }
 
-section.content #gallery img {
+#gallery img {
   max-width:100%
 }
 
@@ -541,11 +540,6 @@ table.table th {
 	background-color: #ccffff; 
 }
 
-#tab2 { 
-	border: 2px solid #aaaa00; 
-	background-color: #ffffcc; 
-}
-
 #tab3 { 
 	border: 2px solid red;
 	background-color: #ffcccc;
@@ -663,6 +657,9 @@ table.table th {
     margin-top: 10px;
   }
 
+  #tab2 iframe {
+    width: 600px;
+  }
 	#footer .logo {
 	  text-align:center;
 	  padding:10px 5px
@@ -722,6 +719,10 @@ table.table th {
 	.map {
 		width: 70%;
 	}
+
+  #tab2 iframe {
+    width: 400px;
+  }
 
 	#carousel .item {
 	  height:200px
