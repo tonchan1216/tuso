@@ -1,7 +1,6 @@
 <!-- サブ画像 -->
-<div class="subImg" id="mainBanner">
-  <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image02.jpg" width="100%">
-
+<div id="banner">
+  <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image3.jpg">
   <div class="slogan">
     <h2>タイトルが入ります。</h2>
 
@@ -13,7 +12,7 @@
   <!-- コンテンツ -->
 
   <section id="main">
-    <section class="content">
+    <section class="content container-fluid">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <h4 class="news-data"><?php the_date('Y/m/d'); ?></h4>
 

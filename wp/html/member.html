@@ -1,45 +1,88 @@
-  <!-- サブ画像 -->
+<!-- サブ画像 -->
+<div id="banner">
+  <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image3.jpg">
+  <div class="slogan">
+    <h2>タイトルが入ります。</h2>
 
-  <div class="subImg" id="mainBanner">
-    <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image02.jpg" width="100%">
+    <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
+  </div>
+</div><!-- / サブ画像 -->
 
-    <div class="slogan">
-      <h2>テキストが入ります。テキストが入ります。</h2>
+<div id="wrapper">
+  <!-- コンテンツ -->
 
-      <h3>テキストが入ります。テキストが入ります。テキストが入ります。</h3>
-    </div>
-  </div><!-- / サブ画像 -->
+  <div id="member" class="container-fluid">
+    <div class="row">
 
-  <div id="wrapper">
-    <!-- サブコンテンツ -->
-
-    <aside class="gridWrapper" id="sub">
-      <section class="grid">
-        <h3>団員専用メニュー(工事中)</h3>
-
-        <ul class="list">
-          <li>
-            <a href="<?php bloginfo('url'); ?>/subpage.html"><img alt="" height="50" src="<?php echo get_template_directory_uri(); ?>/images/icon01.png" width="50">ファイルダウンロード</a>
+      <div class="col-md-3">
+        <h3>団員専用メニュー</h3>
+        <ul id="tab-menu" class="nav nav-pills">
+          <li class="active">
+            <a data-toggle="tab" href="#tab1">ファイル</a>
           </li>
 
           <li>
-            <a href="<?php bloginfo('url'); ?>/subpage.html"><img alt="" height="50" src="<?php echo get_template_directory_uri(); ?>/images/icon02.png" width="50">スケジュール</a>
+            <a data-toggle="tab" href="#tab2">スケジュール</a>
           </li>
 
           <li>
-            <a href="<?php bloginfo('url'); ?>/subpage.html"><img alt="" height="50" src="<?php echo get_template_directory_uri(); ?>/images/icon03.png" width="50">ギャラリー</a>
-          </li>
-
-          <li>
-            <a href="<?php bloginfo('url'); ?>/subpage.html"><img alt="" height="50" src="<?php echo get_template_directory_uri(); ?>/images/icon04.png" width="50">テキストが入ります。テキストが入ります。テキストが入ります。</a>
+            <a data-toggle="tab" href="#tab3">ギャラリー</a>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <article class="content">
-        <div>PDF</div>
-        <div>スケジュール</div>
-        <div>ギャラリー</div>
-      </article>
-    </aside><!-- / サブコンテンツ -->
-  </div><!-- / WRAPPER -->
+      <div class="col-md-9">
+        <article class="content">
+          <div id="tab1" class=" tabbox tab-pane fade in active">
+
+            <article class="container-fluid">
+              <dl>
+                <dt>
+                  <a href="news2.html">2015/1/1</a>
+                </dt>
+
+                <dd>
+                  <a href="news2.html">ファイル１</a>
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>
+                  <a href="news2.html">2015/1/1</a>
+                </dt>
+
+                <dd>
+                  <a href="news2.html">ファイル２</a>
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>
+                  <a href="news2.html">2015/1/1</a>
+                </dt>
+
+                <dd>
+                  <a href="news2.html">ファイル３</a>
+                </dd>
+              </dl>
+            </article>
+
+          </div>
+
+          <div id="tab2" class="tabbox tab-pane fade">
+           <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=1dgkib2cf8234nqntesemi7uks%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Asia%2FTokyo" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>
+
+          <div id="tab3" class="tabbox tab-pane fade">
+            ギャラリー
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div><!-- / コンテンツ -->
+  
+  <div id="page-up">
+    <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-up"></span></a>
+  </div>
+</div><!-- / WRAPPER -->

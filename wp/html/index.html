@@ -1,77 +1,95 @@
-  <!-- メイン画像 -->
+<!-- カルーセル -->
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-  <div class="mainImg" id="mainBanner">
-    <ul class="bxslider">
-      <li>
-        <img alt="" height="300" src="<?php echo get_template_directory_uri(); ?>/images/top-image.jpg" width="100%">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+  </ol>
 
-        <div class="slogan">
-          <h2>タイトルが入ります</h2>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/image6.jpg" alt="サンプル画像１" class="img-responsive">
+      <div class="carousel-caption">
+        <h2>タイトルが入ります</h2>
+        <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
+      </div>
+    </div>    
 
-          <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
-        </div>
-      </li>
+    <div class="item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/image2.jpg" alt="サンプル画像２" class="img-responsive">
+        <div class="carousel-caption">
+        <h2>タイトルが入ります</h2>
+        <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
+      </div>
+    </div>     
 
-      <li>
-        <img alt="" height="300" src="<?php echo get_template_directory_uri(); ?>/images/top-image.jpg" width="100%">
+    <div class="item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/image3.jpg" alt="サンプル画像２" class="img-responsive">
+        <div class="carousel-caption">
+        <h2>タイトルが入ります</h2>
+        <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
+      </div>
+    </div>   
 
-        <div class="slogan">
-          <h2>タイトルが入ります</h2>
+    <div class="item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/image5.jpg" alt="サンプル画像２" class="img-responsive">
+        <div class="carousel-caption">
+        <h2>タイトルが入ります</h2>
+        <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
+      </div>
+    </div>
+  </div>
 
-          <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
-        </div>
-      </li>
+  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div><!-- / カルーセル -->
 
-      <li>
-        <img alt="" height="300" src="<?php echo get_template_directory_uri(); ?>/images/top-image.jpg" width="100%">
+<div id="wrapper" class="container">
+  <section class="content">
+    <h3 class="heading">新着情報</h3>
 
-        <div class="slogan">
-          <h2>タイトルが入ります</h2>
+      <article class="news container-fluid">
+        <?php query_posts('category_name=news,concert&showpost=5'); if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-          <h3>テキストが入りますテキストが入りますテキストが入ります</h3>
-        </div>
-      </li>
-    </ul>
-  </div><!-- / メイン画像 -->
+          <dl>
+            <dt>
+              <a href="<?php the_permalink(); ?>"><?php the_time('Y/m/d'); ?></a>
+            </dt>
 
-  <div id="wrapper">
-    <section class="content">
-      <h3 class="heading">新着情報</h3>
+            <dd>
+              <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
+            </dd>
+          </dl>
 
-        <article class="news">
-          <?php query_posts('category_name=news,concert&showpost=5'); if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php endwhile; endif; ?>
+        <?php wp_reset_query(); ?>
 
-            <dl>
-              <dt>
-                <a href="<?php the_permalink(); ?>"><?php the_time('Y/m/d'); ?></a>
-              </dt>
-
-              <dd>
-                <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
-              </dd>
-            </dl>
-
-          <?php endwhile; endif; ?>
-          <?php wp_reset_query(); ?>
-
-        </article>
-    </section>
-
-    <section class="content">
-      <h3 class="heading">タイトルが入ります。</h3>
-
-      <article>
-        <img alt="" class="imgleft frame" height="240" src="<?php echo get_template_directory_uri(); ?>/images/image03.jpg" width="320">
-
-        <div class="pdtb-10 plain">
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
-        </div>
       </article>
-    </section>
-  </div><!-- / WRAPPER -->
+  </section>
+
+  <section class="content">
+    <h3 class="heading">タイトルが入ります。</h3>
+
+    <div class="row">
+      <div class="col-md-4">
+        <img alt="" class="frame img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/image5.jpg" width="320">
+      </div>
+      
+      <div class="col-md-8">
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+    </div>
+  </section>
+</div><!-- / WRAPPER -->
