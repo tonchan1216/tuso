@@ -544,6 +544,11 @@ table.table th {
 	background-color: #ccffff; 
 }
 
+#tab2 iframe {
+	margin: 0 auto;
+	width: 700px;
+}
+
 #tab3 { 
 	border: 2px solid red;
 	background-color: #ffcccc;
