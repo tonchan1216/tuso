@@ -257,6 +257,7 @@ section.content img {
 }
 
 img.frame, #gallery img {
+  margin: 15px auto;
   border:3px solid #FF5F64
 }
 
@@ -497,6 +498,9 @@ table.table th {
   margin:3px auto 10px;
 }
 
+#footer .list-inline li {
+  margin:25px 8px
+}
 /*************
 /* 先頭へ移動
 *************/
@@ -712,6 +716,10 @@ table.table th {
 
 	/* スマートフォン 横(ランドスケープ) */
 @media only screen and (max-width:640px) {
+	#banner {
+		height: 200px;
+	}
+
 	.posterimg {
 	  margin:0 auto 10px
 	}
@@ -731,6 +739,10 @@ table.table th {
 
 /* スマートフォン 縦(ポートレート) */
 @media only screen and (max-width:480px) {
+	#banner {
+		height: 150px;
+	}
+
 	#title-img {
     width: 250px;
   }
@@ -755,9 +767,4 @@ table.table th {
 	#member h3 {
 	  padding:10px 5px
 	}
-}
-
-.list-inline li {
-  display:inline-block;
-  margin:40px 8px
 }
