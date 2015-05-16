@@ -1,6 +1,6 @@
 <!-- サブ画像 -->
 <div id="banner">
-  <img alt="" src="<?php echo get_template_directory_uri(); ?>images/image3.jpg">
+  <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image3.jpg">
   <div class="slogan">
     <h2>最新の演奏会</h2>
 
@@ -105,4 +105,3 @@
   <div id="page-up">
     <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-up"></span></a>
   </div>
-</div><!-- / WRAPPER -->

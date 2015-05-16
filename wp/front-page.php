@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 <!-- カルーセル -->
 <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -92,3 +94,6 @@
       </div>
     </div>
   </section>
+
+
+<?php get_footer(); ?>

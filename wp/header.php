@@ -33,13 +33,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span> 
             </button>
-            <a class="navbar-brand" href="index.html"><img id="title-img" src="images/title.png"></a>
+            <a class="navbar-brand" href="index.html"><img id="title-img" src="<?php echo get_template_directory_uri(); ?>/images/title.png"></a>
           </div>
 
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="news.html">ニュース<br>
+                <a href="<?php echo home_url('/news'); ?>">ニュース<br>
                 <span>News</span></a>
               </li>
 
@@ -49,11 +49,11 @@
 
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="concert.html">最新の演奏会</a>
+                    <a href="<?php echo home_url('/concert'); ?>">最新の演奏会</a>
                   </li>
 
                   <li>
-                    <a href="pastconcert.html">過去の演奏会</a>
+                    <a href="<?php echo home_url('/pastconcert'); ?>">過去の演奏会</a>
                   </li>
                 </ul>
               </li>
@@ -64,22 +64,22 @@
 
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="join.html">団員募集</a>
+                    <a href="<?php echo home_url('/join'); ?>">団員募集</a>
                   </li>
 
                   <li>
-                    <a href="about.html">当団について</a>
+                    <a href="<?php echo home_url('/about'); ?>">当団について</a>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a href="contact.html">お問い合わせ<br>
+                <a href="<?php echo home_url('/contact'); ?>">お問い合わせ<br>
                 <span>Contact</span></a>
               </li>
 
               <li>
-                <a href="link.html">リンク<br>
+                <a href="<?php echo home_url('/link'); ?>">リンク<br>
                 <span>Link</span></a>
               </li> 
             </ul>

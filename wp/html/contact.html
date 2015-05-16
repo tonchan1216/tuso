@@ -1,39 +1,22 @@
-<!-- サブ画像 -->
-<div id="banner">
-  <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image3.jpg">
-  <div class="slogan">
-    <h2>お問い合わせ</h2>
+<section id="main">
+  <section class="content">
+    <h3 class="heading">お問い合わせ</h3>
 
-    <h3></h3>
-  </div>
-</div><!-- / サブ画像 -->
+    <article class="plain">
+      <p>演奏会や、入団に関する疑問等、なんでもお気軽にお問い合わせ下さい。</p>
+    </article>
+  </section>
 
-<div id="wrapper">
-  <!-- コンテンツ -->
+  <section class="content">
+    <form class="form contact">
+      <input class="fpi" name="name" placeholder="名前" type="text"> 
+      <input class="fpi" name="mail" placeholder="メールアドレス" type="text"> 
+      <input class="form_contents" name="title" placeholder="ご用件" type="text"> 
+      <textarea class="form_contents" name="contents" placeholder="内容"></textarea><br>
 
-  <section id="main">
-    <section class="content">
-      <h3 class="heading">お問い合わせ</h3>
-
-      <article class="plain">
-        <p>演奏会や、入団に関する疑問等、なんでもお気軽にお問い合わせ下さい。</p>
-      </article>
-    </section>
-
-    <section class="content">
-      <form class="form contact">
-        <input class="fpi" name="name" placeholder="名前" type="text"> 
-        <input class="fpi" name="mail" placeholder="メールアドレス" type="text"> 
-        <input class="form_contents" name="title" placeholder="ご用件" type="text"> 
-        <textarea class="form_contents" name="contents" placeholder="内容"></textarea><br>
-
-        <div class="text-a-c">
-          <button type="submit">送信</button>
-        </div>
-      </form>
-    </section>
-  </section><!-- / コンテンツ -->
-      <div id="page-up">
-    <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-up"></span></a>
-  </div>
-</div><!-- / WRAPPER -->
+      <div class="text-a-c">
+        <button type="submit">送信</button>
+      </div>
+    </form>
+  </section>
+</section><!-- / コンテンツ -->

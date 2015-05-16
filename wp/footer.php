@@ -1,3 +1,8 @@
+    <div id="page-up">
+      <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-up"></span></a>
+    </div>
+  </div><!-- / WRAPPER -->
+
   <!-- フッター -->
   <div id="footer">
     <div class="inner container">
@@ -8,7 +13,7 @@
           <div class="col-md-3">
             <!-- ロゴ -->
             <p class="logo">
-              <a href="index.html"><img class="logoImg" src="images/logo.png"><br>
+              <a href="index.html"><img class="logoImg" src="<?php echo get_template_directory_uri(); ?>/images/logo.png"><br>
               <span>東北大学学友会交響楽団</span></a>
             </p><!-- / ロゴ -->
           </div>
@@ -16,19 +21,19 @@
           <div class="col-md-6">
             <ul class="list-inline text-a-c">
               <li>
-                <a href="sitemap.html">サイトマップ</a>
+                <a href="<?php echo home_url('/sitemap'); ?>">サイトマップ</a>
               </li>
 
               <li>
-                <a href="privacypolicy.html">プライバシーポリシー</a>
+                <a href="<?php echo home_url('/privacypolicy'); ?>">プライバシーポリシー</a>
               </li>
 
               <li>
-                <a href="idemnity.html">免責事項</a>
+                <a href="<?php echo home_url('/idemnity'); ?>">免責事項</a>
               </li>
 
               <li>
-                <a href="member.html">団員専用ページ</a>
+                <a href="<?php echo home_url('/member'); ?>">団員専用ページ</a>
               </li>
             </ul>
           </div>
@@ -52,7 +57,7 @@
   </div><!-- / フッター -->
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script> 
-  <script src="js/script.js"></script> 
+  <script src="<?php echo get_template_directory_uri(); ?>js/script.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie.js"></script>
 </body>
 <?php wp_footer(); ?>
