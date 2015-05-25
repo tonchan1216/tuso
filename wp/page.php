@@ -3,7 +3,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
   <!-- サブ画像 -->
   <div id="banner">
-    <img alt="" src="images/image3.jpg">
+    <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image3.jpg">
     <div class="slogan">
       <h2>タイトルが入ります。</h2>
 

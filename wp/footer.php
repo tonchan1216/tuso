@@ -57,7 +57,7 @@
   </div><!-- / フッター -->
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script> 
-  <script src="<?php echo get_template_directory_uri(); ?>js/script.js"></script> 
+  <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie.js"></script>
 </body>
 <?php wp_footer(); ?>

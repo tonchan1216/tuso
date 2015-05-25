@@ -33,7 +33,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span> 
             </button>
-            <a class="navbar-brand" href="index.html"><img id="title-img" src="<?php echo get_template_directory_uri(); ?>/images/title.png"></a>
+            <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><img id="title-img" src="<?php echo get_template_directory_uri(); ?>/images/title.png"></a>
           </div>
 
           <div class="collapse navbar-collapse" id="myNavbar">

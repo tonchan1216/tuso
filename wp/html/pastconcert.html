@@ -3,9 +3,9 @@
     <h3 class="heading">過去の演奏会一覧</h3>
 
     <div id="gallery" class="row">
-      <?php query_posts('category_name=news'); if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <?php query_posts('category_name=concert'); if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="elem col-md-3 col-sm-4 col-xs-6">
-          <a href="images/image06.jpg" title="sample"><img alt="" height="270" src="<?php the_post_thumbnail($post->ID); ?>" width="180"><br>
+          <a href="images/image06.jpg" title="sample"><img alt="" height="270" src="<?php the_field("ポスター", $post->ID); ?>" width="180"><br>
           <?php the_title();?></a>
         </div>
       <?php endwhile; endif; ?>
