@@ -26,7 +26,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   outline:0
 }
 
-ol,ul {
+ul {
   list-style:none
 }
 
@@ -128,6 +128,10 @@ body {
 
 * html #header {
   height:1%
+}
+
+.navbar-right {
+  margin-right: 10px;
 }
 
 /*************
@@ -678,7 +682,7 @@ table.table th {
   }
 
   #tab-menu {
-    width:400px;
+    width:450px;
     margin:0 auto
   }
 
@@ -780,6 +784,10 @@ table.table th {
     height:150px
   }
 
+  .navbar-brand {
+    padding: 10px 0 10px 10px;
+  }
+
   #title-img {
     width:250px
   }
@@ -810,4 +818,14 @@ table.table th {
   #member h3 {
     padding:10px 5px
   }
+
+  #tab-menu {
+    width: 100%;
+  }
+
+  #tab-menu li {
+    width: 48%;
+  }
+
+
 }
