@@ -263,6 +263,7 @@ img.frame,#gallery img {
 }
 
 #gallery .elem {
+  height: 300px;
   text-align: center;
   margin-bottom:50px
 }
@@ -798,6 +799,12 @@ table.table th {
   #banner .slogan {
     top:20px;
     right:-30px
+  }
+
+  #gallery .elem {
+    height: 250px;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   #member h3 {
