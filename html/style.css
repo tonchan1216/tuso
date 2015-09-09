@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /*
 Theme Name: tuso-theme
 Description:東北大オケ用サイト
@@ -96,12 +97,13 @@ a:active,a:focus {
 /* 全体
 ------------------------------------------------------------*/
 body {
-  padding-top: 80px;
+  padding-top:80px
 }
 
 #wrapper {
+  min-height:600px;
   margin:0 auto;
-  padding: 1% 0;
+  padding:1% 0;
   width:98%;
   position:relative
 }
@@ -112,10 +114,9 @@ body {
 }
 
 .fullwrapper {
-	margin: 0 auto;
-	width: 100%;
+  margin:0 auto;
+  width:100%
 }
-
 
 /*************
 /* ヘッダー
@@ -133,17 +134,17 @@ body {
 /* ロゴ
 *************/
 #title-img {
-  max-width: 100%;
+  max-width:100%
 }
 
 #footer .logo img {
-	width: 80px;
+  width:80px
 }
 
 #footer .logo a {
   font-size:17px;
   font-weight:600;
-  text-align: center;
+  text-align:center;
   line-height:1;
   font-family:"Palatino Linotype","Book Antiqua",Palatino,serif
 }
@@ -152,35 +153,35 @@ body {
 /* メイン画像（トップページ+サブページ）
 **************************/
 #carousel img {
-	max-width: 100%;
-	height: auto;
-	margin: auto;
+  max-width:100%;
+  height:auto;
+  margin:auto
 }
 
 #carousel .item {
-	height: 500px;
-	overflow: hidden;
+  height:500px;
+  overflow:hidden
 }
 
 #banner {
   position:relative;
   margin:0 auto 30px;
-  height: 280px;
-  overflow: hidden;
+  height:280px;
+  overflow:hidden;
   border-top:5px solid #FF5F64;
-  border-bottom:5px solid #FF5F64;
+  border-bottom:5px solid #FF5F64
 }
 
 #banner img {
-  position: relative;
+  position:relative;
   width:100%;
   height:auto;
-  top: -100px;
+  top:-100px
 }
 
 /* スローガン*/
 .slogan {
-  background:rgba(255,255,255,0.50);
+  background:rgba(255,255,255,0.50)
 }
 
 .slogan h2 {
@@ -196,14 +197,14 @@ body {
 }
 
 #banner .slogan {
-	position:absolute;
-	width:100%;
-	padding:15px 0;
-	line-height:1.4;
-	z-index:100;
-	top:70px;
-	left:0;
-	right:0
+  position:absolute;
+  width:100%;
+  padding:15px 0;
+  line-height:1.4;
+  z-index:100;
+  top:70px;
+  left:0;
+  right:0
 }
 
 #banner .slogan h2 {
@@ -256,19 +257,21 @@ section.content img {
   max-width:100%
 }
 
-img.frame, #gallery img {
-  margin: 15px auto;
+img.frame,#gallery img {
+  margin:15px auto;
   border:3px solid #FF5F64
 }
 
 #gallery .elem {
+  text-align: center;
   margin-bottom:50px
 }
 
 .posterimg {
-	display: block;
+  display:block;
   margin:60px 40px 10px 10px
 }
+
 .contact {
   width:60%;
   margin:0 auto
@@ -309,7 +312,7 @@ img.frame, #gallery img {
 }
 
 .plain {
-	margin-left: 15px;
+  margin-left:15px
 }
 
 .news-title {
@@ -322,6 +325,7 @@ img.frame, #gallery img {
 .news-content {
   margin:5px 20px
 }
+
 /*************
 テーブル
 *************/
@@ -332,14 +336,14 @@ table.table {
 }
 
 table.table th,table.table td {
-  padding:10px 5px;
+  padding:10px 5px
 }
 
 table.table th {
   text-align:right;
   font-weight:700;
   letter-spacing:1px;
-  white-space:nowrap;
+  white-space:nowrap
 }
 
 .concert table {
@@ -354,24 +358,24 @@ table.table th {
 }
 
 .jointable {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-left: 15px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-left:15px
 }
 
 .jointable caption {
-  font-weight:bold;
-	text-decoration: underline;
+  font-weight:700;
+  text-decoration:underline
 }
 
 .jointable th {
-	min-width: 50px;
-  font-weight:bold;
-  text-align: right;
+  min-width:50px;
+  font-weight:700;
+  text-align:right
 }
 
 .jointable td {
-	padding-left: 15px;
+  padding-left:15px
 }
 
 /*************
@@ -381,24 +385,24 @@ table.table th {
   margin-left:20px;
   margin-top:10px;
   margin-bottom:5px;
-  font-size: 15px;
+  font-size:15px;
   font-weight:700
 }
 
 .concert dd {
   margin-left:45px;
-  display: block;
+  display:block
 }
 
 .linklist dt {
-	margin: 8px 0;
-	font-size: 16px;
-	border-bottom: 1px solid;
+  margin:8px 0;
+  font-size:16px;
+  border-bottom:1px solid
 }
 
 .linklist dd {
-	display: block;
-	margin: 8px 0 8px 20px;
+  display:block;
+  margin:8px 0 8px 20px
 }
 
 .news dl {
@@ -413,44 +417,45 @@ table.table th {
 }
 
 .part dd {
-	display: block;
-	margin-left: 20px;
+  display:block;
+  margin-left:20px
 }
 
 .part dt {
-	margin: 8px 0;
-	text-decoration: underline;
+  margin:8px 0;
+  text-decoration:underline
 }
 
 .conductor dt {
-	font-size: 105%;
-	font-weight: bold;
+  font-size:105%;
+  font-weight:700
 }
 
 .conductor dd {
-	margin-left: 20px;
-	margin-bottom: 20px;
+  margin-left:20px;
+  margin-bottom:20px
 }
 
 .news-content dt {
-	font-weight: bold;
-	margin: 15px 20px;
+  font-weight:700;
+  margin:15px 20px
 }
 
 .news-content dd {
-	display: block;
-	margin-left: 40px;
+  display:block;
+  margin-left:40px
 }
 
 #sitemap {
-	margin-left: 20px;
+  margin-left:20px
 }
-#sitemap ul, #sitemap li {
-	margin-left: 10px;
+
+#sitemap ul,#sitemap li {
+  margin-left:10px
 }
 
 #sitemap > ul {
-	list-style-type: square;
+  list-style-type:square
 }
 
 /*************
@@ -486,34 +491,45 @@ table.table th {
 #footer-grid {
   color:#fff;
   border:0;
-  margin-bottom: 30px;
+  margin-bottom:30px;
   background:transparent
 }
 
 #footer-grid p {
-  padding:5px 0;
+  padding:5px 0
 }
 
 #footer-grid p img {
-  margin:3px auto 10px;
+  margin:3px auto 10px
 }
 
 #footer .list-inline li {
   margin:25px 8px
 }
+
+/*************
+/* ページネーション
+*************/
+.pagination {
+  margin:100px auto 20px;
+  width:200px
+}
+
 /*************
 /* 先頭へ移動
 *************/
 #page-up {
-	position: fixed;
-	right: 5px;
-	bottom: 5px;
-	opacity: 0.7
+  position:fixed;
+  right:5px;
+  bottom:5px;
+  opacity:.7
 }
+
 /*************
 /* Member Only
 *************/
 #member h3 {
+  text-align:center;
   padding:8px 0;
   margin-bottom:5px;
   font-size:110%;
@@ -527,249 +543,264 @@ table.table th {
 }
 
 #member .tabbox {
-  display: none;
-  margin-top: 32px;
+  display:none;
+  margin-top:32px;
+  font-size:120%;
+  padding:20px 10px;
+  min-height:600px;
+  border:2px solid #CFCFCF;
+  background-color:#cff
 }
 
 #member .content .active {
-  display: block;
+  display:block
 }
 
-.tabbox {
-  height: 900px;
+#tab-menu li {
+  text-align:center
 }
 
-#tab1 {
-	border: 2px solid blue;
-	background-color: #ccffff; 
+.cal_wrapper {
+  max-width:800px;
+  min-width:300px;
+  margin:2.0833% auto
 }
 
-#tab2 iframe {
-	margin: 0 auto;
-	width: 700px;
+.googlecal {
+  position:relative;
+  padding-bottom:100%;
+  /* 縦横比 */
+  height:0;
+  overflow:hidden
 }
 
-#tab3 { 
-	border: 2px solid red;
-	background-color: #ffcccc;
+.googlecal iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%!important;
+  height:100%!important
 }
 
 /* PC用 */
 @media only screen and (min-width:940px) {
-	#wrapper,.inner {
-	  width:940px;
-	  padding:0
-	}
-
-	#wrapper {
-	  padding:20px 0;
-	}
-
-	nav#mainNav {
-	  border-top:5px solid #FF5F64;
-	}
-
-	nav#mainNav ul li {
-    text-align:center
-	}
-
-	nav#mainNav ul a {
-	  font-size:15px;
-	  display:block;
-	}
-
-	nav#mainNav ul span {
-	  font-size:10px;
-	  color:#a5a5a5
-	}
-
-	nav#mainNav ul li.active a, nav#mainNav ul a:hover {
-	  background:#333;
-	  color:#f2f2f2
-	}
-
-	#gallery .elem {
-	  text-align: center;
-	}
-
-  #tab-menu li {
-    text-align: center;
-    float: none;
+  #wrapper,.inner {
+    width:940px;
+    padding:0
   }
 
-	#footer .logo img {
-  		margin:3px 60px 10px;
-	}
+  #wrapper {
+    padding:20px 0
+  }
 
-	#footer .text-a-r {
-  	text-align:right
-	}
+  nav#mainNav {
+    border-top:5px solid #FF5F64
+  }
 
-	#footer .text-a-c {
-  	text-align:center
-	}
+  nav#mainNav ul li {
+    text-align:center
+  }
 
-  .dropdown:hover > .dropdown-menu{
-    display: block;
+  nav#mainNav ul a {
+    font-size:15px;
+    display:block
+  }
+
+  nav#mainNav ul span {
+    font-size:10px;
+    color:#a5a5a5
+  }
+
+  nav#mainNav ul li.active a,nav#mainNav ul a:hover {
+    background:#333;
+    color:#f2f2f2
+  }
+
+  #tab-menu li {
+    float:none
+  }
+
+  #footer .logo img {
+    margin:3px 60px 10px
+  }
+
+  #footer .text-a-r {
+    text-align:right
+  }
+
+  #footer .text-a-c {
+    text-align:center
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display:block
   }
 }
 
 /* モニター幅940px以下 */
 @media only screen and (max-width:940px) {
-	* {
-	  -webkit-box-sizing:border-box;
-	  -moz-box-sizing:border-box;
-	  -o-box-sizing:border-box;
-	  -ms-box-sizing:border-box;
-	  box-sizing:border-box
-	}
+  * {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box
+  }
 
   body {
-    padding-top: 50px;
+    padding-top:50px
   }
 
-	#header {
-	  padding:10px 0 0
-	}
+  #header {
+    padding:10px 0 0
+  }
 
   #title-img {
-    width: 280px;
+    width:280px
   }
 
-	nav#mainNav ul li a span {
-	  padding-left:10px
-	}
+  nav#mainNav ul li a span {
+    padding-left:10px
+  }
 
-	nav#mainNav ul li.active a, nav#mainNav ul li a:hover {
-	  background:#333;
+  nav#mainNav ul li.active a,nav#mainNav ul li a:hover {
+    background:#333;
     color:#f2f2f2
-	}
+  }
 
-	.plain {
-		margin: 0 30px;
-	}
+  .plain {
+    margin:0 30px
+  }
 
   .img-responsive {
-    margin: 0 auto 10px;
+    margin:0 auto 10px
   }
 
   #tab-menu {
-    width: 400px;
-    margin: 0 auto;
+    width:400px;
+    margin:0 auto
   }
 
   #tab-menu li {
-    width: 30%;
+    width:30%
   }
 
   #member .tabbox {
-    margin-top: 10px;
+    margin-top:10px
   }
 
   #tab2 iframe {
-    width: 600px;
+    width:600px
   }
-	#footer .logo {
-	  text-align:center;
-	  padding:10px 5px
-	}
 
-	#footer-grid p {
-	  width:100%;
-	  text-align:center;
-	}
+  #footer .logo {
+    text-align:center;
+    padding:10px 5px
+  }
 
-	#footer-grid img {
-	  margin:0 auto
-	}
+  #footer-grid p {
+    width:100%;
+    text-align:center
+  }
 
-	#footer-grid:last-child {
-	  padding-top:20px
-	}
+  #footer-grid img {
+    margin:0 auto
+  }
 
-	#footer-grid .text-a-c, #footer-grid .text-a-r{
-		text-align: center;
-	}
+  #footer-grid:last-child {
+    padding-top:20px
+  }
+
+  #footer-grid .text-a-c,#footer-grid .text-a-r {
+    text-align:center
+  }
 }
 
 /* tablet 縦 */
 @media only screen and (max-width:768px) {
-	#header {
-	  padding-bottom:0
-	}
+  #header {
+    padding-bottom:0
+  }
 
   .navbar-brand {
-    padding-top: 10px;
+    padding-top:10px
   }
 
-	.map {
-		margin: 0 auto;
-	}
+  .map {
+    margin:0 auto
+  }
 
-	.linklist dd {
-		margin: 8px 20px 8px 20px;
-	}
+  .linklist dd {
+    margin:8px 20px
+  }
 
-	#concertRecord {
-		margin-left: 5px;
-	}
+  #concertRecord {
+    margin-left:5px
+  }
 
-	#concertRecord td {
-		padding-left: 10px;
+  #concertRecord td {
+    padding-left:10px
+  }
 }
-}
 
-	/* スマートフォン 横(ランドスケープ) */
+/* スマートフォン 横(ランドスケープ) */
 @media only screen and (max-width:640px) {
-	#banner {
-		height: 200px;
-	}
+  #banner {
+    height:200px
+  }
 
-	.posterimg {
-	  margin:0 auto 10px
-	}
+  .posterimg {
+    margin:0 auto 10px
+  }
 
-	.map {
-		width: 70%;
-	}
+  .map {
+    width:70%
+  }
 
   #tab2 iframe {
-    width: 400px;
+    width:400px
   }
 
-	#carousel .item {
-	  height:200px
-	}
+  #carousel .item {
+    height:200px
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* 画面幅が600px以上の場合の縦横比の指定 */
+  .googlecal {
+    padding-bottom:75%
+  }
 }
 
 /* スマートフォン 縦(ポートレート) */
 @media only screen and (max-width:480px) {
-	#banner {
-		height: 150px;
-	}
+  #banner {
+    height:150px
+  }
 
-	#title-img {
-    width: 250px;
+  #title-img {
+    width:250px
   }
 
   #banner {
-	  margin-left:1px
-	}
+    margin-left:1px
+  }
 
-	#carousel .item {
-	  height:150px
-	}
+  #carousel .item {
+    height:150px
+  }
 
-	#banner h2,#banner h3 {
-	  font-size:70%
-	}
+  #banner h2,#banner h3 {
+    font-size:70%
+  }
 
-	#banner .slogan {
+  #banner .slogan {
     top:20px;
-	  right:-30px
-	}
+    right:-30px
+  }
 
-	#member h3 {
-	  padding:10px 5px
-	}
+  #member h3 {
+    padding:10px 5px
+  }
 }
