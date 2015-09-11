@@ -443,15 +443,18 @@ table.table th {
   margin:8px 0 8px 20px
 }
 
-.news dl {
-  margin:5px 0;
-  border-bottom:1px dotted #DDD;
-  clear:both
+.news ul {
+  margin:5px 0 50px;
+  min-height: 100px;
 }
 
-.news dt,dd {
-  display:inline-block;
-  margin:5px 10px
+.news li {
+  border-bottom:1px dotted #DDD;
+  margin:15px 10px;
+}
+
+.news li > span {
+  margin-right: 10px;
 }
 
 .part dd {
