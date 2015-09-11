@@ -4,7 +4,7 @@
 Theme Name: tuso-theme
 Description:東北大オケ用サイト
 Author: F.T
-Version: バージョン
+Version: バージョン 2.0
 License: ライセンス
 */
 /* =Reset default browser CSS.
@@ -258,7 +258,7 @@ body {
 メイン コンテンツ
 *************/
 section.content {
-  margin-bottom:20px;
+  margin-bottom:40px;
   border-radius:6px;
   overflow:hidden;
   font-size:14px
@@ -357,6 +357,37 @@ img.frame,#gallery img {
 
 .news-content {
   margin:5px 20px
+}
+
+.contents-link {
+  width: 100%;
+  padding-top: 30px;
+  min-height: 180px;
+}
+
+.contents-link > div {
+  text-align: center;
+}
+
+.contents-link > div p {
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: white
+}
+
+.contents-link #link-c {
+  background-color: #6F37BB;
+}
+.contents-link #link-j {
+  background-color: #46A043;
+}
+.contents-link #link-m {
+  background-color: #FF8A00;
+}
+
+.tw {
+  margin-top: 40px;
 }
 
 /*************
@@ -498,6 +529,7 @@ table.table th {
 #sitemap > ul {
   list-style-type:square
 }
+
 
 /*************
 /* フッター
