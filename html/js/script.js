@@ -21,6 +21,10 @@ $(function() {
     $(".slideList").slideToggle(1000,"swing");
   })
 
+  $("#music-library button").click(function() {
+  	$("audio").attr("src",$(this).siblings("a").attr("href"));
+  })
+
   //view-port toggle
 	$(".view-toggle").click(function(){
 		status =  $(this).attr("id");

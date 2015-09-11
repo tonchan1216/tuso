@@ -622,7 +622,7 @@ table.table th {
   padding:20px 10px;
   min-height:600px;
   border:2px solid #CFCFCF;
-  background-color:#cff
+  background-color:#F3FFFF;
 }
 
 #member .content .active {
@@ -653,6 +653,13 @@ table.table th {
   left:0;
   width:100%!important;
   height:100%!important
+}
+
+#tab-gal a {
+  height: 100%;
+  min-height: 120px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 /* PC用 */
