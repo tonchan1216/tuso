@@ -10,15 +10,24 @@ License: ライセンス
 /* =Reset default browser CSS.
 Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+}
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
   border:0;
   font-family:inherit;
   font-size:100%;
   font-style:inherit;
   font-weight:inherit;
-  margin:0;
   outline:0;
-  padding:0;
   vertical-align:baseline
 }
 
@@ -58,6 +67,25 @@ figure {
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display:block
+}
+
+body {
+  background: none;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-justify: inter-ideograph;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  zoom: 1;
+  *zoom: 1;
+  zoom: 1;
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
 }
 
 /* -------------------------------------------------------------- */
@@ -353,13 +381,19 @@ table.table th {
 
 .concert table {
   border-collapse:collapse;
+  background-color: #f9f9f9;
   margin:0
 }
 
 .concert td {
+  font-size: 120%;
   padding:5px;
-  border:1px solid;
-  text-align:center
+  vertical-align: middle!important;
+  text-align:center;
+}
+
+.concert td p {
+  font-family: cursive;
 }
 
 .jointable {
@@ -387,15 +421,14 @@ table.table th {
 データリスト
 *************/
 .concert dt {
-  margin-left:20px;
-  margin-top:10px;
-  margin-bottom:5px;
+  margin: 10px 0 5px 20px;
   font-size:15px;
   font-weight:700
 }
 
 .concert dd {
   margin-left:45px;
+  margin-bottom: 25px; 
   display:block
 }
 
