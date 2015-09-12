@@ -366,12 +366,21 @@ img.frame,#gallery img {
 }
 
 .contents-link > div {
+  max-height: 100px;
+  overflow: hidden;
   text-align: center;
 }
 
+.contents-link > div img {
+  max-width: 100%;
+}
+
 .contents-link > div p {
-  height: 60px;
-  line-height: 60px;
+  position: absolute;
+  top:60px;
+  left: 20px;
+  height: 45px;
+  line-height: 45px;
   border-radius: 50%;
   color: white
 }
@@ -381,13 +390,13 @@ img.frame,#gallery img {
 }
 
 .contents-link #link-c {
-  background-color: #6F37BB;
+  background-color: rgba(110,50,190,0.8);
 }
 .contents-link #link-j {
-  background-color: #46A043;
+  background-color: rgba(70,160,70,0.8);
 }
 .contents-link #link-m {
-  background-color: #FF8A00;
+  background-color: rgba(250,140,0,0.8);
 }
 
 .tw {
@@ -615,6 +624,10 @@ table.table th {
   border-bottom:1px solid #FF5F64
 }
 
+#member .content h3 {
+  margin: 10px 0 20px;
+}
+
 #member ul {
   padding:10px
 }
@@ -631,6 +644,14 @@ table.table th {
 
 #member .content .active {
   display:block
+}
+
+#member dd {
+  margin-left: 10px; 
+}
+
+#member #music li {
+  margin-bottom: 5px;
 }
 
 #tab-menu li {

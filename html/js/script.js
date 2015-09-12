@@ -15,6 +15,17 @@ $(function() {
       return false;
   })
 
+  $(".contents-link").children("div").hover(
+    function(){
+        /* mouse enter の処理 */
+        $(this).find("p").stop().animate({"top": "6px"}, 800);
+    }, 
+    function(){
+        /* mouse leave の処理 */
+        $(this).find("p").stop().animate({"top": "60px"}, 800);
+    }
+);
+
   //slide on off
   $(".slideList").hide();
   $(".readmore").click(function(){
