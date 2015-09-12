@@ -376,6 +376,10 @@ img.frame,#gallery img {
   color: white
 }
 
+.contents-link a:hover {
+  text-decoration: none;
+}
+
 .contents-link #link-c {
   background-color: #6F37BB;
 }
