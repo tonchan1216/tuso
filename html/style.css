@@ -831,6 +831,15 @@ table.table th {
     padding-top:10px
   }
 
+  .contents-link > div {
+    margin: 0 auto;
+    width: 80%;
+  }  
+
+  .contents-link > div img {
+    margin-top: -80px;
+  }
+
   .map {
     margin:0 auto
   }
@@ -907,6 +916,10 @@ table.table th {
   #banner .slogan {
     top:20px;
     right:-30px
+  }
+
+  .contents-link > div img {
+    margin-top: 0;
   }
 
   #gallery .elem {
