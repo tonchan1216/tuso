@@ -461,6 +461,15 @@ table.table th {
   padding-left:15px
 }
 
+#concertRecord tr[data-href] > td {
+  cursor:pointer;
+}
+
+#concertRecord tr[data-href]:hover {
+    background:#ccc
+}
+
+
 /*************
 データリスト
 *************/
@@ -853,7 +862,7 @@ table.table th {
   }
 
   #concertRecord td {
-    padding-left:10px
+    padding-left:10px;
   }
 }
 
