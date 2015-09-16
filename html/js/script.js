@@ -30,6 +30,7 @@ $(function() {
   $(".play").click(function() {
     var audio = $("#audio-player")[0];
     audio.src = $(this).next().attr('href');
+    $('#play-title').text($(this).next().text() + "再生中");
     audio.load();
     audio.play();
   })
