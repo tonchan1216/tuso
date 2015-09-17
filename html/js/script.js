@@ -27,12 +27,17 @@ $(function() {
     });
 
   //audio player
+  $('#music-library').find('a').each(function(){
+    $(this).attr('href',"https://dl.dropboxusercontent.com/u/10141433/"+$(this).text()+"?dl=1");
+  });
   $(".play").click(function() {
     var audio = $("#audio-player")[0];
-    audio.src = $(this).next().attr('href');
+    //audio.src = $(this).next().attr('href');
+    audio.src = "https://dl.dropboxusercontent.com/u/10141433/" + $(this).next().text();
     $('#play-title').text($(this).next().text() + "再生中");
     audio.load();
     audio.play();
+    return false;
   })
   //slide on off
   $(".slideList").hide();
