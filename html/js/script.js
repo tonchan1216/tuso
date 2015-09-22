@@ -1,4 +1,9 @@
 $(function() {
+  //accordion close
+  $('#wrapper,#footer,#carousel,#banner').click(function() {
+    $('.navbar-collapse.in').collapse('hide');
+  });
+
   //page-up
   $("#page-up").hide();
   $(window).scroll(function() {
@@ -39,6 +44,7 @@ $(function() {
     audio.play();
     return false;
   })
+
   //slide on off
   $(".slideList").hide();
   $(".readmore").click(function(){

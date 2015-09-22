@@ -158,6 +158,10 @@ body {
   height:1%
 }
 
+.navbar-toggle[aria-expanded="false"] {
+  background-color: #F8F8F8 !important;
+}
+
 .navbar-right {
   margin-right: 10px;
 }
@@ -466,7 +470,7 @@ table.table th {
 }
 
 #concertRecord tr[data-href]:hover {
-    background:#ccc
+  background:#ccc
 }
 
 
