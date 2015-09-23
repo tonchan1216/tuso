@@ -125,7 +125,7 @@ a:active,a:focus {
 /* 全体
 ------------------------------------------------------------*/
 body {
-  padding-top:80px
+  padding-top:78px
 }
 
 #wrapper {
@@ -151,7 +151,7 @@ body {
 *************/
 #header {
   margin-top:-5px;
-  overflow:hidden
+  overflow:hidden;
 }
 
 * html #header {
@@ -204,29 +204,28 @@ body {
   margin:0 auto 30px;
   height:280px;
   overflow:hidden;
-  border-top:5px solid #FF5F64;
   border-bottom:5px solid #FF5F64
 }
 
 #banner img {
-  position:relative;
+  position:absolute;
   width:100%;
   height:auto;
-  top:-100px
+  bottom: 0;
 }
 
 /* スローガン*/
 .slogan {
-  background:rgba(255,255,255,0.50)
+  background:rgba(130,130,130,0.85);
 }
 
-.slogan h2 {
+.slogan h1 {
   color:#FFF;
   font-size:24px;
   text-shadow:1px 1px 3px #333
 }
 
-.slogan h3 {
+.slogan h2 {
   font-size:16px;
   color:#FFF;
   text-shadow:1px 1px 3px #333
@@ -848,6 +847,10 @@ table.table th {
 
 /* tablet 縦 */
 @media only screen and (max-width:768px) {
+  body {
+    padding-top: 30px;
+  }
+
   #header {
     padding-bottom:0
   }
@@ -886,6 +889,11 @@ table.table th {
 @media only screen and (max-width:640px) {
   #banner {
     height:200px
+  }
+
+  #banner .slogan {
+    top:40px;
+    right:-30px
   }
 
   .posterimg {
@@ -939,7 +947,7 @@ table.table th {
   }
 
   #banner .slogan {
-    top:20px;
+    top:15px;
     right:-30px
   }
 
