@@ -215,24 +215,9 @@ body {
 }
 
 /* スローガン*/
-.slogan {
-  background:rgba(130,130,130,0.85);
-}
-
-.slogan h1 {
-  color:#FFF;
-  font-size:24px;
-  text-shadow:1px 1px 3px #333
-}
-
-.slogan h2 {
-  font-size:16px;
-  color:#FFF;
-  text-shadow:1px 1px 3px #333
-}
-
 #banner .slogan {
   position:absolute;
+  background:rgba(130,130,130,0.85);
   width:100%;
   padding:15px 0;
   line-height:1.4;
@@ -254,7 +239,7 @@ body {
   font-size:16px;
   padding-left:15%;
   color:#FFF;
-  text-shadow:1px 1px 3px #333
+  text-shadow:1px 1px 3px #333;
 }
 
 /*************
@@ -711,6 +696,8 @@ table.table th {
   margin-bottom: 10px;
 }
 
+/* メディアクエリ
+------------------------------------------------------------*/
 /* PC用 */
 @media only screen and (min-width:940px) {
   #wrapper,.inner {
