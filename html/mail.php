@@ -1,3 +1,13 @@
+<?php
+
+$message = "名前：" . $_POST["name"] . "\n本文：" . $_POST["contents"];
+
+if (!mb_send_mail("example@example.com", $_POST["subject"], $message, "From: " . $_POST["mail"])) {
+  exit("error");
+}
+
+?>
+
 <!DOCTYPE html>
 
 <html dir="ltr" lang="ja">
@@ -8,12 +18,12 @@
   <meta content="東北,大学,学友会,交響楽,オケ,オーケストラ" name="keywords">
 
   <title>Tohoku University Symphony Orchestra</title>
-  <link rel="shortcut icon" href="../images/favicon.ico" >
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../style.css" media="screen" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="images/favicon.ico" >
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css">
   <!--[if lt IE 9]>
-  <script src="../js/html5.js"></script>
-  <script src="../js/css3-mediaqueries.js"></script>
+  <script src="js/html5.js"></script>
+  <script src="js/css3-mediaqueries.js"></script>
   <![endif]-->
 </head>
 
@@ -32,13 +42,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span> 
             </button>
-            <a class="navbar-brand" href="../index.html"><img id="title-img" src="../images/title.png"></a>
+            <a class="navbar-brand" href="index.html"><img id="title-img" src="images/title.png"></a>
           </div>
 
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="../news.html">ニュース<br>
+                <a href="news.html">ニュース<br>
                 <span>News</span></a>
               </li>
 
@@ -67,22 +77,22 @@
 
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="../join.html">団員募集</a>
+                    <a href="join.html">団員募集</a>
                   </li>
 
                   <li>
-                    <a href="../about.html">当団について</a>
+                    <a href="about.html">当団について</a>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a href="../contact.html">お問い合わせ<br>
+                <a href="contact.html">お問い合わせ<br>
                 <span>Contact</span></a>
               </li>
 
               <li>
-                <a href="../link.html">リンク<br>
+                <a href="link.html">リンク<br>
                 <span>Link</span></a>
               </li> 
             </ul>
@@ -94,11 +104,11 @@
   
   <!-- サブ画像 -->
   <div id="banner">
-    <img alt="" src="../images/image3.jpg">
+    <img alt="" src="images/image3.jpg">
     <div class="slogan">
-      <h2>最新の演奏会</h2>
+      <h2>お問い合わせ</h2>
 
-      <h3>第162回定期演奏会</h3>
+      <h3>下記のメールフォームにてご連絡ください</h3>
     </div>
   </div><!-- / サブ画像 -->
 
@@ -107,81 +117,20 @@
 
     <section id="main">
       <section class="content">
-        <h3 class="heading">第162回定期演奏会</h3>
+        <h3 class="heading">お問い合わせ</h3>
 
-        <article class="concert">
-          <div class="row">
-            <div class="col-sm-4 col-sm-push-8">
-              <img alt="" class="posterimg frame" src="../images/poster/162.jpg" width="240" height="320">
-            </div>
+        <article class="plain">
+          <p>演奏会や、入団に関する疑問等、なんでもお気軽にお問い合わせ下さい。</p>
+        </article>
+      </section>
 
-            <div class="col-sm-8 col-sm-pull-4">
-              <p>第162回定期演奏会は終了いたしました。ご来場ありがとうございました。</p>
-              <dl>
-                <dt>指揮</dt>
-
-                <dd>石川 善美 (当団常任指揮者)</dd>
-
-                <dt>日時</dt>
-
-                <dd>2014/6/14（土）開場18:00　開演18:30</dd>
-
-                <dt>曲目</dt>
-
-                <dd>
-                  <table class="table table-bordered table-striped" summary="musiclist">
-                    <tbody>
-                      <tr>
-                        <td>大学祝典序曲 ハ短調　作品80</td>
-
-                        <td>ブラームス<p>J.Brahms</p></td>
-                      </tr>
-
-                      <tr>
-                        <td>交響曲第41番「ジュピター」ハ長調　K.551</td>
-
-                        <td>モーツァルト<p>W.A.Mozart</p></td>
-                      </tr>
-
-                      <tr>
-                        <td>交響曲第9番「新世界より」ホ短調　作品95</td>
-
-                        <td>ドヴォルザーク<p>A.Dvořák</p></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </dd>
-
-                <dt>会場</dt>
-
-                <dd>
-                  東北大学百周年記念会館　川内萩ホール<br>
-                  会場へのアクセスは<a href="http://www.bureau.tohoku.ac.jp/hagihall/access/index.html">こちら</a>
-                </dd>
-
-                <dt>入場料</dt>
-
-                <dd>自由席　1,000円　　指定席　1,500円</dd>
-
-                <dt>プレイガイド　（販売終了）</dt> 
-
-                <dd>
-                  (株)ヤマハミュージックリテイリング仙台店、東北大学生協川内店、藤崎、(株)仙台三越、
-                  カワイミュージックショップ仙台、東京エレクトロンホール宮城(宮城県民会館)
-                </dd>
-
-                <dt>お問い合わせ</dt>
-
-                <dd>
-                  実行委員長　谷田貝<br>
-                  <a href="mailto:tuso.162@gmail.com">tuso.162@gmail.com</a>
-                </dd>
-              </dl>
-            </div>
+      <section>
+        <article class="plain">
+          <p>メールが送信されました。迅速に対応いたしますので、今しばらくお待ちください。</p>
         </article>
       </section>
     </section><!-- / コンテンツ -->
-    <div id="page-up">
+        <div id="page-up">
       <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-up"></span></a>
     </div>
   </div><!-- / WRAPPER -->
@@ -195,7 +144,7 @@
           <div class="col-md-3">
             <!-- ロゴ -->
             <p class="logo">
-              <a href="../index.html"><img class="logoImg" src="../images/logo.png"><br>
+              <a href="index.html"><img class="logoImg" src="images/logo.png"><br>
               <span>東北大学学友会交響楽団</span></a>
             </p><!-- / ロゴ -->
           </div>
@@ -203,19 +152,19 @@
           <div class="col-md-6">
             <ul class="list-inline text-a-c">
               <li>
-                <a href="../sitemap.html">サイトマップ</a>
+                <a href="sitemap.html">サイトマップ</a>
               </li>
 
               <li>
-                <a href="../privacypolicy.html">プライバシーポリシー</a>
+                <a href="privacypolicy.html">プライバシーポリシー</a>
               </li>
 
               <li>
-                <a href="../idemnity.html">免責事項</a>
+                <a href="idemnity.html">免責事項</a>
               </li>
 
               <li>
-                <a href="../memberonly/member.html">団員専用ページ</a>
+                <a href="memberonly/member.html">団員専用ページ</a>
               </li>
             </ul>
           </div>
@@ -235,9 +184,9 @@
       (C) Copyright 東北大学交響楽団／東北大学学友会交響楽部　2015 All rights reserved.
     </div>
   </div><!-- / フッター -->
-  <script src="../js/jquery-1.11.2.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script> 
-  <script src="../js/script.js"></script> 
-  <script src="../js/jquery.cookie.js"></script>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/script.js"></script> 
+  <script src="js/jquery.cookie.js"></script>
 </body>
 </html>
