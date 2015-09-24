@@ -2,7 +2,7 @@
 deny from all
 </Files>
 Options -Indexes
-AuthUserFile /tuso/html/memberonly/.htpasswd
+AuthUserFile /home/sites/www.tohokuuniv-orch.com/web/pwmgr/.htpasswd2
 AuthGroupFile /dev/null
 AuthName "Please enter your ID and password"
 AuthType Basic
