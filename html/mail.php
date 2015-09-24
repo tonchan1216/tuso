@@ -1,13 +1,3 @@
-<?php
-
-$message = "名前：" . $_POST["name"] . "\n本文：" . $_POST["contents"];
-
-if (!mb_send_mail("example@example.com", $_POST["subject"], $message, "From: " . $_POST["mail"])) {
-  exit("error");
-}
-
-?>
-
 <!DOCTYPE html>
 
 <html dir="ltr" lang="ja">
@@ -126,7 +116,31 @@ if (!mb_send_mail("example@example.com", $_POST["subject"], $message, "From: " .
 
       <section>
         <article class="plain">
-          <p>メールが送信されました。迅速に対応いたしますので、今しばらくお待ちください。</p>
+          <?php
+            mb_language("ja");
+            mb_internal_encoding("UTF-8");
+
+            $to = "tohokuunivorchhomepage@gmail.com";
+            $subject = "お問い合わせメール:" . $_POST['subject'];
+            $message = "お名前：".$_POST['name']."\n"
+                      ."メールアドレス:".$_POST['mail']."\n"
+                      ."用件:".$_POST['subject']."\n\n"
+                      ."===メール本文＝＝＝\n".$_POST['contents'];
+            $body = mb_convert_encoding($message,'ISO-2022-JP', "auto");
+            $header = "MIME-Version: 1.0\r\n"
+                      . "Content-Transfer-Encoding: 7bit\r\n"
+                      . "Content-Type: text/plain; charset=ISO-2022-JP\r\n"
+                      . "Message-Id: <" . md5(uniqid(microtime())) . "@tohokuuniv-orch.com>\r\n"
+                      . "From:".mb_encode_mimeheader($_POST["name"])."<mail-form@tohokuuniv-orch.com>\r\n"
+                      . "Reply-To:".$_POST["mail"]."\r\n";
+
+            ini_set("sendmail_from", $from);
+            if(!mb_send_mail($to,$subject,$body,$header, "-f ".$_POST["mail"])){
+              echo "Error....記入された内容をご確認の上、もう一度送信してください。";
+            }else{
+              echo "正常に送信されました。迅速に対応いたしますので、今しばらくお待ちください。";
+            }
+          ?>
         </article>
       </section>
     </section><!-- / コンテンツ -->
