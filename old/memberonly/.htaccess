@@ -1,0 +1,7 @@
+AuthUserFile /home/sites/www.tohokuuniv-orch.com/web/pwmgr/.htpasswd
+AuthGroupFile /dev/null
+AuthName "MEMBER SITE"
+AuthType Basic
+<Limit POST GET>
+require valid-user
+</Limit>

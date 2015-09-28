@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href="../../base.css" rel="stylesheet" type="text/css" media="screen,tv,projection" />
+	<title>Tohoku University Symphony Orchestra</title>
+</head>
+<body>
+<br />
+<div id="formdiv">
+<h3>- 以下の内容でよろしければ送信ボタンを押して下さい -</h3>
+<table border="0" cellspacing="1" cellpadding="7" width="80%" border="0" bgcolor="#003399">
+<!-- cell_begin -->
+<tr>
+  <td bgcolor="#f3f4fa" align="right" width="25%" nowrap><b>$left</b></td>
+  <td bgcolor="#ffffff" width="75%" align="left">$right</td>
+</tr>
+<!-- cell_end -->
+</table>
+<br />
+<form action="$script" method="post">
+<!-- hidden -->
+<input type="button" value="&lt;&lt; 前画面にもどる" onclick="history.back()" />
+&nbsp;&nbsp;&nbsp;
+<input type="submit" value="上記内容で送信 &gt;&gt;" />
+</form>
+</div>
+</body>
+</html>

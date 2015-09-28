@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=shift_JIS" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta name="description" content="東北大学交響楽団" />
+	<meta name="keywords" content="東北,大学,学友会,交響楽,オケ" />
+	<link href="../base.css" rel="stylesheet" type="text/css" media="screen,tv,projection" />
+	<link href="../print.css" rel="stylesheet" type="text/css" media="print" />
+	<title>Tohoku University Symphony Orchestra - オンラインチケット予約</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<h1><a href="../index.html"><img src="../images/title.png" alt="東北大学交響楽団 Official Web Site" width="930" height="156" /></a></h1>
+<hr />
+<!--end div#header-->
+</div>
+<div id="sidebar">
+<p>
+	<img class="menu" src="../images/menu.png" alt="menu" width="167" height="81" /><br />
+	<script type="text/javascript" src="../javascript/docwritepostmail.js"></script>
+	<img class="menuend" src="../images/menuend.png" alt="menuend" width="167" height="200" />
+</p>
+<!--end div#sidebar-->
+</div>
+<div id="main">
+<div id="contact">
+<h2>オンラインチケット予約　<b>＜締め切りました＞</b></h2>
+<p>自由席・指定席チケットのオンライン予約サービスを行っています。
+<h3>予約手順</h3>
+<h4>自由席</h4>
+<ol type="1" start="1">
+	<li>下の予約フォームに必要事項を記入、送信してください。</li>
+	<li>こちらより確認のメールをお送りし、予約完了となります。</li>
+</ol>
+<h4>指定席</h4>
+<ol type="1" start="1">
+	<li>下の予約フォームに必要事項を記入、送信してください。
+	<br>なお、この際大まかな座席指定が可能です。座席表を参照しながらご希望の座席
+	<br>位置を入力してください。</li>
+	<li>こちらより座席番号の記載された確認のメールをお送りし、予約完了となります。<br>
+	座席表で位置をご確認ください。</li>
+</ol>
+<h3>当日の入場手続き</h3>
+<p>会場のチケット売り場にて、お名前とオンライン予約の旨をお伝えください。代金と引き換えにチケットをお渡しします。</p>
+<!-- 
+<h2>予約フォーム</h2>
+<p>備考の項目を除き、すべて記入必須ですので漏らさずご記入ください。</p>
+<form id="contactForm" name="contactForm" method="post" action="clipmail.cgi">
+	<table summary="">	
+		<tr><th scope="row"><label for="name">お名前</label></th>
+		<td><input type="text" name="name" id="name"></td></tr>
+		<tr><th scope="row"><label for="email">メールアドレス</label></th>
+		<td><input type=text name="email" size=25 id=email></td></tr>
+		<tr><th scope="row"><label for="email2">もう一度メールアドレスを<br />記入して下さい(確認用)</label></th>
+		<td><input type=text name="email2" size=25 id=email2></td></tr>
+		<input type="hidden" name="match" value="email email2">
+		
+		<tr><th scope="row"><label for="comment">自由席枚数</label></th>
+		<td><select name="自由席">
+			<option value="なし">なし</option>
+			<option value="1枚">1枚</option>
+			<option value="2枚">2枚</option>
+			<option value="3枚">3枚</option>
+			<option value="4枚">4枚</option>
+			<option value="5枚">5枚</option>
+			<option value="6枚">6枚</option>
+			<option value="7枚">7枚</option>
+			<option value="8枚">8枚</option>
+			<option value="9枚">9枚</option>
+			</select></td></tr>
+		<tr><th scope="row"><label for="comment">指定席枚数<br>指定席残りわずかです</label></th>
+		<td><select name="指定席">
+			<option value="なし">なし</option>
+			<option value="1枚">1枚</option>
+			<option value="2枚">2枚</option>
+			<option value="3枚">3枚</option>
+			<option value="4枚">4枚</option>
+			<option value="5枚">5枚</option>
+			<option value="6枚">6枚</option>
+			<option value="7枚">7枚</option>
+			<option value="8枚">8枚</option>
+			<option value="9枚">9枚</option>
+			</select></td></tr>
+		<tr><th scope="row"><label for="comment">ご希望の座席位置<br>
+		（指定席の方のみ）</label></th>
+		<td><select name="座席希望">
+			<option value="なし">なし</option>
+			<option value="１階　通路側">１階　通路側</option>
+			<option value="１階　中央付近">１階　中央付近</option>
+			<option value="２階　通路側">２階　通路側</option>
+			<option value="２階　中央付近">２階　中央付近</option>
+			</select></td></tr>
+		<tr><th scope="row"><label for="comment">備考</label></th>
+		<td><textarea name="備考" id="comment" rows="10" cols="35" wrap="hard"></textarea></td></tr>
+		<input type="hidden" name="subject" value="Online Ticket Reservation">
+		<input type="hidden" name="need" value="name email">
+
+<tr><th><input type="submit"  id="submit" ></th><td>
+<input type="reset" value="取消" /></td></tr>
+</table>
+</form>
+<br>
+<br>
+-->
+<h2>座席表</h2>
+<img src="../images/hallseat.png" alt="ホール座席表">
+<hr />
+<!--end div#basi	c-->
+</div>
+<!--end div#main-->
+</div>
+<div id="footer">
+	<!--
+<p>
+<ul>
+	<li><a href="#">サイトマップ</a></li>
+	<li><a href="#">プライバシーポリシー</a></li>
+	<li><a href="#">免責事項</a></li>
+</ul>
+</p>
+<hr />
+-->
+<address>
+(C) Copyright 東北大学交響楽団／東北大学学友会交響楽部　2007 All rights reserved.
+</address>
+<!--end div#footer-->
+</div>
+<!--end div#wrapper-->
+</div>
+</body>
+</html>

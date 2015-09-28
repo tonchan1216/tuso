@@ -1,0 +1,167 @@
+* {
+	font-style: normal; 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+body {
+	font-family: serif;
+	font-size: 80%;
+	line-height: 1.5;
+	background-image: url(images/bg3.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%; 
+		position: relative;
+}
+
+hr {
+	display: none;
+}
+
+a img {
+	border-style: none;
+}
+
+h2 {
+	font-size: 110%;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	border-bottom: 2px solid;
+	border-left: 8px solid;
+	width: 490px;
+}
+
+h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+	font-size: 100%;
+}
+
+h4 {
+	font-size: 85%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 25px;
+}
+
+#main {
+
+	padding-top: 4px;
+	width: 561px;
+	margin-bottom: 20px;
+
+}
+
+#main p {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.7;
+	text-indent: 1em;
+	width: 470px;
+}
+
+#main table {
+	margin-left: 20px;
+}
+
+#main table th {
+	text-align: right;
+	padding-right: 15px;
+}
+
+#main table td {
+	padding-right: 10px;
+}
+
+#concert table {
+	margin: 0px;
+	border-collapse: collapse;
+}
+
+#concert table td {
+	margin: 0px;
+}
+
+#main #topImg {
+	position: absolute;
+	left: 37px;
+}
+
+#main #news {
+	position: absolute;
+	top: 280px;
+}
+
+#main #news ul li {
+	margin-left: 15px;
+	margin-top: 18px;
+	list-style: none;
+}
+
+#main dl dt {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#main dl dd {
+	margin-left: 45px;	
+}
+
+#main form table th {
+	padding-left: 0px;
+}
+
+#concert script {
+	display: none;
+}
+
+#formdiv {
+	background-image: url(images/bg3.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%; 
+	padding-top: 4px;
+	text-align: center;
+
+	margin-bottom: 20px;
+
+}
+
+#formdiv p {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.7;
+	text-indent: 1em;
+	width: 470px;
+}
+
+#header {
+	display: none;
+}
+
+#sidebar {
+	display: none;
+}
+#footer {
+
+	font-size: 80%;
+
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+address {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#footer ul {
+	display: none;
+}
+
+#footer p {
+	display: none;
+}

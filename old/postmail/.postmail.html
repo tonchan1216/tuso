@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href="../base.css" rel="stylesheet" type="text/css" media="screen,tv,projection" />
+	<title>Tohoku University Symphony Orchestra</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<h1><a href="../index.html"><img src="../images/title.png" alt="東北大学交響楽部 Official Web Site" width="791" height="156" /></a></h1>
+<hr />
+<!--end div#header-->
+</div>
+<div id="sidebar">
+<p>
+	<img class="menu" src="../images/menu.png" alt="menu" width="167" height="81" /><br />
+	<script type="text/javascript" src="../javascript/docwritepostmail.js"></script>
+	<img class="menuend" src="../images/menuend.png" alt="menuend" width="167" height="200" />
+</p>
+<!--end div#sidebar-->
+</div>
+<div id="main">
+<div id="contact">
+<h2>お問い合わせ</h2>
+<p>当サイトからのお問い合わせはフォームからのみになります。ご了承ください。<br />
+ここに入力した内容は、サイト管理人に送信されます。 演奏会や、入団に関する疑問等、お気軽にお問い合わせ下さい。 
+</p>
+
+<form id="contactForm" name="contactForm" method="post" action="postmail.cgi">
+	<table summary="">	
+		<tr><th scope="row"><label for="name">お名前</label></th>
+		<td><input type="text" name="name" id="name"></td></tr>
+		
+		<tr><th scope="row"><label for="mail">メールアドレス</label></th>
+		<td><input type=text name="mail" size=25 id=email></td></tr>
+		
+		<tr><th scope="row"><label for"kind">お問い合わせの種類</label></th>
+		<td><select name="kind">
+			<option value="入部希望、質問">入部希望、質問</option>
+			<option value="演奏会に関して">演奏会に関して</option>
+			<option value="リンク希望">リンク希望</option>
+			<option value="当サイトについて">当サイトについて</option>
+			<option value="その他">その他</option>
+			</select></td></tr>
+			
+		<tr><th scope="row"><label for="comment">お問い合わせ内容</label></th>
+		<td><textarea name="comment" id="comment" rows="10" cols="35" wrap="hard"></textarea></td></tr>
+	</table>
+	
+<p>ご記入内容をご確認の上、送信ボタンを押してください。
+<input type="submit" name="submit" id="submit" value="確認画面へ" />
+<input type="reset" value="取消" /></p>
+</form>
+<hr />
+<!--end div#contact-->
+</div>
+<!--end div#main-->
+</div>
+<div id="footer">
+<address>
+(C)東北大学交響楽団／東北大学学友会交響楽部 Copyright @2007 All rights reserved.
+</address>
+<!--end div#footer-->
+</div>
+<!--end div#wrapper-->
+</div>
+</body>	
+
+</html>
