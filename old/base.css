@@ -76,6 +76,7 @@ h4 {
 	width: 700px;
 	margin-bottom: 20px;
 	position: relative;
+	height: 520px;
 }
 
 #main p {
@@ -179,8 +180,8 @@ h4 {
 }
 
 #footer {
-
 	font-size: 80%;
+	height: 90px;
 	clear: both;
 	padding-left: 30px;
 	margin-bottom: 20px;
