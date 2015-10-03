@@ -39,12 +39,14 @@
             <ul class="nav navbar-nav navbar-right">
               <li>
                 <a href="news.html">ニュース<br>
-                <span>News</span></a>
+                  <span>News</span>
+                </a>
               </li>
 
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">演奏会<br>
-                <span>Concert</span></a>
+                  <span>Concert</span>
+                </a>
 
                 <ul class="dropdown-menu">
                   <li>
@@ -63,7 +65,8 @@
 
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">紹介<br>
-                <span>About</span></a>
+                  <span>About</span>
+                </a>
 
                 <ul class="dropdown-menu">
                   <li>
@@ -78,12 +81,14 @@
 
               <li>
                 <a href="contact.html">お問い合わせ<br>
-                <span>Contact</span></a>
+                  <span>Contact</span>
+                </a>
               </li>
 
               <li>
                 <a href="link.html">リンク<br>
-                <span>Link</span></a>
+                  <span>Link</span>
+                </a>
               </li> 
             </ul>
           </div>
@@ -117,34 +122,34 @@
       <section>
         <article class="plain">
           <?php
-            mb_language("ja");
-            mb_internal_encoding("UTF-8");
+          mb_language("ja");
+          mb_internal_encoding("UTF-8");
 
-            $to = "tohokuunivorchhomepage@gmail.com";
-            $subject = "お問い合わせメール:" . $_POST['subject'];
-            $message = "お名前：".$_POST['name']."\n"
-                      ."メールアドレス:".$_POST['mail']."\n"
-                      ."用件:".$_POST['subject']."\n\n"
-                      ."===メール本文＝＝＝\n".$_POST['contents'];
-            $body = mb_convert_encoding($message,'ISO-2022-JP', "auto");
-            $header = "MIME-Version: 1.0\r\n"
-                      . "Content-Transfer-Encoding: 7bit\r\n"
-                      . "Content-Type: text/plain; charset=ISO-2022-JP\r\n"
-                      . "Message-Id: <" . md5(uniqid(microtime())) . "@tohokuuniv-orch.com>\r\n"
-                      . "From:".mb_encode_mimeheader($_POST["name"])."<mail-form@tohokuuniv-orch.com>\r\n"
-                      . "Reply-To:".$_POST["mail"]."\r\n";
+          $to = "tohokuunivorchhomepage@gmail.com";
+          $subject = "お問い合わせメール:" . $_POST['subject'];
+          $message = "お名前：".$_POST['name']."\n"
+          ."メールアドレス:".$_POST['mail']."\n"
+          ."用件:".$_POST['subject']."\n\n"
+          ."===メール本文＝＝＝\n".$_POST['contents'];
+          $body = mb_convert_encoding($message,'ISO-2022-JP', "auto");
+          $header = "MIME-Version: 1.0\r\n"
+          . "Content-Transfer-Encoding: 7bit\r\n"
+          . "Content-Type: text/plain; charset=ISO-2022-JP\r\n"
+          . "Message-Id: <" . md5(uniqid(microtime())) . "@tohokuuniv-orch.com>\r\n"
+          . "From:".mb_encode_mimeheader($_POST["name"])."<mail-form@tohokuuniv-orch.com>\r\n"
+          . "Reply-To:".$_POST["mail"]."\r\n";
 
-            ini_set("sendmail_from", $from);
-            if(!mb_send_mail($to,$subject,$body,$header, "-f ".$_POST["mail"])){
-              echo "Error....記入された内容をご確認の上、もう一度送信してください。";
-            }else{
-              echo "正常に送信されました。迅速に対応いたしますので、今しばらくお待ちください。";
-            }
+          ini_set("sendmail_from", $from);
+          if(!mb_send_mail($to,$subject,$body,$header, "-f ".$_POST["mail"])){
+            echo "Error....記入された内容をご確認の上、もう一度送信してください。";
+          }else{
+            echo "正常に送信されました。迅速に対応いたしますので、今しばらくお待ちください。";
+          }
           ?>
         </article>
       </section>
     </section><!-- / コンテンツ -->
-        <div id="page-up">
+    <div id="page-up">
       <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-arrow-up"></span></a>
     </div>
   </div><!-- / WRAPPER -->
@@ -159,7 +164,8 @@
             <!-- ロゴ -->
             <p class="logo">
               <a href="index.html"><img class="logoImg" src="images/logo.png"><br>
-              <span>東北大学学友会交響楽団</span></a>
+                <span>東北大学学友会交響楽団</span>
+              </a>
             </p><!-- / ロゴ -->
           </div>
 
@@ -184,7 +190,6 @@
           </div>
 
           <div class="col-md-3 text-a-r">
-            <!-- 電話番号+受付時間 -->
 
             <p><a href="http://validator.w3.org/check?uri=referer"><img alt="Valid XHTML 1.0 Transitional" height="31" src="http://www.w3.org/Icons/valid-xhtml10" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border:0;width:88px;height:31px"></a></p>
 

@@ -7,9 +7,7 @@ Author: F.T
 Version: バージョン 2.0
 License: ライセンス
 */
-/* =Reset default browser CSS.
-Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
--------------------------------------------------------------- */
+/*-------------------------------------------------------------- */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
