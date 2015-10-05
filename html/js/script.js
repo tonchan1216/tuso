@@ -21,7 +21,7 @@ $(function() {
   });
 
   //contets-link
-  $(".contents-link").children("div").hover(
+  $("#contents-link").children("div").hover(
     function(){
       /* mouse enter の処理 */
       $(this).find("p").stop().animate({"top": "6px"}, 800);
