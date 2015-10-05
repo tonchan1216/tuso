@@ -867,6 +867,10 @@ table.table th {
     right:-30px
   }
 
+  #news-list li {
+    font-size: 1.5em;
+  }
+
   #news-list li span {
     display: inline-block;
     width: 100%;
@@ -964,7 +968,7 @@ table.table th {
     font-size:1.0em;
   }
 
-  .plain {
+  .plain p {
     font-size: 1.2em;
   }
 }
