@@ -923,6 +923,10 @@ table.table th {
     font-size: 0.8em
   }
 
+  #wrapper .content .heading {
+    font-size: 1.2em
+  }
+
   #contents-link > div img {
     margin-top: 0;
   }
