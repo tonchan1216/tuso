@@ -859,7 +859,7 @@ table.table th {
 /* スマートフォン 横(ランドスケープ) */
 @media only screen and (max-width:640px) {
   #header .dropdown-menu li:first {
-    margin-top: 5px;
+    margin-top: 10px;
   } 
   #header .dropdown-menu li {
     margin-bottom: 15px;
@@ -876,6 +876,10 @@ table.table th {
 
   #news-list li {
     font-size: 1.4em;
+  }
+
+  div.row #news-list li {
+    font-size: 0.8em;
   }
 
   #news-list li span {
