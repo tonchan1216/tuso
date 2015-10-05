@@ -893,6 +893,9 @@ table.table th {
 
 /* スマートフォン 縦(ポートレート) */
 @media only screen and (max-width:480px) {
+  html {
+    font-size: 80%;
+  }
   #header .navbar-brand {
     padding: 10px 0 10px 10px;
   }
@@ -920,21 +923,21 @@ table.table th {
     right:-30px
   }
 
-  #wrapper .content {
+/*  #wrapper .content {
     font-size: 0.8em;
   }
 
   #wrapper .content .heading {
     font-size: 1.3em;
-  }
+  }*/
 
   #contents-link > div img {
     margin-top: 0;
   }
 
-  #news .news-title {
+/*  #news .news-title {
     font-size:1.3em;
-  }
+  }*/
 
   #gallery .elem {
     height: 250px;
@@ -954,11 +957,11 @@ table.table th {
     width: 48%;
   }
 
-  #footer .logo a {
+/*  #footer .logo a {
     font-size:1.0em;
   }
 
   .plain {
     font-size: 1.2em;
-  }
+  }*/
 }
