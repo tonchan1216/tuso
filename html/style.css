@@ -920,15 +920,19 @@ table.table th {
   }
 
   #wrapper .content {
-    font-size: 0.8em
+    font-size: 0.8em;
   }
 
   #wrapper .content .heading {
-    font-size: 1.3em
+    font-size: 1.3em;
   }
 
   #contents-link > div img {
     margin-top: 0;
+  }
+
+  #news .news-title {
+    font-size:1.3em;
   }
 
   #gallery .elem {
@@ -947,6 +951,10 @@ table.table th {
 
   #tab-menu li {
     width: 48%;
+  }
+
+  #footer .logo a {
+    font-size:1.0em;
   }
 
   .plain {
