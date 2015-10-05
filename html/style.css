@@ -178,6 +178,10 @@ body {
   overflow:hidden
 }
 
+#carousel .carousel-caption {
+  font-size: 1.2em;
+}
+
 #banner {
   position:relative;
   margin:0 auto 30px;
@@ -209,12 +213,12 @@ body {
   padding-bottom:5px;
   padding-left:15%;
   color:#FFF;
-  font-size:24px;
+  font-size:2em;
   text-shadow:1px 1px 3px #333
 }
 
 #banner .slogan h3 {
-  font-size:16px;
+  font-size:1.3em;
   padding-left:15%;
   color:#FFF;
   text-shadow:1px 1px 3px #333;
@@ -227,7 +231,7 @@ body {
   margin-bottom:40px;
   border-radius:6px;
   overflow:hidden;
-  font-size:14px
+  font-size:1.16em
 }
 
 * html section.content {
@@ -241,7 +245,7 @@ body {
 #wrapper .content .heading {
   padding:3px 10px;
   margin-bottom:15px;
-  font-size:20px;
+  font-size:1.5em;
   border-left:7px solid #FF5F64;
   border-bottom:3px solid #FF5F64
 }
@@ -317,7 +321,7 @@ body {
 #news .news-title {
   padding:3px 0;
   margin-bottom:15px;
-  font-size:20px;
+  font-size:1.5em;
   border-bottom:2px solid #FF5F64
 }
 
@@ -413,7 +417,7 @@ table.table th {
 
 #concert dt {
   margin: 10px 0 5px 20px;
-  font-size:15px;
+  font-size: 1.15em;
   font-weight:700
 }
 
@@ -454,7 +458,7 @@ table.table th {
 
 #linklist dt {
   margin:8px 0;
-  font-size:16px;
+  font-size:1.2em;
   border-bottom:1px solid
 }
 
@@ -542,16 +546,11 @@ table.table th {
 }
 
 #footer .logo a {
-  font-size:17px;
+  font-size:1.3em;
   font-weight:600;
   text-align:center;
   line-height:1;
-  font-family:"Palatino Linotype","Book Antiqua",Palatino,serif
-}
-
-#footer .mail strong {
-  font-size:20px;
-  font-weight:700
+  font-family: "ＭＳ 明朝",serif;
 }
 
 #footer .copyright {
