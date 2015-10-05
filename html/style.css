@@ -924,7 +924,7 @@ table.table th {
   }
 
   #wrapper .content .heading {
-    font-size: 1.25em
+    font-size: 1.5em
   }
 
   #contents-link > div img {
@@ -947,5 +947,9 @@ table.table th {
 
   #tab-menu li {
     width: 48%;
+  }
+
+  .plain {
+    font-size: 1.2em;
   }
 }
