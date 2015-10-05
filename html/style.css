@@ -932,6 +932,12 @@ table.table th {
     margin-top: 0;
   }
 
+  #news-list li span {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8em;
+  }
+
   #news .news-title {
     font-size:1.3em;
   }
