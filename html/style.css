@@ -858,6 +858,10 @@ table.table th {
 
 /* スマートフォン 横(ランドスケープ) */
 @media only screen and (max-width:640px) {
+  #header .dropdown-menu li {
+    margin-bottom: 5px;
+  }
+
   #banner {
     height:200px
   }
