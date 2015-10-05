@@ -152,31 +152,16 @@ body {
   height:1%
 }
 
-.navbar-toggle[aria-expanded="false"] {
+#header .navbar-toggle[aria-expanded="false"] {
   background-color: #F8F8F8 !important;
 }
 
-.navbar-right {
+#header.navbar-right {
   margin-right: 10px;
 }
 
-/*************
-/* ロゴ
-*************/
-#title-img {
+#header .logoImg {
   max-width:100%
-}
-
-#footer .logo img {
-  width:80px
-}
-
-#footer .logo a {
-  font-size:17px;
-  font-weight:600;
-  text-align:center;
-  line-height:1;
-  font-family:"Palatino Linotype","Book Antiqua",Palatino,serif
 }
 
 /**************************
@@ -208,7 +193,6 @@ body {
   bottom: 0;
 }
 
-/* スローガン*/
 #banner .slogan {
   position:absolute;
   background:rgba(130,130,130,0.85);
@@ -239,7 +223,7 @@ body {
 /*************
 メイン コンテンツ
 *************/
-section.content {
+#wrapper .content {
   margin-bottom:40px;
   border-radius:6px;
   overflow:hidden;
@@ -250,11 +234,11 @@ section.content {
   height:1%
 }
 
-section.content p {
+#wrapper .content p {
   margin-bottom:5px
 }
 
-h3.heading {
+#wrapper .content .heading {
   padding:3px 10px;
   margin-bottom:15px;
   font-size:20px;
@@ -262,7 +246,7 @@ h3.heading {
   border-bottom:3px solid #FF5F64
 }
 
-section.content img {
+#wrapper .content img {
   max-width:90%;
   height:auto
 }
@@ -271,7 +255,7 @@ section.content img {
   max-width:100%
 }
 
-img.frame,#gallery img {
+#gallery img, img.frame {
   margin:15px auto;
   border:3px solid #FF5F64
 }
@@ -287,12 +271,12 @@ img.frame,#gallery img {
   margin:60px 40px 10px 10px
 }
 
-.contact {
+#contact {
   width:60%;
   margin:0 auto
 }
 
-.contact input,textarea {
+#contact input,textarea {
   width:100%;
   padding:10px;
   margin:10px 0;
@@ -300,14 +284,14 @@ img.frame,#gallery img {
   font-size:90%
 }
 
-.contact textarea {
+#contact textarea {
   width:100%;
   height:100px;
   resize:none;
   border:1px solid #DDD
 }
 
-.contact button {
+#contact button {
   padding:10px 50px;
   font-size:120%;
   cursor:pointer;
@@ -322,7 +306,7 @@ img.frame,#gallery img {
   transition:all .25s ease
 }
 
-.contact button:hover {
+#contact button:hover {
   background:#E20F04
 }
 
@@ -330,34 +314,34 @@ img.frame,#gallery img {
   margin-left:15px
 }
 
-.news-title {
+#news .news-title {
   padding:3px 0;
   margin-bottom:15px;
   font-size:20px;
   border-bottom:2px solid #FF5F64
 }
 
-.news-content {
+#news .news-content {
   margin:5px 20px
 }
 
-.contents-link {
+#contents-link {
   width: 100%;
   padding-top: 30px;
   min-height: 180px;
 }
 
-.contents-link > div {
+#contents-link > div {
   max-height: 100px;
   overflow: hidden;
   text-align: center;
 }
 
-.contents-link > div img {
+#contents-link > div img {
   max-width: 100%;
 }
 
-.contents-link > div p {
+#contents-link > div p {
   position: absolute;
   top:60px;
   left: 20px;
@@ -367,17 +351,17 @@ img.frame,#gallery img {
   color: white
 }
 
-.contents-link a:hover {
+#contents-link a:hover {
   text-decoration: none;
 }
 
-.contents-link #link-c {
+#contents-link #link-c {
   background-color: rgba(110,50,190,0.8);
 }
-.contents-link #link-j {
+#contents-link #link-j {
   background-color: rgba(70,160,70,0.8);
 }
-.contents-link #link-m {
+#contents-link #link-m {
   background-color: rgba(250,140,0,0.8);
 }
 
@@ -391,7 +375,7 @@ img.frame,#gallery img {
 }
 
 /*************
-テーブル
+テーブル データリスト
 *************/
 table.table {
   border-collapse:collapse;
@@ -410,21 +394,41 @@ table.table th {
   white-space:nowrap
 }
 
-.concert table {
+#concert table {
   border-collapse:collapse;
   background-color: #f9f9f9;
   margin:0
 }
 
-.concert td {
+#concert td {
   font-size: 120%;
   padding:5px;
   vertical-align: middle!important;
   text-align:center;
 }
 
-.concert td p {
+#concert td p {
   font-family: cursive;
+}
+
+#concert dt {
+  margin: 10px 0 5px 20px;
+  font-size:15px;
+  font-weight:700
+}
+
+#concert dd {
+  margin-left:45px;
+  margin-bottom: 25px; 
+  display:block
+}
+
+#concertRecord tr[data-href] > td {
+  cursor:pointer;
+}
+
+#concertRecord tr[data-href]:hover {
+  background:#ccc
 }
 
 .jointable {
@@ -448,81 +452,57 @@ table.table th {
   padding-left:15px
 }
 
-#concertRecord tr[data-href] > td {
-  cursor:pointer;
-}
-
-#concertRecord tr[data-href]:hover {
-  background:#ccc
-}
-
-
-/*************
-データリスト
-*************/
-.concert dt {
-  margin: 10px 0 5px 20px;
-  font-size:15px;
-  font-weight:700
-}
-
-.concert dd {
-  margin-left:45px;
-  margin-bottom: 25px; 
-  display:block
-}
-
-.linklist dt {
+#linklist dt {
   margin:8px 0;
   font-size:16px;
   border-bottom:1px solid
 }
 
-.linklist dd {
+#linklist dd {
   display:block;
   margin:8px 0 8px 20px
 }
 
-.news ul {
+#news-list ul {
   margin:5px 0 50px;
   min-height: 100px;
 }
 
-.news li {
+#news-list li {
   border-bottom:1px dotted #DDD;
   margin:15px 10px;
 }
 
-.news li > span {
+#news-list li > span {
   margin-right: 10px;
 }
 
-.part dd {
+#part dd {
   display:block;
   margin-left:20px
 }
 
-.part dt {
+#part dt {
   margin:8px 0;
   text-decoration:underline
 }
 
-.conductor dt {
+#conductor dt {
   font-size:105%;
   font-weight:700
 }
 
-.conductor dd {
+#conductor dd {
   margin-left:20px;
   margin-bottom:20px
 }
 
-.news-content dt {
+#news .news-content dt {
   font-weight:700;
   margin:15px 20px
 }
 
-.news-content dd {
+#news .news-content dd {
   display:block;
   margin-left:40px
 }
@@ -531,14 +511,13 @@ table.table th {
   margin-left:20px
 }
 
-#sitemap ul,#sitemap li {
+#sitemap ul, #sitemap li {
   margin-left:10px
 }
 
 #sitemap > ul {
   list-style-type:square
 }
-
 
 /*************
 /* フッター
@@ -556,6 +535,18 @@ table.table th {
 
 #footer a:hover {
   color:#ccc
+}
+
+#footer .logoImg {
+  width:80px
+}
+
+#footer .logo a {
+  font-size:17px;
+  font-weight:600;
+  text-align:center;
+  line-height:1;
+  font-family:"Palatino Linotype","Book Antiqua",Palatino,serif
 }
 
 #footer .mail strong {
@@ -653,13 +644,13 @@ table.table th {
   text-align:center
 }
 
-.cal_wrapper {
+#member .cal_wrapper {
   max-width:800px;
   min-width:300px;
   margin:2.0833% auto
 }
 
-.googlecal {
+#member .googlecal {
   position:relative;
   padding-bottom:100%;
   /* 縦横比 */
@@ -667,7 +658,7 @@ table.table th {
   overflow:hidden
 }
 
-.googlecal iframe {
+#member .googlecal iframe {
   position:absolute;
   top:0;
   left:0;
@@ -675,15 +666,15 @@ table.table th {
   height:100%!important
 }
 
-#audio-player {
+#member #audio-player {
   width: 100%;
 }
 
-#music-library li {
+#member #music-library li {
   margin: 5px 0;
 }
 
-#tab-gal a {
+#member #tab-gal a {
   height: 100%;
   min-height: 120px;
   overflow: hidden;
@@ -703,27 +694,31 @@ table.table th {
     padding:20px 0
   }
 
-  nav#mainNav {
+  #mainNav {
     border-top:5px solid #FF5F64
   }
 
-  nav#mainNav ul li {
+  #mainNav ul li {
     text-align:center
   }
 
-  nav#mainNav ul a {
+  #mainNav ul a {
     font-size:15px;
     display:block
   }
 
-  nav#mainNav ul span {
+  #mainNav ul span {
     font-size:10px;
     color:#a5a5a5
   }
 
-  nav#mainNav ul li.active a,nav#mainNav ul a:hover {
+  #mainNav ul li.active a,#mainNav ul a:hover {
     background:#333;
     color:#f2f2f2
+  }
+
+  #mainNav .dropdown:hover > .dropdown-menu {
+    display:block
   }
 
   #tab-menu li {
@@ -740,10 +735,6 @@ table.table th {
 
   #footer .text-a-c {
     text-align:center
-  }
-
-  .dropdown:hover > .dropdown-menu {
-    display:block
   }
 }
 
@@ -765,15 +756,15 @@ table.table th {
     padding:10px 0 0
   }
 
-  #title-img {
+  #header .logoImg {
     width:280px
   }
 
-  nav#mainNav ul li a span {
+  #mainNav ul li a span {
     padding-left:10px
   }
 
-  nav#mainNav ul li.active a,nav#mainNav ul li a:hover {
+  #mainNav ul li.active a,#mainNav ul li a:hover {
     background:#333;
     color:#f2f2f2
   }
@@ -836,24 +827,24 @@ table.table th {
     padding-bottom:0
   }
 
-  .navbar-brand {
+  #header .navbar-brand {
     padding-top:10px
   }
 
-  .contents-link > div {
+  #contents-link > div {
     margin: 0 auto;
     width: 80%;
   }  
 
-  .contents-link > div img {
+  #contents-link > div img {
     margin-top: -80px;
   }
 
-  .map {
+  #access .map {
     margin:0 auto
   }
 
-  .linklist dd {
+  #linklist dd {
     margin:8px 20px
   }
 
@@ -881,7 +872,7 @@ table.table th {
     margin:0 auto 10px
   }
 
-  .map {
+  #access .map {
     width:70%
   }
 
@@ -896,7 +887,7 @@ table.table th {
 
 @media only screen and (min-width: 600px) {
   /* 画面幅が600px以上の場合の縦横比の指定 */
-  .googlecal {
+  #member .googlecal {
     padding-bottom:75%
   }
 }
@@ -907,11 +898,11 @@ table.table th {
     height:150px
   }
 
-  .navbar-brand {
+  #header .navbar-brand {
     padding: 10px 0 10px 10px;
   }
 
-  #title-img {
+  #header .logoImg {
     width:250px
   }
 
@@ -932,7 +923,7 @@ table.table th {
     right:-30px
   }
 
-  .contents-link > div img {
+  #contents-link > div img {
     margin-top: 0;
   }
 
@@ -953,6 +944,4 @@ table.table th {
   #tab-menu li {
     width: 48%;
   }
-
-
 }
