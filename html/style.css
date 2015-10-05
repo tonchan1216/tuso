@@ -893,10 +893,6 @@ table.table th {
 
 /* スマートフォン 縦(ポートレート) */
 @media only screen and (max-width:480px) {
-  #banner {
-    height:150px
-  }
-
   #header .navbar-brand {
     padding: 10px 0 10px 10px;
   }
@@ -905,11 +901,12 @@ table.table th {
     width:250px
   }
 
-  #banner {
-    margin-left:1px
+  #carousel .item {
+    height:150px
   }
 
-  #carousel .item {
+  #banner {
+    margin-left:1px;
     height:150px
   }
 
@@ -920,6 +917,10 @@ table.table th {
   #banner .slogan {
     top:15px;
     right:-30px
+  }
+
+  #wrapper .content {
+    font-size: 1.0em
   }
 
   #contents-link > div img {
