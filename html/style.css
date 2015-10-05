@@ -868,13 +868,12 @@ table.table th {
   }
 
   #news-list li {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   #news-list li span {
     display: inline-block;
     width: 100%;
-    font-size: 1.8em;
   }
 
   .posterimg {
