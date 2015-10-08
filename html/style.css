@@ -553,6 +553,10 @@ table.table th {
   font-family: "ＭＳ 明朝",serif;
 }
 
+#footer .logo span {
+  margin: 3px 30px 10px;
+}
+
 #footer .copyright {
   margin:0 auto;
   font-size:11px;
