@@ -30,7 +30,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
             </button>
             <a class="navbar-brand" href="index.html"><img class="logoImg" src="images/title.png"></a>
           </div>
@@ -89,21 +89,21 @@
                 <a href="link.html">リンク<br>
                   <span>Link</span>
                 </a>
-              </li>
+              </li> 
             </ul>
           </div>
         </div>
       </nav>
     </div>
   </div><!-- / ヘッダー -->
-
+  
   <!-- サブ画像 -->
   <div id="banner">
     <img alt="" src="images/image3.jpg">
     <div class="slogan">
-      <h2>最新の演奏会</h2>
+      <h2>お問い合わせ</h2>
 
-      <h3>次回の定期演奏会のお知らせです。</h3>
+      <h3>下記のメールフォームにてご連絡ください</h3>
     </div>
   </div><!-- / サブ画像 -->
 
@@ -112,89 +112,40 @@
 
     <section id="main">
       <section class="content">
-        <h3 class="heading">第16６回定期演奏会</h3>
+        <h3 class="heading">お問い合わせ</h3>
 
-        <article id="concert">
-          <div class="row">
-            <div class="col-sm-4 col-sm-push-8">
-              <!-- <img alt="" class="posterimg frame" src="images/poster/165.jpg" width="240" height="320"> -->
-            </div>
+        <article class="plain">
+          <p>演奏会や、入団に関する疑問等、なんでもお気軽にお問い合わせ下さい。</p>
+        </article>
+      </section>
 
-            <div class="col-sm-8 col-sm-pull-4">
-              <!-- <p>第165回定期演奏会は終了いたしました。ご来場ありがとうございました。</p> -->
-              <dl>
-                <dt>指揮</dt>
+      <section>
+        <article class="plain">
+          <?php
+          mb_language("ja");
+          mb_internal_encoding("UTF-8");
 
-                <dd>星出 豊  (藤原歌劇団・日本オペラ協会)</dd>
+          $to = "tohokuunivorchhomepage@gmail.com";
+          $subject = "お問い合わせメール:" . $_POST['subject'];
+          $message = "お名前：".$_POST['name']."\n"
+          ."メールアドレス:".$_POST['mail']."\n"
+          ."用件:".$_POST['subject']."\n\n"
+          ."===メール本文＝＝＝\n".$_POST['contents'];
+          $body = mb_convert_encoding($message,'ISO-2022-JP', "auto");
+          $header = "MIME-Version: 1.0\r\n"
+          . "Content-Transfer-Encoding: 7bit\r\n"
+          . "Content-Type: text/plain; charset=ISO-2022-JP\r\n"
+          . "Message-Id: <" . md5(uniqid(microtime())) . "@tohokuuniv-orch.com>\r\n"
+          . "From:".mb_encode_mimeheader($_POST["name"])."<mail-form@tohokuuniv-orch.com>\r\n"
+          . "Reply-To:".$_POST["mail"]."\r\n";
 
-                <dt>ソリスト</dt>
-
-                <dd>
-                  バリトン  牧野正人(藤原歌劇団オペラ歌手)
-                </dd>
-
-                <dt>日時</dt>
-
-                <dd>2016/7/16（土)　開場18:00　開演18:30</dd>
-
-                <dt>曲目</dt>
-
-                <dd>
-                  <table class="table table-bordered table-striped" summary="musiclist">
-                    <tbody>
-                      <tr>
-                        <td>オペラ「道化師」より</td>
-                        <td>前奏曲とプロローグ<br>間奏曲</td>
-                        <td style="border-bottom:0px;">レオンカヴァッロ<p>R.Leoncavallo</p></td>
-                      </tr>
-
-                      <tr>
-                        <td>歌劇「椿姫」より</td>
-                        <td>プロヴァンスの海と陸</td>
-                        <td style="border-bottom:0px;"></td>
-                      </tr>
-                      <tr>
-                        <td>歌劇「仮面舞踏会」より</td>
-                        <td>お前こそ心を汚すもの</td>
-                        <td style="border-top:0px;border-bottom:0px;">ヴェルディ<p>G.Verdi</p></td>
-                      </tr>
-
-                      <tr>
-                        <td>交響曲第6番ロ短調　作品74</td>
-
-                        <td>チャイコフスキー<p>P.I.Tchaikovsky</p></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </dd>
-
-                <dt>会場</dt>
-
-                <dd>
-                  東北大学百周年記念会館　川内萩ホール<br>
-                  会場へのアクセスは<a href="http://www.bureau.tohoku.ac.jp/hagihall/access/index.html">こちら</a>
-                </dd>
-
-                <dt>入場料</dt>
-
-                <dd>自由席　1,000円　　指定席　1,500円</dd>
-
-                <!-- <dt>プレイガイド　（販売中）</dt>
-
-                <dd>
-                  (株)ヤマハミュージックリテイリング仙台店、東北大学生協川内店、藤崎、(株)仙台三越、
-                  カワイミュージックショップ仙台、東京エレクトロンホール宮城(宮城県民会館)
-                </dd> -->
-
-                <dt>お問い合わせ</dt>
-
-                <dd>
-                  実行委員長　小長井<br>
-                  <a href="mailto:tuso.165@gmail.com">tuso.165@gmail.com</a>
-                </dd>
-              </dl>
-            </div>
-          </div>
+          ini_set("sendmail_from", $from);
+          if(!mb_send_mail($to,$subject,$body,$header, "-f ".$_POST["mail"])){
+            echo "Error....記入された内容をご確認の上、もう一度送信してください。";
+          }else{
+            echo "正常に送信されました。迅速に対応いたしますので、今しばらくお待ちください。";
+          }
+          ?>
         </article>
       </section>
     </section><!-- / コンテンツ -->
@@ -253,8 +204,8 @@
     </div>
   </div><!-- / フッター -->
   <script src="js/jquery-1.11.2.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/script.js"></script> 
   <script src="js/jquery.cookie.js"></script>
 </body>
 </html>
