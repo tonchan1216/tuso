@@ -2,10 +2,10 @@
 deny from all
 </Files>
 Options -Indexes
-AuthUserFile /home/sites/www.tohokuuniv-orch.com/web/pwmgr/.htpasswd2
+AuthUserFile /home/sites/www.tohokuuniv-orch.com/web/pwmgr/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Please enter your ID and password"
 AuthType Basic
-require valid-user 
-DirectoryIndex member.html       
+require valid-user
+DirectoryIndex member.html
 order deny,allow

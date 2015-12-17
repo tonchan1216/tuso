@@ -1,7 +1,11 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
 AuthUserFile /home/sites/www.tohokuuniv-orch.com/web/pwmgr/.htpasswd
 AuthGroupFile /dev/null
-AuthName "MEMBER SITE"
+AuthName "Please enter your ID and password"
 AuthType Basic
-<Limit POST GET>
 require valid-user
-</Limit>
+DirectoryIndex member.html
+order deny,allow
