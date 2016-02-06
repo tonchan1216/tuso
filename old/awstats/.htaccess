@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName AwStats
+AuthExternal pwauth
+GroupExternal unixgroup
+require group site121

@@ -1,0 +1,4 @@
+Options Includes 
+AddHandler server-parsed .html
+AddHandler cgi-script .cgi
+Options +ExecCGI

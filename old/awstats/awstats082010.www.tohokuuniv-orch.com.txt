@@ -1,0 +1,488 @@
+AWSTATS DATA FILE 6.4 (build 1.814)
+# If you remove this file, all statistics for date 2010-08 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1865                
+POS_TIME 2542                
+POS_VISITOR 12722               
+POS_DAY 16794               
+POS_DOMAIN 3307                
+POS_LOGIN 3539                
+POS_ROBOT 3694                
+POS_WORMS 4128                
+POS_EMAILSENDER 4259                
+POS_EMAILRECEIVER 4402                
+POS_SESSION 16936               
+POS_SIDER 17143               
+POS_FILETYPES 4537                
+POS_OS 4680                
+POS_BROWSER 4791                
+POS_SCREENSIZE 5024                
+POS_UNKNOWNREFERER 5098                
+POS_UNKNOWNREFERERBROWSER 5917                
+POS_ORIGIN 6129                
+POS_SEREFERRALS 6272                
+POS_PAGEREFS 6452                
+POS_SEARCHWORDS 7037                
+POS_KEYWORDS 9496                
+POS_MISC 2206                
+POS_ERRORS 11829               
+POS_CLUSTER 3395                
+POS_SIDER_404 11954               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20100913123603 2600 717503 46587063164
+FirstTime 20100829012918
+LastTime 20100831235056
+LastUpdate 20100914103915 1 0 0 0 0
+TotalVisits 149                 
+TotalUnique 95                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 100                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 27 60 932271 11 15 20320
+1 51 80 744855 22 22 40278
+2 1 1 3730 14 14 30793
+3 20 58 930103 14 19 41479
+4 1 1 3730 12 16 349634
+5 0 0 0 15 24 64855
+6 2 2 7460 7 7 16090
+7 3 3 7460 8 8 24720
+8 3 3 7460 15 19 43655
+9 2 7 89691 14 19 43252
+10 12 87 1504503 12 12 38503
+11 44 157 2937645 11 13 27280
+12 38 159 2440784 11 19 51422
+13 5 23 444369 10 12 23498
+14 8 50 862777 9 11 23550
+15 3 20 428041 9 12 38129
+16 6 8 22650 13 17 46972
+17 10 43 485889 15 21 32710
+18 53 161 3431145 14 16 38062
+19 23 158 3023616 12 17 39446
+20 62 329 2891009 10 10 27373
+21 34 313 4212746 9 10 26302
+22 23 102 1643255 13 18 37909
+23 33 245 3276182 14 20 130460
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 464 2070 30331371
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 9
+baiduspider 136 496664 20100831231926 0
+slurp 69 74399 20100831233410 0
+bspider 44 119339 20100831231416 0
+msnbot 17 318844 20100831230844 0
+googlebot 5 3069 20100831225258 0
+spider 3 9707 20100831205130 0
+robot 3 11190 20100831193753 0
+speedy 2 7831 20100830165323 0
+surveybot 1 3730 20100831083959 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+css 217 358353 0 0
+png 1223 27773161 0 0
+html 464 1948662 0 0
+js 162 247711 0 0
+gif 4 3484 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 7
+macosx 35
+winxp 1167
+winlong 459
+winnt 360
+win2000 4
+Unknown 44
+linux 1
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 15
+msie8.0 820
+msie6.0 652
+mozilla 6
+firefox2.0.0.8 22
+msie7.0 260
+libwww 2
+opera 16
+firefox3.6.6 17
+netscape4.0 4
+firefox3.6.3 15
+wget 1
+Unknown 20
+firefox3.6.8 188
+safari 45
+docomo 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 10
+Mozilla/5.0_(en-us)_AppleWebKit/525.13_(KHTML,_like_Gecko;_Google_Wireless_Transcoder)_Version/3.1_Safari/525.13 20100829115126
+Linguee_Bot_(http://www.linguee.com/bot;_bot@linguee.com) 20100829012932
+DoCoMo/2.0_P02B(c500;TB;W30H20) 20100831095010
+Mozilla/4.0 20100831232921
+- 20100831232916
+libwww-perl/5.805 20100831062532
+Mozilla/5.0_(compatible;_DiffBrowser/0.92;_Windows) 20100831143825
+Mozilla/4.0_(jig_browser_web;_1.0.4;_P02B) 20100831095010
+Mozilla/5.0_(en-us)_AppleWebKit/525.13_(KHTML,_like_Gecko;_Google_Wireless_Transcoder)_Version/3.1_Safari/525.13,Mozilla/5.0_(en-us)_AppleWebKit/525.13_(KHTML,_like_Gecko;_Google_Wireless_Transcoder)_Version/3.1_Safari/525.13 20100829232832
+Website_Explorer/0.9.9.9 20100831234948
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 3
+- 20100831232916
+Linguee_Bot_(http://www.linguee.com/bot;_bot@linguee.com) 20100829012932
+Website_Explorer/0.9.9.9 20100831234948
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 186 222
+From1 0 0
+From2 49 51
+From3 17 17
+From4 212 1780
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 3
+google 28 28
+search 1 1
+yahoo 20 22
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 8
+http://www.tohoku.ac.jp/japanese/studentinfo/studentlife/02/studentlife0203/ 6 6
+http://wikiwiki.jp/tonpei/ 2 2
+http://circle.cc.hokudai.ac.jp/orchestra/links.html 2 2
+http://orchestre-de-sendai.jp/second/links.html 2 2
+http://www.tohoku.ac.jp/japanese/studentinfo/studentlife/02/studentlife0203/#anc03 2 2
+http://www.ne.jp/asahi/jurassic/page/link_s.htm 1 1
+http://datekan.web.fc2.com/link.html 1 1
+http://mixi.jp/view_community.pl 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 30
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 14
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd 3
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd 3
+%e6%9d%b1%e5%8c%97%e5%a4%a7+%e4%ba%a4%e9%9f%bf%e6%a5%bd 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%80%80%e7%ae%a1%e5%bc%a6%e6%a5%bd%e5%9b%a3 2
+%e9%9d%99%e5%b2%a1%e5%a4%a7%e5%ad%a6%e7%ae%a1%e5%bc%a6%e6%a5%bd%e5%9b%a3%ef%bc%af%ef%bc%a2 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e5%ad%a6%e5%8f%8b%e4%bc%9a%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e3%80%80%e3%82%aa%e3%83%bc%e3%82%b1%e3%82%b9%e3%83%88%e3%83%a9 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3%e3%80%80155%e5%9b%9e 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6+%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e3%82%b8%e3%83%a7%e3%82%bb%e3%83%95%e3%83%bb%e3%82%b7%e3%83%ab%e3%83%90%e3%83%bc%e3%82%b9%e3%82%bf%e3%82%a4%e3%83%b3 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6+%e3%82%aa%e3%83%bc%e3%82%b1%e3%82%b9%e3%83%88%e3%83%a9 1
+%e7%9f%b3%e5%b7%9d%e5%96%84%e7%be%8e 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3%e3%80%80%e6%bc%94%e5%a5%8f%e6%97%85%e8%a1%8c 1
+%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3%e3%80%80%e5%a4%a7%e5%ad%a6 1
+%e3%82%aa%e3%83%bc%e3%82%b1%e3%82%b9%e3%83%88%e3%83%a9%e3%80%80%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%80%80%e3%82%aa%e3%83%bc%e3%82%b1%e3%82%b9%e3%83%88%e3%83%a9 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+utf8 1
+%e9%88%b4%e6%9c%a8%e6%b8%85%e4%b8%89%e3%80%80%e7%86%8a%e7%94%b0 1
+%e5%a4%a7%e5%ad%a6%e3%80%80%e3%82%aa%e3%82%b1 1
+%e3%80%80%e3%83%ad%e3%83%bc%e3%83%9e%e3%83%b3%e3%83%bb%e3%82%b3%e3%83%95%e3%83%9e%e3%83%b3 1
+%e8%8f%8a%e5%9c%b0%e4%bf%8a%e4%b8%80%e3%80%80%e3%83%81%e3%82%a7%e3%83%ad 1
+%e7%86%8a%e7%94%b0%e7%82%ba%e5%ae%8f%e3%80%80%e6%9d%b1%e5%8c%97 1
+%e4%ba%a4%e9%9f%bf%e6%a5%bd%e3%80%80%e5%a4%a7%e5%ad%a6 1
+%e3%82%b3%e3%83%95%e3%83%9e%e3%83%b3%e3%80%80%e3%83%ad%e3%83%bc%e3%83%9e%e3%83%b3 1
+%e7%a6%8f%e5%b1%b1%e4%bf%8a%e4%bb%8b 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd%e3%80%80%e6%b5%a6%e5%b4%8e 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 32
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 14
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd 3
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd 3
+%e6%9d%b1%e5%8c%97%e5%a4%a7 2
+%e4%ba%a4%e9%9f%bf%e6%a5%bd 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%80%80%e7%ae%a1%e5%bc%a6%e6%a5%bd%e5%9b%a3 2
+%e9%9d%99%e5%b2%a1%e5%a4%a7%e5%ad%a6%e7%ae%a1%e5%bc%a6%e6%a5%bd%e5%9b%a3%ef%bc%af%ef%bc%a2 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e3%80%80%e3%82%aa%e3%83%bc%e3%82%b1%e3%82%b9%e3%83%88%e3%83%a9 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3%e3%80%80%e6%bc%94%e5%a5%8f%e6%97%85%e8%a1%8c 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%80%80%e3%82%aa%e3%83%bc%e3%82%b1%e3%82%b9%e3%83%88%e3%83%a9 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e9%88%b4%e6%9c%a8%e6%b8%85%e4%b8%89%e3%80%80%e7%86%8a%e7%94%b0 1
+%e3%80%80%e3%83%ad%e3%83%bc%e3%83%9e%e3%83%b3%e3%83%bb%e3%82%b3%e3%83%95%e3%83%9e%e3%83%b3 1
+%e8%8f%8a%e5%9c%b0%e4%bf%8a%e4%b8%80%e3%80%80%e3%83%81%e3%82%a7%e3%83%ad 1
+%e3%82%b3%e3%83%95%e3%83%9e%e3%83%b3%e3%80%80%e3%83%ad%e3%83%bc%e3%83%9e%e3%83%b3 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e5%ad%a6%e5%8f%8b%e4%bc%9a%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3%e3%80%80155%e5%9b%9e 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e3%82%b8%e3%83%a7%e3%82%bb%e3%83%95%e3%83%bb%e3%82%b7%e3%83%ab%e3%83%90%e3%83%bc%e3%82%b9%e3%82%bf%e3%82%a4%e3%83%b3 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf 1
+%e7%9f%b3%e5%b7%9d%e5%96%84%e7%be%8e 1
+%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3%e3%80%80%e5%a4%a7%e5%ad%a6 1
+%e3%82%aa%e3%83%bc%e3%82%b1%e3%82%b9%e3%83%88%e3%83%a9%e3%80%80%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6 1
+%e3%82%aa%e3%83%bc%e3%82%b1%e3%82%b9%e3%83%88%e3%83%a9 1
+utf8 1
+%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e5%a4%a7%e5%ad%a6%e3%80%80%e3%82%aa%e3%82%b1 1
+%e7%86%8a%e7%94%b0%e7%82%ba%e5%ae%8f%e3%80%80%e6%9d%b1%e5%8c%97 1
+%e4%ba%a4%e9%9f%bf%e6%a5%bd%e3%80%80%e5%a4%a7%e5%ad%a6 1
+%e7%a6%8f%e5%b1%b1%e4%bf%8a%e4%bb%8b 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e3%80%80%e4%ba%a4%e9%9f%bf%e6%a5%bd%e3%80%80%e6%b5%a6%e5%b4%8e 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+401 5 6795
+302 11 2481
+206 12 128933
+404 63 73710
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 8
+/www.tohokuuniv-orch.com/robots.txt 55 -
+/www.tohokuuniv-orch.com/javascript/joinus.html 1 -
+/www.tohokuuniv-orch.com/javascript/profile.html 1 -
+/www.tohokuuniv-orch.com/javascript/clipmail/clipmail.html 1 -
+/www.tohokuuniv-orch.com/javascript/links.html 1 -
+/www.tohokuuniv-orch.com/javascript/javascript/docwrite.js 2 http://tohokuuniv-orch.com/
+/www.tohokuuniv-orch.com/javascript/pastconcert.html 1 -
+/www.tohokuuniv-orch.com/javascript/concert.html 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 100
+150.70.64.203 33 39 134363 20100831221946
+150.70.75.165 32 39 225923 20100831223824
+173.193.219.168 32 34 126646 20100831010109
+111.216.99.154 25 51 1361355 20100829184350
+121.229.100.46 15 222 477666 20100830200700
+111.234.156.77 14 65 1324133 20100830223510
+219.121.118.150 13 32 500335 20100829120001
+216.104.15.130 12 19 91075 20100831202616
+175.105.82.76 12 31 494503 20100831200437
+61.208.123.18 11 30 878925 20100830004242
+119.171.65.19 1 15 415898 20100829205758
+118.6.24.251 2 17 423547 20100831222907
+119.105.249.122 2 17 423547 20100830211337
+119.147.7.231 2 3 9707 20100831232905
+121.229.115.222 4 45 7497 20100830211459
+222.144.77.35 4 34 337643 20100830212227
+123.217.77.45 6 90 455074 20100829214318
+122.1.33.86 3 18 423185 20100831184047
+85.25.124.132 10 10 29974 20100829012932
+110.1.170.161 1 15 415898 20100829234400
+114.161.211.155 3 19 432165 20100830212818
+216.104.15.134 5 7 38833 20100831202609
+130.34.95.16 2 17 424093 20100831195023
+125.52.218.218 2 17 424516 20100831225725
+119.147.21.44 1 1 3730 20100831232823
+222.159.174.94 1 15 412168 20100831200251
+130.34.135.151 1 4 0 20100831114832
+123.198.14.202 1 15 415898 20100831214318
+133.11.104.70 6 24 448169 20100831121203
+121.229.114.214 8 121 444504 20100831233223
+124.146.175.178 0 2 30722 
+124.115.1.8 1 3 8602 20100829211830
+164.71.1.220 0 7 117357 
+150.70.66.183 8 11 34117 20100830122901
+72.14.212.87 0 1 2697 
+113.108.91.95 1 1 3730 20100831232916
+180.16.85.197 1 15 415898 20100831184741
+220.100.251.118 2 17 426057 20100830144423
+113.108.64.100 1 1 3730 20100831232921
+115.176.63.65 1 15 415898 20100829214245
+58.89.197.223 2 30 831796 20100829232429
+208.80.194.32 1 1 3730 20100831080105
+61.208.122.193 2 18 520732 20100831202319
+59.157.212.94 2 17 423547 20100829212113
+60.39.172.36 2 17 424093 20100830191035
+138.101.114.43 4 21 436720 20100830142913
+210.230.114.253 1 15 415898 20100831235056
+118.236.59.13 7 26 455074 20100830110733
+122.26.83.36 1 14 148061 20100830121850
+210.89.108.99 2 28 214939 20100831105009
+60.37.145.181 3 19 434252 20100831211138
+210.227.195.28 6 25 450900 20100831130309
+114.186.98.183 4 20 430771 20100829211335
+61.213.94.244 2 16 419628 20100831070822
+208.80.194.28 1 1 3730 20100829171547
+122.212.179.10 2 22 311746 20100831144410
+210.236.102.156 3 19 434252 20100831121319
+216.104.15.142 4 5 34099 20100831174206
+203.216.245.12 2 2 7460 20100831062532
+124.110.96.143 2 17 423547 20100830115330
+133.8.122.198 8 42 458742 20100829123826
+219.104.212.215 7 26 457886 20100829202918
+72.14.192.1 1 8 656304 20100829115126
+125.54.182.114 7 27 466496 20100829122056
+130.34.254.28 2 17 423547 20100831132128
+218.40.210.174 1 14 148061 20100831013214
+130.34.226.199 3 17 170656 20100831191750
+61.193.251.204 2 2 7460 20100831110608
+118.15.248.135 2 16 6462 20100830002212
+125.175.82.57 1 1 3730 20100831234948
+114.129.4.6 5 22 348981 20100831180222
+113.159.231.234 10 29 468794 20100831120058
+121.105.14.179 3 19 434252 20100830190725
+124.115.1.7 1 3 8602 20100830162113
+192.51.44.16 1 1 3730 20100829090944
+61.193.128.165 6 22 175404 20100830220814
+124.83.159.222 1 4 55239 20100831095009
+121.14.95.213 1 4 10849 20100831233539
+130.34.15.128 6 6 0 20100831143825
+58.0.128.84 1 15 415898 20100829192608
+61.44.82.112 1 15 415898 20100831013410
+164.71.1.222 0 3 11343 
+58.188.69.97 1 15 415898 20100829195659
+175.104.211.214 6 24 450204 20100831221257
+219.112.3.129 3 18 428158 20100830232320
+38.127.227.137 1 1 3730 20100831012704
+118.20.13.122 5 22 446345 20100830203635
+216.104.15.138 9 11 32097 20100831222554
+121.92.30.8 1 1 3730 20100829044642
+123.222.133.84 1 15 415898 20100829104910
+113.240.234.10 5 24 356037 20100831233041
+125.30.18.95 7 26 333489 20100830171849
+122.145.55.10 3 19 434252 20100829111650
+72.14.212.85 0 1 47635 
+203.223.56.121 9 28 468763 20100830194831
+218.183.128.30 1 15 321216 20100830180608
+210.153.199.36 5 22 445764 20100831104614
+164.71.1.146 1 10 116461 20100831105213
+219.122.96.44 2 17 423547 20100829154151
+121.114.116.41 2 16 155060 20100830224653
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 3
+20100829 145 593 10747779 41
+20100830 139 742 8654731 44
+20100831 180 735 10928861 64
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 2
+5mn-15mn 9
+0s-30s 98
+15mn-30mn 5
+30s-2mn 20
+2mn-5mn 7
+30mn-1h 8
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 32
+/www.tohokuuniv-orch.com/ 140 469980 107 66
+/www.tohokuuniv-orch.com/concert.html 37 101084 3 11
+/www.tohokuuniv-orch.com/joinus.html 36 197505 1 13
+/www.tohokuuniv-orch.com/concerts/154th.html 30 97980 4 8
+/www.tohokuuniv-orch.com/profile.html 28 110376 1 4
+/www.tohokuuniv-orch.com/clipmail/clipmail.html 25 69344 2 6
+/www.tohokuuniv-orch.com/pastconcert.html 25 92256 0 3
+/www.tohokuuniv-orch.com/concerts/regconcertlist.html 17 373082 10 11
+/www.tohokuuniv-orch.com/links.html 16 106530 3 10
+/www.tohokuuniv-orch.com/concerts/153rd.html 11 35794 0 0
+/www.tohokuuniv-orch.com/concerts/2003joint.html 2 6048 0 0
+/www.tohokuuniv-orch.com/concerts/143rd.html 2 5706 0 0
+/www.tohokuuniv-orch.com/concerts/152nd.html 10 38520 4 2
+/www.tohokuuniv-orch.com/sitemap.html 3 5538 0 1
+/www.tohokuuniv-orch.com/entrance.html 6 12606 1 2
+/www.tohokuuniv-orch.com/idemnity.html 2 5812 0 0
+/www.tohokuuniv-orch.com/concerts/147th.html 2 5122 0 0
+/www.tohokuuniv-orch.com/concerts/151st.html 9 24651 2 3
+/www.tohokuuniv-orch.com/concerts/141st.html 2 5674 0 0
+/www.tohokuuniv-orch.com/concerts/140th.html 9 28845 1 1
+/www.tohokuuniv-orch.com/concerts/149th.html 4 10612 0 0
+/www.tohokuuniv-orch.com/concerts/148th.html 5 14425 0 2
+/www.tohokuuniv-orch.com/concerts/145th.html 2 5490 0 0
+/www.tohokuuniv-orch.com/concerts/144th.html 3 8343 1 0
+/www.tohokuuniv-orch.com/concerts/142nd.html 2 5502 0 0
+/www.tohokuuniv-orch.com/concerts/2008joint.html 7 18756 5 3
+/www.tohokuuniv-orch.com/concerts/centennial.html 5 15705 1 0
+/www.tohokuuniv-orch.com/concerts/150th.html 10 39080 3 1
+/www.tohokuuniv-orch.com/concerts/146th.html 2 5602 0 0
+/www.tohokuuniv-orch.com/concerts/2006tochigi.html 5 15450 0 2
+/www.tohokuuniv-orch.com/concerts/139th.html 3 9207 0 0
+/www.tohokuuniv-orch.com/privacypolicy.html 4 8037 0 0
+END_SIDER

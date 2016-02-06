@@ -1,0 +1,641 @@
+AWSTATS DATA FILE 6.4 (build 1.814)
+# If you remove this file, all statistics for date 2016-02 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1865                
+POS_TIME 2549                
+POS_VISITOR 12738               
+POS_DAY 19616               
+POS_DOMAIN 3370                
+POS_LOGIN 3603                
+POS_ROBOT 3791                
+POS_WORMS 4154                
+POS_EMAILSENDER 4285                
+POS_EMAILRECEIVER 4428                
+POS_SESSION 19839               
+POS_SIDER 20048               
+POS_FILETYPES 4563                
+POS_OS 4891                
+POS_BROWSER 4994                
+POS_SCREENSIZE 5169                
+POS_UNKNOWNREFERER 5243                
+POS_UNKNOWNREFERERBROWSER 6522                
+POS_ORIGIN 7226                
+POS_SEREFERRALS 7369                
+POS_PAGEREFS 7549                
+POS_SEARCHWORDS 8354                
+POS_KEYWORDS 9443                
+POS_MISC 2213                
+POS_ERRORS 10265               
+POS_CLUSTER 3459                
+POS_SIDER_404 10395               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20160206022215 75024 17605620 40696803239
+FirstTime 20160201001801
+LastTime 20160206013057
+LastUpdate 20160206113540 360 0 360 0 0
+TotalVisits 195                 
+TotalUnique 160                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 170                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 40 196 27044645 23 25 49859
+1 14 30 2047884 23 25 207435
+2 24 24 229064 28 28 81527
+3 9 40 2903695 15 15 42380
+4 12 24 1948202 16 16 47613
+5 22 65 14448259 19 21 158019
+6 4 4 37749 18 18 17175
+7 6 35 1823387 15 15 22689
+8 6 6 96619 21 21 51909
+9 18 84 14230567 15 15 21000
+10 15 22 594216 12 13 385749
+11 23 110 10475905 18 18 24467
+12 5 8 174062 9 9 43170
+13 38 65 3104450 30 30 86232
+14 28 160 29375943 19 19 37478
+15 10 50 3679023 16 17 42454
+16 20 101 17570980 23 24 58579
+17 81 234 35841430 23 27 49738
+18 36 190 15489219 17 17 33739
+19 19 92 9271185 22 27 50098
+20 14 75 15587004 25 28 77620
+21 61 214 26291706 19 20 44302
+22 47 277 61215400 15 17 392948
+23 22 119 10863754 28 28 76913
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 574 2225 304344348
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 1
+tuso 15 15 841394 20160204220139
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+googlebot 37 575055 20160206011704 0
+baiduspider 23 170935 20160205194855 0
+slurp 12 61095 20160206022215 0
+spider 9 72427 20160206000944 0
+robot 5 35603 20160204214249 0
+yandex 3 357954 20160203233908 0
+crawl 1 0 20160206005841 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 15
+eot 21 362286 0 0
+css 188 11216663 0 0
+png 207 4601502 0 0
+ttf 9 408636 0 0
+pdf 3 651349 0 0
+xlsx 2 29582 0 0
+woff2 37 630980 0 0
+woff 24 538752 0 0
+php 4 24210 0 0
+html 468 4794361 0 0
+docx 4 79037 0 0
+js 382 11577097 0 0
+jpg 863 269157206 0 0
+gif 11 55211 0 0
+svg 2 217476 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 6
+macosx 544
+winxp 55
+winlong 42
+winnt 1104
+Unknown 247
+linux 233
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 10
+msie6.0 25
+msie8.0 13
+mozilla 568
+netscape5.0 1
+firefox44.0 114
+firefox23.0 1
+libwww 5
+firefox6.0 2
+Unknown 120
+safari 1376
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 21
+Stratagems_Kumo 20160204005653
+Mozilla/5.0_(compatible;_meanpathbot/1.0;__http://www.meanpath.com/meanpathbot.html) 20160202204252
+Mozilla/5.0_(compatible;_DotBot/1.1;_http://www.opensiteexplorer.org/dotbot,_help@moz.com) 20160205104516
+Ruby,_link_thumbnailer 20160203171132
+Ruby 20160203171140
+Twitterbot/1.0 20160205210815
+Mechanize/2.7.2_Ruby/2.1.2p95_(http://github.com/sparklemotion/mechanize/) 20160203171142
+- 20160205194300
+Mechanize/2.7.3_Ruby/2.2.3p173_(http://github.com/sparklemotion/mechanize/) 20160203171145
+Mozilla/5.0_(compatible;_bingbot/2.0;__http://www.bing.com/bingbot.htm) 20160206013057
+libwww-perl/6.08 20160205055050
+WebKit 20160203171130
+facebookexternalhit/1.1;kakaotalk-scrap/1.0; 20160201104449
+Mozilla/5.0_(compatible;_SemrushBot/1~bl;__http://www.semrush.com/bot.html) 20160204024620
+Grasshopper 20160206002800
+Mozilla/5.0 20160202123846
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20160204231224
+Chilkat/1.0.0_(_http://www.chilkatsoft.com/ChilkatHttpUA.asp) 20160205115522
+libwww-perl/6.06 20160204163155
+Java/1.6.0_04 20160202170603
+Mozilla/5.0_(compatible;_MJ12bot/v1.4.5;_http://www.majestic12.co.uk/bot.php?_) 20160205221738
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 13
+Stratagems_Kumo 20160204005653
+WebKit 20160203171130
+facebookexternalhit/1.1;kakaotalk-scrap/1.0; 20160201104449
+Ruby,_link_thumbnailer 20160203171132
+Ruby 20160203171140
+Grasshopper 20160206002800
+Twitterbot/1.0 20160205210815
+Mechanize/2.7.2_Ruby/2.1.2p95_(http://github.com/sparklemotion/mechanize/) 20160203171142
+- 20160205194300
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20160204231224
+Mechanize/2.7.3_Ruby/2.2.3p173_(http://github.com/sparklemotion/mechanize/) 20160203171145
+Chilkat/1.0.0_(_http://www.chilkatsoft.com/ChilkatHttpUA.asp) 20160205115522
+Java/1.6.0_04 20160202170603
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 271 343
+From1 0 0
+From2 62 82
+From3 18 18
+From4 223 1782
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 3
+google 43 63
+search 1 1
+yahoo 18 18
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 13
+http://www.tohoku.ac.jp/japanese/studentinfo/studentlife/02/studentlife0203/ 3 3
+http://matome.naver.jp/odai/2009041716321739559 2 2
+http://matome.naver.jp/m/odai/2009041716321739559 2 2
+http://burger-imperia.com 2 2
+http://www.ne.jp/asahi/jurassic/page/link_s.htm 1 1
+http://www.media-sup-port.com/orchestra/sympho_stu.html 1 1
+http://pizza-tycoon.com 1 1
+http://www.geocities.jp/h_akitaya/live/20040626tohoku.html 1 1
+http://wikiwiki.jp/tonpei/ 1 1
+http://rbot.info/link/grityremeromodi 1 1
+http://rbot.info/link/grityremeromoly 1 1
+http://we-love-classic.com/gakki/amaoke/a-o-miyagi.html 1 1
+http://tuhan-shop.net/classic/a-oke/er-a-oke-miyagi.html 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 13
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6 4
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6+%e4%ba%a4%e6%a5%bd%e5%9b%a3 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%82%aa%e3%82%b1 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3%e3%80%80%e5%ae%9a%e6%9c%9f%e6%bc%94%e5%a5%8f%e4%bc%9a 1
+%e4%ba%a4%e9%9f%bf%e6%9b%b2+%e5%a4%a7%e5%ad%a6%e3%82%aa%e3%82%b1 1
+%e4%bd%90%e8%97%a4%e3%81%b2%e3%81%95%e3%82%89 1
+%e8%a5%bf%e3%81%88%e3%82%8a%e3%81%8b%e3%80%80%e3%83%94%e3%82%a2%e3%83%8e 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6+%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e5%9c%b0%e5%9f%9f%e3%81%ab%e6%a0%b9%e3%81%96%e3%81%97%e3%81%9f%e6%b4%bb%e5%8b%95+%e6%bc%94%e5%a5%8f 1
+%e5%a4%a7%e5%ad%a6%e3%82%aa%e3%82%b1+%e4%ba%a4%e9%9f%bf%e6%9b%b2 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6+%e4%ba%a4%e9%9f%bf%e6%a5%bd 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 14
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6 8
+%e5%a4%a7%e5%ad%a6%e3%82%aa%e3%82%b1 2
+%e4%ba%a4%e9%9f%bf%e6%9b%b2 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 2
+%e4%ba%a4%e6%a5%bd%e5%9b%a3 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e3%82%aa%e3%82%b1 2
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3%e3%80%80%e5%ae%9a%e6%9c%9f%e6%bc%94%e5%a5%8f%e4%bc%9a 1
+%e6%bc%94%e5%a5%8f 1
+%e4%bd%90%e8%97%a4%e3%81%b2%e3%81%95%e3%82%89 1
+%e8%a5%bf%e3%81%88%e3%82%8a%e3%81%8b%e3%80%80%e3%83%94%e3%82%a2%e3%83%8e 1
+%e5%9c%b0%e5%9f%9f%e3%81%ab%e6%a0%b9%e3%81%96%e3%81%97%e3%81%9f%e6%b4%bb%e5%8b%95 1
+%e4%ba%a4%e9%9f%bf%e6%a5%bd 1
+%e4%ba%a4%e9%9f%bf%e6%a5%bd%e5%9b%a3 1
+%e6%9d%b1%e5%8c%97%e5%a4%a7%e5%ad%a6%e4%ba%a4%e9%9f%bf%e6%a5%bd 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+401 27 36693
+302 93 28490
+206 25 462981
+404 258 301860
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 67
+/index2.htm 2 -
+/js/).length,k.html5Clone= 1 -
+/robots.txt 112 -
+/js/],_default:k.htmlSerialize 1 -
+/print.css 1 -
+/site/concert/143.htm 1 -
+/js/).children().detach().end()[this.options.html 1 -
+/concerts/2006tochigi.html 1 http://www.tohokuuniv-orch.com/concerts/2006tochigi.html
+/concerts/centennial.html 2 -
+/concerts/2013_joint.html 1 -
+/js/'+b+' 1 -
+/browserconfig.xml 11 -
+/sinkan.html 3 -
+/concerts/161th.html 1 -
+/concerts/160th.html 4 -
+/past/js/css3-mediaqueries.js 1 -
+/profile.html 6 -
+/entrance.html 9 -
+/concerts/159th.html 1 http://www.tohokuuniv-orch.com/concerts/159th.html
+/concerts/154th.html 5 -
+/concerts/152nd.html 1 -
+/images/poster/145.png 1 -
+/javascript/docwrite.js 1 -
+/links.html 6 -
+/concert/145rct.html 1 -
+/past/js/html5.js 1 -
+/concerts/146th.html 2 -
+/js/).length,k.htmlSerialize=!!b.getElementsByTagName( 1 -
+/concerts/2003joint.html 1 -
+/wp-config.old 2 -
+/js/===c 1 -
+/joinus.html 3 -
+/wp-login.php 2 -
+/js/).html()||a.find( 1 -
+/concerts/157th.html 4 -
+/js/===c)&&(b.defaultValue=a.defaultValue)}}m.extend({clone:function(a,b,c){var 1 -
+/apple-touch-icon.png 2 -
+/concerts/164th.html 1 -
+/concerts/2008joint.html 3 -
+/concerts/150th.html 4 -
+/images/poster/xxxxx.jpg 1 http://www.tohokuuniv-orch.com/past/special/2013joint.html
+/concerts/139th.html 1 -
+/images/165poster.jpg 2 -
+/concerts/155th.html 2 http://www.tohokuuniv-orch.com/concerts/155th.html
+/concerts/H22PTA.html 5 -
+/concerts/149th.html 1 -
+/concerts/153rd.html 1 -
+/base.css 2 -
+/js/)[this.options.html 1 -
+/concerts/regconcertlist.html 4 -
+/concerts/143rd.html 3 -
+/concerts/161st.html 3 -
+/apple-touch-icon-precomposed.png 2 -
+/concerts/147th.html 2 -
+/javascript/docwritepostmail.js 1 -
+/concerts/142nd.html 5 -
+/https://twitter.com/UnivTohoku_orch 1 -
+/concerts/162nd.html 3 -
+/administrator/index.php 3 -
+/concerts/144th.html 1 -
+/concerts/148th.html 1 -
+/js/,data:b}).done(function(a){e=arguments,g.html(d 1 -
+/concerts/idemnity.html 1 -
+/js/!=typeof 1 -
+/wp-config.bak 2 -
+/images/poster/143.png 1 -
+/concerts/145th.html 3 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 170
+86.123.247.64 48 63 1382483 20160202170541
+133.130.54.151 30 30 279359 20160205211908
+46.33.250.108 25 25 268305 20160202133707
+61.44.108.211 15 85 18440451 20160204220139
+130.34.157.13 13 45 10476164 20160202205740
+180.3.12.43 10 58 14421637 20160204234126
+182.249.246.138 9 53 13132541 20160204174715
+110.161.143.243 9 52 14311008 20160202053712
+123.219.220.180 9 42 12431979 20160202164314
+157.55.39.136 9 9 111770 20160201085130
+175.135.181.195 4 19 1671036 20160204112510
+40.77.167.30 0 1 14050 
+49.98.146.24 3 34 12044100 20160205222116
+192.243.55.135 6 6 73485 20160204023913
+182.250.250.2 3 19 2000814 20160203195615
+157.55.39.241 0 4 436336 
+192.243.55.132 2 2 16107 20160204024620
+114.164.79.24 3 18 1654919 20160205103732
+133.127.254.203 3 18 1653276 20160202182208
+45.55.134.11 1 5 147209 20160201075815
+119.171.60.44 3 18 253060 20160203141726
+150.70.173.10 0 1 95931 
+191.232.136.143 6 7 59116 20160201100619
+130.34.46.49 2 11 649517 20160202035708
+126.72.143.14 3 19 1997517 20160204211242
+182.251.240.36 4 19 1662128 20160203222248
+183.77.206.199 2 17 1646067 20160205213849
+40.77.167.98 3 7 688835 20160203053147
+126.115.6.162 6 22 2020317 20160205122635
+80.91.162.99 4 4 28767 20160204040353
+114.145.184.47 2 17 1643968 20160205014531
+208.115.113.94 8 8 67996 20160205061756
+111.106.165.70 2 17 1649364 20160205003904
+195.154.200.68 1 1 9308 20160205205722
+130.34.95.57 6 34 3374801 20160203042508
+114.183.182.230 0 1 294106 
+130.34.123.156 3 19 2460525 20160201112732
+210.156.19.184 2 17 1649364 20160203214411
+182.250.243.5 2 17 1649364 20160202032415
+60.97.13.107 3 18 1680652 20160201001820
+192.243.55.133 4 4 35347 20160204024431
+157.55.39.30 2 3 271447 20160205170605
+130.34.95.65 6 37 3649441 20160204113054
+40.77.167.14 1 1 10055 20160203064316
+69.30.234.186 1 1 9308 20160203090338
+220.144.125.214 3 19 2000814 20160205181437
+126.236.226.123 2 11 649061 20160205113228
+52.72.91.81 7 37 4962120 20160203171132
+157.55.39.19 1 1 0 20160204042042
+14.189.130.10 1 1 10055 20160204154055
+46.246.87.122 2 2 20110 20160202101838
+157.55.39.182 1 4 134014 20160203040342
+118.6.14.143 2 2 20110 20160205131438
+49.98.175.119 2 17 1649364 20160205183906
+199.59.148.210 1 1 10055 20160204193249
+218.227.18.89 3 18 1654919 20160201212835
+157.55.39.110 1 3 16335 20160202185406
+157.55.2.186 1 1 45404 20160203043732
+115.163.175.154 7 24 1884574 20160203181700
+59.147.9.57 3 18 1658216 20160204211949
+199.30.24.167 1 3 169088 20160202231300
+191.232.136.135 1 1 6799 20160201181625
+222.229.71.237 6 37 12065084 20160205170018
+126.236.130.144 5 37 3382472 20160202221333
+101.99.59.25 1 1 10055 20160205115522
+126.142.205.167 2 17 1649364 20160204183324
+192.243.55.129 6 6 51057 20160204021955
+160.16.62.108 2 2 20110 20160206002800
+106.161.144.181 2 17 1643968 20160202230044
+191.232.136.85 2 2 34048 20160203090755
+221.66.164.132 3 19 2000814 20160205235421
+157.55.39.70 2 2 154142 20160203105454
+130.34.15.128 5 35 3300986 20160203164845
+192.243.55.138 4 4 33561 20160204022958
+153.173.217.48 4 19 1656529 20160205004007
+40.77.167.23 1 1 10055 20160204050301
+61.25.154.122 1 1 10055 20160201112552
+220.145.66.252 8 26 2166518 20160201130906
+202.162.91.126 4 19 1663286 20160202231757
+178.63.86.11 1 1 10055 20160204001212
+192.243.55.130 1 1 6641 20160204014519
+157.55.39.69 0 3 134014 
+183.79.179.9 1 1 10055 20160204163155
+119.147.146.194 0 1 2394 
+65.55.210.75 0 3 179616 
+211.10.82.242 3 19 1997517 20160201152437
+121.113.197.34 4 29 11051998 20160204221846
+126.255.65.215 5 22 2142176 20160202174539
+202.79.243.160 1 1 10055 20160202224744
+157.55.39.105 2 2 20110 20160205035953
+211.14.8.234 4 4 40220 20160205055050
+66.249.85.227 1 1 10055 20160204083141
+210.149.238.158 3 18 1652820 20160205213150
+191.232.136.139 1 1 8852 20160202221143
+110.76.142.156 1 1 10055 20160201104449
+62.4.22.54 8 8 80440 20160204005653
+66.220.146.25 0 1 6379 
+175.135.82.193 2 17 1643968 20160204181146
+31.31.77.242 1 1 10055 20160201132725
+191.232.136.147 1 1 10055 20160201092959
+40.77.167.104 1 1 45404 20160201085153
+118.157.84.101 5 36 10278666 20160202094208
+130.34.40.135 3 18 1654919 20160203180426
+93.159.230.90 2 11 343211 20160203005108
+173.252.90.234 0 1 6379 
+59.133.3.47 3 18 1654919 20160204210953
+183.76.252.86 2 17 1643968 20160202203422
+180.51.162.180 2 11 649517 20160201132359
+150.70.188.168 0 1 35951 
+118.21.138.164 1 10 957991 20160203163333
+144.76.61.21 1 1 10055 20160202223528
+191.232.136.118 1 1 10055 20160203222716
+211.2.146.2 4 20 2004270 20160201223205
+125.204.15.62 2 2 20110 20160205192435
+162.247.72.202 1 1 10055 20160201230809
+130.34.77.85 3 19 1995418 20160204173107
+92.113.141.25 2 2 20110 20160205222441
+192.243.55.134 3 3 24713 20160204023732
+125.14.245.112 4 20 2009666 20160203220008
+142.54.184.90 1 1 10055 20160205221738
+208.115.113.86 7 7 57631 20160205104516
+210.79.44.113 2 17 1671344 20160201191052
+191.232.136.107 1 1 6498 20160203034325
+192.99.107.184 1 1 10055 20160202204252
+183.74.207.85 3 19 1995418 20160206000428
+119.104.81.136 6 38 12407142 20160202001429
+114.4.136.243 3 18 0 20160201182914
+114.168.122.8 2 17 1643968 20160202232459
+40.77.167.64 1 2 22902 20160203033620
+198.203.31.208 1 1 10055 20160205194300
+130.34.173.69 4 23 1821499 20160202183351
+157.55.39.14 2 4 317356 20160206013057 20160206013057 /
+31.207.143.23 1 1 10055 20160203183430
+220.107.60.250 5 30 1676178 20160203073448
+61.198.114.248 2 17 1646067 20160204194309
+157.55.39.106 1 1 6739 20160205032959
+175.104.250.182 3 30 3857067 20160202145130
+119.104.157.229 2 17 1646067 20160202222327
+107.184.144.59 3 18 1652820 20160204200352
+125.198.180.238 8 40 12426239 20160204224739
+157.55.39.200 1 1 8331 20160203152534
+130.34.134.250 4 28 1654919 20160202151644
+153.223.112.250 4 19 1663703 20160201090514
+192.243.55.137 3 3 29966 20160204022559
+101.226.33.221 1 1 10055 20160204193907
+69.30.198.186 1 1 10055 20160205033404
+66.249.85.233 1 1 10055 20160203113122
+191.232.136.12 1 1 6475 20160203022127
+210.138.101.119 2 17 1646067 20160204173254
+157.55.39.71 1 1 10055 20160203105808
+46.28.68.158 1 1 10055 20160201233743
+211.199.139.240 1 1 10055 20160201181137
+49.96.61.163 2 12 1456766 20160206005001
+40.77.167.10 1 2 3140 20160203094242
+92.225.32.143 2 17 1643968 20160202225958
+95.211.198.9 1 1 10055 20160202123846
+202.214.224.40 2 8 696928 20160203163342
+180.153.214.189 1 1 10055 20160202193851
+157.55.39.64 2 2 17637 20160205160435
+103.9.96.228 2 11 645764 20160201145016
+119.147.146.193 1 1 10055 20160204181503
+192.243.55.131 1 1 8482 20160204023151
+157.55.39.213 1 1 10055 20160201193911
+61.44.80.236 5 32 4079293 20160202203532
+180.43.7.123 4 35 12049655 20160203142156
+61.12.154.129 3 20 1996289 20160204141802
+130.34.46.51 3 34 12038704 20160204200517
+199.59.148.211 2 2 18907 20160205210815
+191.232.136.36 2 2 0 20160202131558
+1.75.240.192 4 20 2004270 20160203001747
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 6
+20160201 84 297 29346980 34
+20160202 177 653 88325774 37
+20160203 89 404 42500700 41
+20160204 128 553 100911416 45
+20160205 89 285 39787184 34
+20160206 7 33 3472294 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 2
+5mn-15mn 5
+15mn-30mn 4
+30s-2mn 17
+2mn-5mn 11
+0s-30s 150
+30mn-1h 5
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 59
+/ 161 1568580 138 59
+/concert.html 47 398340 10 17
+/fonts/glyphicons-halflings-regular.woff2 37 630980 0 8
+/join.html 33 448998 0 13
+/fonts/glyphicons-halflings-regular.woff 24 538752 0 11
+/pastconcert.html 21 715008 1 4
+/fonts/glyphicons-halflings-regular.eot 21 362286 1 8
+/about.html 20 176852 6 6
+/news.html 13 87607 3 4
+/link.html 13 153840 2 8
+/memberonly/asset/twitter_kisoku.pdf 2 411140 0 2
+/special.html 8 58592 2 1
+/past/145.html 1 8134 0 0
+/past/special/2006tour.html 1 7903 0 0
+/past/151.html 4 32496 0 1
+/past/142.html 1 8168 0 0
+/idemnity.html 8 47593 1 5
+/past/165.html 12 90420 1 5
+/past/155.html 5 41420 0 1
+/past/147.html 1 8134 0 0
+/past/150.html 6 56616 1 2
+/past/special/2013joint.html 2 17450 0 1
+/past/139.html 1 8837 0 0
+/sitemap.html 7 48405 1 1
+/fonts/glyphicons-halflings-regular.ttf 9 408636 3 6
+/past/141.html 1 8150 0 0
+/news/2015-12-17.html 7 45325 2 1
+/memberonly/asset/165-impression.docx 1 22772 0 0
+/past/152.html 4 34708 0 0
+/past/153.html 4 32708 2 1
+/past/163.html 8 49986 5 4
+/past/special/2007centennial.html 1 8214 0 0
+/past/164.html 9 65608 3 3
+/past/143.html 1 8157 0 0
+/past/154.html 4 32732 1 2
+/privacypolicy.html 5 33205 1 2
+/past/162.html 3 24651 0 1
+/past/158.html 6 49368 2 2
+/past/149.html 1 8086 0 0
+/fonts/glyphicons-halflings-regular.svg 2 217476 2 0
+/past/special/2011tour.html 1 8401 0 0
+/contact.html 11 71478 2 3
+/past/160.html 4 33928 2 2
+/past/144.html 1 7986 0 0
+/memberonly/asset/165-anser_sheet.xlsx 2 29582 0 0
+/memberonly/member.html 6 81426 0 1
+/past/148.html 1 8183 0 0
+/past/special/2003joint.html 2 15666 0 1
+/clipmail/clipmail.html 1 3662 0 0
+/past/159.html 4 32880 0 1
+/memberonly/asset/164kessan.pdf 1 240209 0 1
+/past/special/2011PTA.html 1 7408 0 0
+/past/161.html 6 48816 1 3
+/past/140.html 1 8458 0 0
+/past/157.html 6 49380 1 2
+/past/156.html 3 24234 0 0
+/past/146.html 1 8164 0 0
+/mail.php 4 24210 1 1
+/memberonly/asset/165-opinion.docx 3 56265 0 0
+END_SIDER
