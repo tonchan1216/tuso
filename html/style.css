@@ -316,7 +316,7 @@ body {
 
 .plain {
 	margin-left:15px
-}
+};
 
 #news .news-title {
 	padding:3px 0;
@@ -844,6 +844,7 @@ table.table th {
 	}
 
 	#access .map {
+		width: 60%;
 		margin:0 auto
 	}
 
@@ -883,7 +884,7 @@ table.table th {
 	}
 
 	div.row #news-list li {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 
 	#news-list li span {
