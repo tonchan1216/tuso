@@ -684,6 +684,61 @@ table.table th {
 	margin-bottom: 10px;
 }
 
+/*チケット*/
+#ticket-block article > div {
+	position: relative;
+}
+
+#ticket-block .seat-block{
+	position: absolute;
+}
+
+#ticket-block .seat-block:hover{
+	cursor: pointer;
+	background-color: rgba(13, 72, 160, 0.5);
+}
+
+#ticket-block .second-floor {
+	height: 17%;
+	width: 27%;
+	top: 33.5%;
+	left: 31%;
+}
+
+#ticket-block .third-floor {
+	height: 9%;
+	width: 42.5%;
+	top: 75%;
+	left: 24%;
+}
+
+#ticket-confirm .table {
+	margin-top: 60px;
+	width: 60%;
+}
+
+#ticket-confirm .table th {
+	text-align: center;
+}
+
+#ticket-confirm .confirm-action {
+	text-align: center;
+}
+
+#ticket-confirm .confirm-action button {
+	margin: 20px;
+}
+
+#ticket-form input,#ticket-form select, #ticket-form button {
+	display: block;
+	margin: 20px auto;
+}
+
+#ticket-form input,#ticket-form select {
+	width: 60%;
+}
+
+
 /* メディアクエリ
 ------------------------------------------------------------*/
 /* PC用 */

@@ -103,7 +103,7 @@
 	<div id="banner">
 		<img alt="" src="../images/image3.jpg">
 		<div class="slogan">
-			<h2>【団員専用】指定席申請ページ</h2>
+			<h2>団員専用指定席申請ページ</h2>
 
 			<h3>定期演奏会の指定席券を申請いただけます</h3>
 		</div>
@@ -118,7 +118,7 @@
 				<div class="col-md-3">
 					<h3>指定席申し込みの流れ</h3>
 					<ul id="tab-menu" class="nav nav-pills">
-						<li class="active">
+						<li>
 							<a data-toggle="tab" href="#ticket-block">座席ブロック指定</a>
 						</li>
 
@@ -134,111 +134,21 @@
 							<a data-toggle="tab" href="#ticket-form">情報入力</a>
 						</li>
 
-						<li>
-							<a data-toggle="tab" href="javascript:void(0)">申し込み完了</a>
+						<li class="active">
+							<a data-toggle="tab" href="#tab-complete">申し込み完了</a>
 						</li>
 					</ul>
 				</div>
 
 				<div class="col-md-9">
 					<article class="content">
-						<div id="ticket-block" class="tabbox tab-pane fade in active">
-							<article class="container-fluid">
-								<h3>座席ブロックの指定</h3>
-								<div>								
-									<img src="../images/seating_noinfo_all.png" alt="">
-									<div class="seat-block second-floor" data-position="second-floor"></div>
-									<div class="seat-block third-floor" data-position="third-floor"></div>
-								</div>
-							</article>
-						</div>
 
-						<div id="ticket-seat" class="tabbox tab-pane fade">
+						<div id="ticket-complete">
 							<article class="container-fluid">
-								<h3>座席番号の指定</h3>
-
-								<div class="second-floor">
-									２階　座席詳細
-									<img src="../images/seating_noinfo_second.png" alt="">
-								</div>								
-								<div class="third-floor">
-									３階　座席詳細
-									<img src="../images/seating_noinfo_third.png" alt="">
-								</div>
-							</article>
-						</div>
-
-						<div id="ticket-confirm" class="tabbox tab-pane fade">
-							<article class="container-fluid">
-								<h3>選択された指定席</h3>
+								<h3>お申し込み完了</h3>
 								<div>
-									<p>先ほぼ選択いただいた指定席一覧になります。</p>
-									<p>再度ご確認の上，間違いがなければお客様情報入力フォームに進んで下さい。</p>
-
-									<table class="table" summary="座席">
-										<thead>
-											<tr>
-												<th>フロア</th>
-												<th>番号</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1階</td>
-												<td>B-23</td>
-											</tr>
-											<tr>
-												<td>1階</td>
-												<td>B-24</td>
-											</tr>
-											<tr>
-												<td>2階</td>
-												<td>H-2</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<th>合計</th>
-												<td>3枚</td>
-											</tr>
-										</tfoot>
-									</table>
-									
-									<div class="confirm-action">
-										<button type="button" class="btn btn-warning" value="back">修正する</button>
-										<button type="button" class="btn btn-success" value="next">確定する</button>
-									</div>
+									指定席のお申し込みが完了いたしました。
 								</div>
-							</article>
-						</div>						
-
-						<div id="ticket-form" class="tabbox tab-pane fade">
-							<article class="container-fluid">
-								<h3>お客様情報入力フォーム</h3>
-								<p>氏名，パート，メールアドレスを入力して送信して下さい</p>
-								<form action="ticket.php" method="post">
-									<input name="name" placeholder="名前" type="text">
-									<input name="grade" placeholder="学年" type="text"> 
-									<select name="horoscope" size="8">
-										<option value="Vn">ヴァイオリン</option>
-										<option value="Vla">ヴィオラ</option>
-										<option value="Vc">チェロ</option>
-										<option value="Cb">コントラバス</option>
-										<option value="Fl">フルート</option>
-										<option value="Ob">オーボエ</option>
-										<option value="Cl">クラリネット</option>
-										<option value="Fg">ファゴット</option>
-										<option value="Hr">ホルン</option>
-										<option value="Tp">トランペット</option>
-										<option value="Tb">トロンボーン</option>
-										<option value="Tub">チューバ</option>
-										<option value="Perc">打楽器</option>
-										<option value="Other">その他</option>
-									</select>
-									<input name="mail" placeholder="メールアドレス" type="text"> 
-									<input name="password" placeholder="パスワード" type="password"> 
-									<button type="submit" class="btn btn-primary">送信</button>
-								</form>
 							</article>
 						</div>
 					</article>
