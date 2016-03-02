@@ -687,6 +687,7 @@ table.table th {
 /*チケット*/
 #ticket-block article > div {
 	position: relative;
+	text-align: center;
 }
 
 #ticket-block .seat-block{
@@ -698,19 +699,78 @@ table.table th {
 	background-color: rgba(13, 72, 160, 0.5);
 }
 
-#ticket-block .second-floor {
-	height: 17%;
-	width: 27%;
+#ticket-block .second-forward {
+	height: 4.5%;
+	width: 16%;
 	top: 33.5%;
-	left: 31%;
+	left: 41.5%;
 }
 
-#ticket-block .third-floor {
-	height: 9%;
-	width: 42.5%;
-	top: 75%;
-	left: 24%;
+#ticket-block .second-center {
+	height: 10.5%;
+	width: 16%;
+	top: 40%;
+	left: 41.5%;
 }
+#ticket-block .second-left {
+	height: 17.5%;
+	width: 5%;
+	top: 33%;
+	left: 35.5%;
+}
+
+#ticket-block .second-right {
+	height: 17.5%;
+	width: 5%;
+	top: 33%;
+	left: 58.5%;
+}
+
+#ticket-block .third-center {
+	height: 8%;
+	width: 13%;
+	top: 76%;
+	left: 43.7%;
+}
+
+#ticket-block .third-left {
+	height: 9%;
+	width: 11.5%;
+	top: 75%;
+	left: 30%;
+}
+
+#ticket-block .third-right {
+	height: 9%;
+	width: 11.5%;
+	top: 75%;
+	left: 59%;
+}
+
+#ticket-seat article > div {
+	/*position: relative;*/
+	text-align: center;
+}
+
+#ticket-seat > article > div > p {
+	text-align: center;
+	margin: 20px auto;
+}
+
+#ticket-seat > article > div > img {
+	margin-top: 20px;
+}
+
+#ticket-seat .second-left > img, #ticket-seat .second-right > img{
+	max-height: 600px;
+	width: auto;
+}
+
+#ticket-seat article > ul {
+	text-align: center;
+}
+
+
 
 #ticket-confirm .table {
 	margin-top: 60px;

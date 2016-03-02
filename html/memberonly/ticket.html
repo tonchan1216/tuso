@@ -119,19 +119,19 @@
 					<h3>指定席申し込みの流れ</h3>
 					<ul id="tab-menu" class="nav nav-pills">
 						<li class="active">
-							<a data-toggle="tab" href="#ticket-block">座席ブロック指定</a>
+							<a data-toggle="tab" href="javascript:void(0)">座席ブロック指定</a>
 						</li>
 
 						<li>
-							<a data-toggle="tab" href="#ticket-seat">座席番号指定</a>
+							<a data-toggle="tab" href="javascript:void(0)">座席番号指定</a>
 						</li>
 
 						<li>
-							<a data-toggle="tab" href="#ticket-confirm">確認</a>
+							<a data-toggle="tab" href="javascript:void(0)">確認</a>
 						</li>						
 
 						<li>
-							<a data-toggle="tab" href="#ticket-form">情報入力</a>
+							<a data-toggle="tab" href="javascript:void(0)">情報入力</a>
 						</li>
 
 						<li>
@@ -146,9 +146,14 @@
 							<article class="container-fluid">
 								<h3>座席ブロックの指定</h3>
 								<div>								
-									<img src="../images/seating_noinfo_all.png" alt="">
-									<div class="seat-block second-floor" data-position="second-floor"></div>
-									<div class="seat-block third-floor" data-position="third-floor"></div>
+									<img src="../images/hagi_seating_all.png" alt="">
+									<div class="seat-block second-forward" data-position="second-forward"></div>
+									<div class="seat-block second-center" data-position="second-center"></div>
+									<div class="seat-block second-left" data-position="second-left"></div>
+									<div class="seat-block second-right" data-position="second-right"></div>
+									<div class="seat-block third-center" data-position="third-center"></div>
+									<div class="seat-block third-left" data-position="third-left"></div>
+									<div class="seat-block third-right" data-position="third-right"></div>
 								</div>
 							</article>
 						</div>
@@ -156,15 +161,39 @@
 						<div id="ticket-seat" class="tabbox tab-pane fade">
 							<article class="container-fluid">
 								<h3>座席番号の指定</h3>
-
-								<div class="second-floor">
-									２階　座席詳細
-									<img src="../images/seating_noinfo_second.png" alt="">
+								<div class="second-forward">
+									<p>２階前方　座席詳細</p>
+									<img src="../images/hagi_seating_second_forward.png" alt="">
 								</div>								
-								<div class="third-floor">
-									３階　座席詳細
-									<img src="../images/seating_noinfo_third.png" alt="">
+								<div class="second-center">
+									<p>２階中央　座席詳細</p>
+									<img src="../images/hagi_seating_second_center.png" alt="">
+								</div>								
+								<div class="second-left">
+									<p>２階下手側　座席詳細</p>
+									<img src="../images/hagi_seating_second_left.png" alt="">
+								</div>								
+								<div class="second-right">
+									<p>２階上手側　座席詳細</p>
+									<img src="../images/hagi_seating_second_right.png" alt="">
+								</div>								
+								<div class="third-center">
+									<p>３階中央　座席詳細</p>
+									<img src="../images/hagi_seating_third_center.png" alt="">
 								</div>
+								<div class="third-left">
+									<p>３階下手側　座席詳細</p>
+									<img src="../images/hagi_seating_third_left.png" alt="">
+								</div>
+								<div class="third-right">
+									<p>３階上手側　座席詳細</p>
+									<img src="../images/hagi_seating_third_right.png" alt="">
+								</div>
+
+								<ul class="confirm-action">
+									<button type="button" class="btn btn-warning" value="back">ブロック選択に戻る</button>
+									<button type="button" class="btn btn-success" value="next">次へ進む</button>
+								</ul>
 							</article>
 						</div>
 

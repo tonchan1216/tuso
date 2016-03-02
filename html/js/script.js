@@ -74,6 +74,19 @@ $(function() {
 		$('#ticket-seat .'+$(this).data('position')).fadeIn();
 	})
 
+	$('#ticket-seat button').click(function() {
+		$('#ticket-seat').removeClass('active').removeClass('in');
+		$('#tab-menu li').removeClass('active');
+		$("#ticket-seat article > div").hide();
+		if ($(this).val() == 'back') {
+			$('#ticket-block').addClass('active').addClass('in');
+			$('#tab-menu li:nth-child(1)').addClass('active');
+		}	else {
+			$('#ticket-confirm').addClass('active').addClass('in');
+			$('#tab-menu li:nth-child(3)').addClass('active');
+		}
+	})
+
 	$('#ticket-confirm button').click(function() {
 		$('#ticket-confirm').removeClass('active').removeClass('in');
 		$('#tab-menu li').removeClass('active');
