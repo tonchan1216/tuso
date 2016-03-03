@@ -717,6 +717,8 @@ table.table th {
 	width: 5%;
 	top: 33%;
 	left: 35.5%;
+	-webkit-transform: skew(0deg,5deg);
+	-moz-transform: skew(0,5deg);
 }
 
 #ticket-block .second-right {
@@ -724,6 +726,8 @@ table.table th {
 	width: 5%;
 	top: 33%;
 	left: 58.5%;
+	-webkit-transform: skew(0deg,-5deg);
+	-moz-transform: skew(0,-5deg);
 }
 
 #ticket-block .third-center {
@@ -734,21 +738,25 @@ table.table th {
 }
 
 #ticket-block .third-left {
-	height: 9%;
+	height: 8.5%;
 	width: 11.5%;
 	top: 75%;
 	left: 30%;
+	-webkit-transform: skew(0deg,5deg);
+	-moz-transform: skew(0,5deg);
 }
 
 #ticket-block .third-right {
-	height: 9%;
+	height: 8.5%;
 	width: 11.5%;
 	top: 75%;
 	left: 59%;
+	-webkit-transform: skew(0deg,-5deg);
+	-moz-transform: skew(0,-5deg);
 }
 
 #ticket-seat article > div {
-	/*position: relative;*/
+	position: relative;
 	text-align: center;
 }
 
@@ -766,11 +774,71 @@ table.table th {
 	width: auto;
 }
 
+#ticket-seat article table {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#ticket-seat .second-forward table {
+	top: 30%;
+}
+
+#ticket-seat .second-center table {
+	top: 20%;
+}
+
+#ticket-seat .third-center table {
+	top: 28%;
+}
+
+#ticket-seat tr{
+	display: block;
+}
+
+#ticket-seat .second-forward tr {
+	height: 17%;
+	width: 70.7%;
+	margin-bottom: 2.7%;
+	margin-left: 15%;
+}
+
+#ticket-seat .second-center tr {
+	height: 8.5%;
+	width: 66.2%;
+	margin-bottom: 2.7%;
+	margin-left: 17%;
+}
+
+#ticket-seat .third-center tr {
+	height: 15.7%;
+	width: 59%;
+	margin-bottom: 2%;
+	margin-left: 21%;
+}
+
+#ticket-seat article td.seat {
+	display: inline-block;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+#ticket-seat article td.seat:hover {
+	background-color: red;
+	cursor: pointer;
+}
+
+#ticket-seat .second-forward td.seat, #ticket-seat .second-center td.seat {
+	width: 6.25%;
+}
+
+#ticket-seat .third-center td.seat {
+	width: 7.68%;
+}
+
 #ticket-seat article > ul {
 	text-align: center;
 }
-
-
 
 #ticket-confirm .table {
 	margin-top: 60px;
