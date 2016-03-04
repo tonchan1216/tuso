@@ -423,7 +423,7 @@ table.table th {
 
 #concert dd {
 	margin-left:45px;
-	margin-bottom: 25px; 
+	margin-bottom: 25px;
 	display:block
 }
 
@@ -636,7 +636,7 @@ table.table th {
 }
 
 #member dd {
-	margin-left: 10px; 
+	margin-left: 10px;
 }
 
 #member #music li {
@@ -791,6 +791,13 @@ table.table th {
 #ticket-seat .third-center table {
 	top: 28%;
 }
+#ticket-seat .third-left table {
+	top: 28.6%;
+}
+
+#ticket-seat .third-right table {
+	top: 27.8%;
+}
 
 #ticket-seat tr{
 	display: block;
@@ -817,6 +824,24 @@ table.table th {
 	margin-left: 21%;
 }
 
+#ticket-seat .third-left tr {
+	height: 17%;
+	width: 56.5%;
+	margin-bottom: 2.3%;
+	margin-left: 21%;
+	-webkit-transform: skew(-5.3deg,5.3deg);
+	-moz-transform: skew(-5.3deg,5.3deg);
+}
+
+#ticket-seat .third-right tr {
+	height: 17.3%;
+	width: 56%;
+	margin-bottom: 2.1%;
+	margin-left: 23%;
+	-webkit-transform: skew(5.4deg,-5.4deg);
+	-moz-transform: skew(5.3deg,-5.3deg);
+}
+
 #ticket-seat article td.seat {
 	display: inline-block;
 	box-sizing: border-box;
@@ -834,6 +859,14 @@ table.table th {
 
 #ticket-seat .third-center td.seat {
 	width: 7.68%;
+}
+
+#ticket-seat .third-left td.seat {
+	width: 9.09%;
+}
+
+#ticket-seat .third-right td.seat {
+	width: 9.09%;
 }
 
 #ticket-seat article > ul {
@@ -1020,7 +1053,7 @@ table.table th {
 	#contents-link > div {
 		margin: 0 auto;
 		width: 80%;
-	}  
+	}
 
 	#contents-link > div img {
 		margin-top: -80px;
@@ -1048,7 +1081,7 @@ table.table th {
 @media only screen and (max-width:640px) {
 	#header .dropdown-menu li:first {
 		margin-top: 10px;
-	} 
+	}
 	#header .dropdown-menu li {
 		margin-bottom: 15px;
 	}
