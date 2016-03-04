@@ -788,6 +788,14 @@ table.table th {
 	top: 20%;
 }
 
+#ticket-seat .second-left table {
+	top: 18%;
+}
+
+#ticket-seat .second-right table {
+	top: 16.5%;
+}
+
 #ticket-seat .third-center table {
 	top: 28%;
 }
@@ -817,6 +825,32 @@ table.table th {
 	margin-left: 17%;
 }
 
+#ticket-seat .second-left tr {
+	height: 6.8%;
+	width: 26.5%;
+	margin-bottom: 2.3%;
+	margin-left: 35.2%;
+	-webkit-transform: skew(-4.5deg,4.5deg);
+	-moz-transform: skew(-4.5deg,4.5deg);
+}
+
+#ticket-seat .second-left tr.aisle {
+	margin-bottom: 2%;
+}
+
+#ticket-seat .second-right tr {
+	height: 6.5%;
+	width: 26.5%;
+	margin-bottom: 2.4%;
+	margin-left: 38.2%;
+	-webkit-transform: skew(4.5deg,-4.5deg);
+	-moz-transform: skew(4.5deg,-4.5deg);
+}
+
+#ticket-seat .second-right tr.aisle {
+	margin-bottom: 9.7%;
+}
+
 #ticket-seat .third-center tr {
 	height: 15.7%;
 	width: 59%;
@@ -828,23 +862,25 @@ table.table th {
 	height: 17%;
 	width: 56.5%;
 	margin-bottom: 2.3%;
-	margin-left: 21%;
+	margin-left: 20.7%;
 	-webkit-transform: skew(-5.3deg,5.3deg);
 	-moz-transform: skew(-5.3deg,5.3deg);
 }
 
 #ticket-seat .third-right tr {
-	height: 17.3%;
+	height: 17.5%;
 	width: 56%;
 	margin-bottom: 2.1%;
-	margin-left: 23%;
-	-webkit-transform: skew(5.4deg,-5.4deg);
+	margin-left: 23.2%;
+	-webkit-transform: skew(5.3deg,-5.3deg);
 	-moz-transform: skew(5.3deg,-5.3deg);
 }
 
 #ticket-seat article td.seat {
 	display: inline-block;
 	box-sizing: border-box;
+	border: solid 1px #000;
+	border-collapse: collapse;
 	height: 100%;
 }
 
@@ -857,15 +893,19 @@ table.table th {
 	width: 6.25%;
 }
 
+#ticket-seat .second-left td.seat {
+	width: 14.28%;
+}
+
+#ticket-seat .second-right td.seat {
+	width: 14.28%;
+}
+
 #ticket-seat .third-center td.seat {
 	width: 7.68%;
 }
 
-#ticket-seat .third-left td.seat {
-	width: 9.09%;
-}
-
-#ticket-seat .third-right td.seat {
+#ticket-seat .third-left td.seat, #ticket-seat .third-right td.seat {
 	width: 9.09%;
 }
 
