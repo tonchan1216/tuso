@@ -63,6 +63,7 @@ $(function() {
 	if($.cookie("style")){
 		vp_switch($.cookie("style"));
 	}
+})
 
 function vp_switch(s){
 	$("#"+s).addClass("active");
