@@ -1,4 +1,40 @@
 $(function() {
+
+	//CSVから読み込み
+	function getCSVFile() {
+		var xhr = new XMLHttpRequest();
+		xhr.onload = function() {
+			createArray(xhr.responseText);
+		};
+		xhr.open("get", "asset/ticket.csv", true);
+		xhr.send(null);
+	}
+
+	function createArray(csvData) {
+		$tempArray = csvData.split("\n");
+		$csvArray = new Array();
+		for(var i = 0; i<$tempArray.length;i++){
+			$csvArray[i] = $tempArray[i].split(",");
+		}
+
+		//読み込んだデータを元にDOM要素にclass追加
+		$.each($csvArray, function() {
+			$target_seat = $(this);
+			$elem = null;
+			$('#ticket-seat th:contains('+$target_seat[0]+')').siblings('td:contains('+$target_seat[1]+')').each(function(){
+				if($(this).text() == $target_seat[1] && $(this).siblings('th').text() == $target_seat[0]) $elem = $(this);
+			})
+
+			if ($target_seat[2] == -1) {
+				$elem.addClass('disabled');
+			}	else if ($target_seat[2] == 1) {
+				$elem.addClass('reserved');
+			}
+		})
+	}
+
+	getCSVFile();
+
 	//block →　seat
 	$("#ticket-seat article > div").hide();
 	$('#ticket-block .seat-block').click(function() {
@@ -66,3 +102,8 @@ $(function() {
 	})
 });
 
+// function createXMLHttpRequest() {
+// 	var XMLhttpObject = null;
+// 	XMLhttpObject = new XMLHttpRequest();
+// 	return XMLhttpObject;
+// }
