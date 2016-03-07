@@ -159,10 +159,11 @@
 								}
 
 								function check_reserved($selected_seat,$records){
-									foreach ($selected_seat as $selected_key => $selected_value) {
-										foreach ($records as $reserved_key => $reserved_value) {
-											if ($selected_value[0] == $reserved_value[0] && $selected_value[1] == $reserved_value[1] && $reserved_value[2] == 1) {
-												$booking_error[$selected_key] = $selected_value[0].'-'.$selected_value[1];
+									foreach ($selected_seat as $selected_value) {
+										$data = explode('-',$selected_value);
+										foreach ($records as $record_value) {
+											if ($data[0] == $record_value[0] && $data[1] == $record_value[1]) {
+												$booking_error[] = $data[0].'-'.$data[1];
 												break;
 											}
 										}
@@ -188,8 +189,8 @@
 									mb_internal_encoding("UTF-8");
 
 									$to = "tohokuunivorchhomepage@gmail.com";
-									$subject = "指定席予約メール";
-									$message = "お名前：".$data['name']."\n"
+									$subject = "指定席予約メール:".$data['name'];
+									$message = "お名前：".$data['name']."様\n"
 									."学年:".$data['grade']."\n"
 									."パート:".$data['part']."\n"
 									."メールアドレス:".$data['mail']."\n\n"
@@ -223,7 +224,10 @@
 									$booking_error = check_reserved($_POST['seat'], $records);
 
 									if ($booking_error) {
-										$application_error['check'] = "Some seat you selected is already reserved!";
+										$application_error['check'] = "選択いただいた座席の中に，既に他の方が予約したものがあります。<br>該当する座席番号：";
+										foreach ($booking_error as $value) {
+											$application_error['check'] .= "「".$value."」";
+										}
 									} else {
 										$write_error = write_csv($_POST['seat']);
 
@@ -231,6 +235,7 @@
 											$application_error['write'] = "Can't write File";
 										} else {
 											$mail_error = send_email($_POST);
+											//$mail_error = true;
 											if (!$mail_error) {
 												$application_error['mail'] = "Can't send Email";
 											}
@@ -243,8 +248,16 @@
 									<h3>お申し込みエラー</h3>
 									<div>
 										指定席のお申し込み中にエラーが発生いたしました。<br>
-										お手数をおかけしますが、再度読み込みを行って申請してください。
-										<pre><?php echo var_dump($application_error);?></pre>
+										お手数をおかけしますが、下記リンクより再度アクセスして申請を行ってください。<br>
+										※何度もこのエラーが表示される場合は，表示されるエラーメッセージと共に担当者へご報告願います。
+										<ul class="error_messages">
+											<?php foreach ($application_error as $key => $value) {
+												echo "<li>";
+												echo "<p class='application_error'>" . $key . " Error!!" . "</p>";
+												echo $value;
+												echo "</li>";
+											}?>
+										</ul>
 									</div>
 								<?php else:?>
 									<h3>お申し込み完了</h3>
@@ -255,9 +268,9 @@
 									</div>
 								<?php endif;?>
 								<div>
-									<ul>
-										<li><a href="member.html" title="">団員専用ページトップ</a></li>
-										<li><a href="ticket.html" title="">指定席予約ページトップ</a></li>
+									<ul class="link-buttons">
+										<li><a class="btn btn-info" href="member.html" title="">団員専用ページトップ</a></li>
+										<li><a class="btn btn-info" href="ticket.html" title="">指定席予約ページトップ</a></li>
 									</ul>
 								</div>
 							</article>
