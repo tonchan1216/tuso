@@ -143,11 +143,122 @@
 				<div class="col-md-9">
 					<article class="content">
 
-						<div id="ticket-complete">
+						<div id="ticket-complete" class="tabbox tab-pane fade in active">
 							<article class="container-fluid">
-								<h3>お申し込み完了</h3>
+								<?php
+								function read_csv(){
+									if (($handle = fopen("asset/ticket.csv", "r")) !== false) {
+										while (($line = fgetcsv($handle, 1000, ",")) !== false) {
+											$records[] = $line; 
+										} 
+										fclose($handle);
+										return $records;						
+									}else{
+										return false;
+									}
+								}
+
+								function check_reserved($selected_seat,$records){
+									foreach ($selected_seat as $selected_key => $selected_value) {
+										foreach ($records as $reserved_key => $reserved_value) {
+											if ($selected_value[0] == $reserved_value[0] && $selected_value[1] == $reserved_value[1] && $reserved_value[2] == 1) {
+												$booking_error[$selected_key] = $selected_value[0].'-'.$selected_value[1];
+												break;
+											}
+										}
+									}
+									return ($booking_error) ? $booking_error : false;
+								}
+
+								function write_csv($selected_seat){
+									if (($handle = fopen("asset/ticket.csv", "a")) !== false) {
+										foreach ($selected_seat as $fields) {
+											$data = explode('-',$fields);
+											if(!fwrite($handle, $data[0].",".$data[1].",1\n")) $write_error = "Write data error";
+										}
+										fclose($handle); 
+									}else{
+										$write_error = "Open file error";
+									}
+									return ($write_error) ? $write_error : false;
+								}
+
+								function send_email($data){
+									mb_language("ja");
+									mb_internal_encoding("UTF-8");
+
+									$to = "tohokuunivorchhomepage@gmail.com";
+									$subject = "指定席予約メール";
+									$message = "お名前：".$data['name']."\n"
+									."学年:".$data['grade']."\n"
+									."パート:".$data['part']."\n"
+									."メールアドレス:".$data['mail']."\n\n"
+									."＝＝＝メール本文＝＝＝\n指定席の予約が完了いたしました。\nお申し込みいただいた指定席は以下の通りです。\n\n";
+									foreach ($data['seat'] as $value) {
+										$message .= $value . "\n";
+									}
+									$message .= "\n以上の".strval(count($data['seat']))."枚(".strval(count($data['seat'])*1500)."円)になります。\n";
+
+									$body = mb_convert_encoding($message,'ISO-2022-JP', "auto");
+									$header = "MIME-Version: 1.0\r\n"
+									. "Content-Transfer-Encoding: 7bit\r\n"
+									. "Content-Type: text/plain; charset=ISO-2022-JP\r\n"
+									. "Message-Id: <" . md5(uniqid(microtime())) . "@tohokuuniv-orch.com>\r\n"
+									. "From:".mb_encode_mimeheader($data["name"])."<ticket-form@tohokuuniv-orch.com>\r\n"
+									. "Cc:".mb_encode_mimeheader($data["name"])."<".$data["mail"].">\r\n"
+									. "Reply-To:".$data["mail"]."\r\n";
+
+									ini_set("sendmail_from", $from);
+									return mb_send_mail($to,$subject,$body,$header, "-f ".$data["mail"]);
+								}
+								?>
+
+								<?php
+								//実行フェーズ
+								$mail_error = false;
+								$records = read_csv();
+								if(!$records){
+									$application_error['read'] = "Can't read File";
+								} else {
+									$booking_error = check_reserved($_POST['seat'], $records);
+
+									if ($booking_error) {
+										$application_error['check'] = "Some seat you selected is already reserved!";
+									} else {
+										$write_error = write_csv($_POST['seat']);
+
+										if ($write_error) {
+											$application_error['write'] = "Can't write File";
+										} else {
+											$mail_error = send_email($_POST);
+											if (!$mail_error) {
+												$application_error['mail'] = "Can't send Email";
+											}
+										}
+									}
+								}
+								?>
+
+								<?php if($application_error):?>
+									<h3>お申し込みエラー</h3>
+									<div>
+										指定席のお申し込み中にエラーが発生いたしました。<br>
+										お手数をおかけしますが、再度読み込みを行って申請してください。
+										<pre><?php echo var_dump($application_error);?></pre>
+									</div>
+								<?php else:?>
+									<h3>お申し込み完了</h3>
+									<div>
+										指定席のお申し込みが完了いたしました。<br>
+										入力いただいたアドレスに完了メールを送信いたしましたのでご確認ください。<br>
+										※届いていない場合は迷惑メールに分類されている可能性がございますので、そちらもご確認ください。
+									</div>
+								<?php endif;?>
 								<div>
-									指定席のお申し込みが完了いたしました。
+									<ul>
+										<li><a href="member.html" title="">団員専用ページトップ</a></li>
+										<li><a href="ticket.html" title="">指定席予約ページトップ</a></li>
+									</ul>
 								</div>
 							</article>
 						</div>

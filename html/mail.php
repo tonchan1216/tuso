@@ -130,7 +130,7 @@
 					$message = "お名前：".$_POST['name']."\n"
 					."メールアドレス:".$_POST['mail']."\n"
 					."用件:".$_POST['subject']."\n\n"
-					."===メール本文＝＝＝\n".$_POST['contents'];
+					."＝＝＝メール本文＝＝＝\n".$_POST['contents'];
 					$body = mb_convert_encoding($message,'ISO-2022-JP', "auto");
 					$header = "MIME-Version: 1.0\r\n"
 					. "Content-Transfer-Encoding: 7bit\r\n"

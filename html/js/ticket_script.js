@@ -48,26 +48,28 @@ $(function() {
 
 	//seat select
 	$('#ticket-seat .seat').click(function() {
-		$(this).toggleClass('selected');
-		$column = $(this).text();
-		$row = $(this).parent().children('th').text();
-		$selected_seat = $row + "-" + $column;
-		if ($row > 20) {
-			$floor = "3階";
-		}else{
-			$floor = "2階";
-		}
-
-		$exist_flag = false;
-		$('#ticket-confirm .selected-seat').each(function (i, e){
-			if ($(e).text() == $selected_seat) {
-				$(e).parent().remove();
-				$exist_flag = true;			
+		if ( !$(this).hasClass("reserved") && !$(this).hasClass("disabled")){
+			$(this).toggleClass('selected');
+			$column = $(this).text();
+			$row = $(this).parent().children('th').text();
+			$selected_seat = $row + "-" + $column;
+			if ($row > 20) {
+				$floor = "3階";
+			}else{
+				$floor = "2階";
 			}
-		})
 
-		if (!$exist_flag) {
-			$('#ticket-confirm table tbody').append('<tr><td>'+$floor+'</td><td class="selected-seat">'+$selected_seat+'</td>	</tr>');
+			$exist_flag = false;
+			$('#ticket-confirm .selected-seat').each(function (i, e){
+				if ($(e).text() == $selected_seat) {
+					$(e).parent().remove();
+					$exist_flag = true;			
+				}
+			})
+
+			if (!$exist_flag) {
+				$('#ticket-confirm table tbody').append('<tr><td>'+$floor+'</td><td class="selected-seat">'+$selected_seat+'</td>	</tr>');
+			}
 		}
 	})
 
@@ -98,6 +100,10 @@ $(function() {
 		}	else {
 			$('#ticket-form').addClass('active').addClass('in');
 			$('#ticket-menu li:nth-child(4)').addClass('active');
+
+			$('#ticket-confirm table .selected-seat').each(function (){
+				$('#ticket-form form').append('<input type="hidden" name="seat[]" value="' + $(this).text() + '">');
+			})
 		}
 	})
 });
