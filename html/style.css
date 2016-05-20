@@ -882,6 +882,11 @@ table.table th {
 	width: 60%;
 }
 
+#ticket-form .caution {
+	margin-top: 10px;
+	font-size: 0.8rem;
+}
+
 #ticket-complete article .application_error {
 	color: #f5f5f5;
 	background-color: #FF0000;

@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta content="東北大学交響楽団" name="description">
 	<meta content="東北,大学,学友会,交響楽,オケ,オーケストラ" name="keywords">
 
@@ -470,7 +472,8 @@
 						<div id="ticket-form" class="tabbox tab-pane fade">
 							<article class="container-fluid">
 								<h3>お客様情報入力フォーム</h3>
-								<p>氏名，パート，メールアドレスを入力して送信して下さい</p>
+								<p>氏名，学年，パート，メールアドレスを入力して送信して下さい</p>
+								<p class="caution">※迷惑メール対策などで、インターネットメールの拒否設定を行っていると受信できません。<br>「ticket-form@tohokuuniv-orch.com」からのメールが受信できるように設定を行ってください。</p>
 								<form action="ticket.php" method="post">
 									<input name="name" placeholder="名前" type="text">
 									<input name="grade" placeholder="学年" type="text">
@@ -490,8 +493,9 @@
 										<option value="Perc">打楽器</option>
 										<option value="Other">その他</option>
 									</select>
-									<input name="mail" placeholder="メールアドレス" type="text">
+									<input name="mail" placeholder="メールアドレス" type="email">
 									<input name="password" placeholder="パスワード" type="password">
+									<input type="hidden" name="number" value="第165回定期演奏会">
 									<button type="submit" class="btn btn-primary">送信</button>
 								</form>
 							</article>
@@ -561,7 +565,9 @@
 	<script src="../js/jquery-1.11.2.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/script.js"></script>
-	<script src="../js/ticket_script.js"></script>
+	<script>
+		document.write('<script src="../js/ticket_script.js?' + parseInt((new Date)/1000) + '"><\/script>')
+	</script>	
 	<script src="../js/jquery.cookie.js"></script>
 	<script src="../js/lightbox.js"></script>
 </body>

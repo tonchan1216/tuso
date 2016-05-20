@@ -1,3 +1,4 @@
+<?php $pass = "165kasugai";?>
 <!DOCTYPE html>
 
 <html dir="ltr" lang="ja">
@@ -194,11 +195,13 @@
 									."学年:".$data['grade']."\n"
 									."パート:".$data['part']."\n"
 									."メールアドレス:".$data['mail']."\n\n"
-									."＝＝＝メール本文＝＝＝\n指定席の予約が完了いたしました。\nお申し込みいただいた指定席は以下の通りです。\n\n";
+									."＝＝＝指定席予約フォーム＝＝＝\n指定席の予約が完了いたしました。\nお申し込みいただいた指定席は以下の通りです。\n\n";
+									$message .= "【".$data['number']."】\n";
 									foreach ($data['seat'] as $value) {
 										$message .= $value . "\n";
 									}
-									$message .= "\n以上の".strval(count($data['seat']))."枚(".strval(count($data['seat'])*1500)."円)になります。\n";
+									$message .= "\n以上の".strval(count($data['seat']))."枚(".strval(count($data['seat'])*1500)."円)になります。\n\n";
+									$message .= "本メールの内容に心当たりのない方は、tohokuunivorchhomepage@gmail.comまでご連絡ください。\n";
 
 									$body = mb_convert_encoding($message,'ISO-2022-JP', "auto");
 									$header = "MIME-Version: 1.0\r\n"
@@ -214,65 +217,74 @@
 								}
 								?>
 
-								<?php
-								//実行フェーズ
-								$mail_error = false;
-								$records = read_csv();
-								if(!$records){
-									$application_error['read'] = "Can't read File";
-								} else {
-									$booking_error = check_reserved($_POST['seat'], $records);
+								<?php if (htmlspecialchars($_POST['password']) == $pass):?>
 
-									if ($booking_error) {
-										$application_error['check'] = "選択いただいた座席の中に，既に他の方が予約したものがあります。<br>該当する座席番号：";
-										foreach ($booking_error as $value) {
-											$application_error['check'] .= "「".$value."」";
-										}
+									<?php 
+									//実行フェーズ
+									$mail_error = false;
+									$records = read_csv();
+									if(!$records){
+										$application_error['read'] = "Can't read File";
 									} else {
-										$write_error = write_csv($_POST['seat']);
+										$booking_error = check_reserved($_POST['seat'], $records);
 
-										if ($write_error) {
-											$application_error['write'] = "Can't write File";
+										if ($booking_error) {
+											$application_error['check'] = "選択いただいた座席の中に，既に他の方が予約したものがあります。<br>該当する座席番号：";
+											foreach ($booking_error as $value) {
+												$application_error['check'] .= "「".$value."」";
+											}
 										} else {
-											$mail_error = send_email($_POST);
+											$write_error = write_csv($_POST['seat']);
+
+											if ($write_error) {
+												$application_error['write'] = "Can't write File";
+											} else {
+												$mail_error = send_email($_POST);
 											//$mail_error = true;
-											if (!$mail_error) {
-												$application_error['mail'] = "Can't send Email";
+												if (!$mail_error) {
+													$application_error['mail'] = "Can't send Email";
+												}
 											}
 										}
 									}
-								}
-								?>
+									?>
 
-								<?php if($application_error):?>
+									<?php if($application_error):?>
+										<h3>お申し込みエラー</h3>
+										<div>
+											指定席のお申し込み中にエラーが発生いたしました。<br>
+											お手数をおかけしますが、下記リンクより再度アクセスして申請を行ってください。<br>
+											※何度もこのエラーが表示される場合は，表示されるエラーメッセージと共に担当者へご報告願います。
+											<ul class="error_messages">
+												<?php foreach ($application_error as $key => $value) {
+													echo "<li>";
+													echo "<p class='application_error'>" . $key . " Error!!" . "</p>";
+													echo $value;
+													echo "</li>";
+												}?>
+											</ul>
+										</div>
+									<?php else:?>
+										<h3>お申し込み完了</h3>
+										<div>
+											指定席のお申し込みが完了いたしました。<br>
+											入力いただいたアドレスに完了メールを送信いたしましたのでご確認ください。<br>
+											※届いていない場合は迷惑メールに分類されている可能性がございますので、そちらもご確認ください。
+										</div>
+									<?php endif;?>
+
+								<?php else:?>
 									<h3>お申し込みエラー</h3>
 									<div>
-										指定席のお申し込み中にエラーが発生いたしました。<br>
-										お手数をおかけしますが、下記リンクより再度アクセスして申請を行ってください。<br>
-										※何度もこのエラーが表示される場合は，表示されるエラーメッセージと共に担当者へご報告願います。
-										<ul class="error_messages">
-											<?php foreach ($application_error as $key => $value) {
-												echo "<li>";
-												echo "<p class='application_error'>" . $key . " Error!!" . "</p>";
-												echo $value;
-												echo "</li>";
-											}?>
-										</ul>
-									</div>
-								<?php else:?>
-									<h3>お申し込み完了</h3>
-									<div>
-										指定席のお申し込みが完了いたしました。<br>
-										入力いただいたアドレスに完了メールを送信いたしましたのでご確認ください。<br>
-										※届いていない場合は迷惑メールに分類されている可能性がございますので、そちらもご確認ください。
+										パスワードの認証に失敗しました。再度ご確認の上、お申込みください。
 									</div>
 								<?php endif;?>
 								<div>
 									<ul class="link-buttons">
 										<li><a class="btn btn-info" href="member.html" title="">団員専用ページトップ</a></li>
-										<li><a class="btn btn-info" href="ticket.html" title="">指定席予約ページトップ</a></li>
 									</ul>
 								</div>
+
 							</article>
 						</div>
 					</article>
