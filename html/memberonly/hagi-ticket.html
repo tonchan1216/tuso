@@ -475,9 +475,9 @@
 								<p>氏名，学年，パート，メールアドレスを入力して送信して下さい</p>
 								<p class="caution">※迷惑メール対策などで、インターネットメールの拒否設定を行っていると受信できません。<br>「ticket-form@tohokuuniv-orch.com」からのメールが受信できるように設定を行ってください。</p>
 								<form action="ticket.php" method="post">
-									<input name="name" placeholder="名前" type="text">
-									<input name="grade" placeholder="学年" type="text">
-									<select name="part" size="8">
+									<input name="name" placeholder="名前" type="text" required>
+									<input name="grade" placeholder="学年" type="text" required>
+									<select name="part" size="8" required>
 										<option value="Vn">ヴァイオリン</option>
 										<option value="Vla">ヴィオラ</option>
 										<option value="Vc">チェロ</option>
@@ -493,9 +493,9 @@
 										<option value="Perc">打楽器</option>
 										<option value="Other">その他</option>
 									</select>
-									<input name="mail" placeholder="メールアドレス" type="email">
-									<input name="password" placeholder="パスワード" type="password">
-									<input type="hidden" name="number" value="第165回定期演奏会">
+									<input name="mail" placeholder="メールアドレス" type="email" required>
+									<input name="password" placeholder="パスワード" type="password" required>
+									<input type="hidden" name="number" value="第166回定期演奏会">
 									<button type="submit" class="btn btn-primary">送信</button>
 								</form>
 							</article>

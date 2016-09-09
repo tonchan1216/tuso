@@ -1,4 +1,4 @@
-<?php $pass = "165kasugai";?>
+<?php $pass = "166kasugai";?>
 <!DOCTYPE html>
 
 <html dir="ltr" lang="ja">
