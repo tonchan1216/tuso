@@ -12,25 +12,25 @@
 
 	<div class="carousel-inner">
 		<div class="item active">
-			<img src="images/image6.jpg" alt="サンプル画像１" class="img-responsive">
+			<img src="<?php echo get_field('image1');?>" class="img-responsive">
 			<div class="carousel-caption">
 			</div>
 		</div>
 
 		<div class="item">
-			<img src="images/image03.jpg" alt="サンプル画像２" class="img-responsive">
+			<img src="<?php echo get_field('image2');?>" class="img-responsive">
 			<div class="carousel-caption">
 			</div>
 		</div>
 
 		<div class="item">
-			<img src="images/image3.jpg" alt="サンプル画像２" class="img-responsive">
+			<img src="<?php echo get_field('image3');?>" class="img-responsive">
 			<div class="carousel-caption">
 			</div>
 		</div>
 
 		<div class="item">
-			<img src="images/image5.jpg" alt="サンプル画像２" class="img-responsive">
+			<img src="<?php echo get_field('image4');?>" class="img-responsive">
 			<div class="carousel-caption">
 			</div>
 		</div>
@@ -56,11 +56,9 @@
 
 			<div class="col-md-8">
 				<div class="plain">
-					<p>東北大学交響楽団は、東北大学学友会の学生オーケストラとして活動している団体です。</p>
-
-					<p>我々は年２回の定期演奏会に加え、技術力向上のための合宿や大学行事での演奏など、様々な活動を行っています。</p>
-
-					<p>定期演奏会での皆様のご来場を、団員一同こころからお待ちしております。</p>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php the_content();?>
+					<?php endwhile; ?>
 				</div>
 			</div>
 		</div>

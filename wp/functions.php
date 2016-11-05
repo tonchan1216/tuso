@@ -75,3 +75,33 @@ function create_post_type() {
       )
     );
 }
+
+add_action( 'init', 'create_post_type_2' );
+function create_post_type_2() {
+  register_post_type( 'memberonly',
+    array(
+      'labels' => array(
+        'name' => __( '団員専用ファイル' ),
+        'singular_name' => __( '団員専用ファイル' )
+        ),
+      'public' => true,
+      'exclude_from_search' => true,
+      'show_in_nav_menus' => false,
+      'menu_position' => 10,
+      'has_archive' => false,
+      'supports' => array('title') 
+      )
+    );
+  register_taxonomy(
+    'member-cat', 
+    'memberonly', 
+    array(
+      'hierarchical' => true, 
+      'update_count_callback' => '_update_post_term_count',
+      'label' => 'ファイルカテゴリ',
+      'singular_label' => 'ファイルカテゴリ',
+      'public' => true,
+      'show_ui' => true
+      )
+    );
+}
