@@ -28,11 +28,10 @@
 							<a href="<?php echo get_the_permalink();?>"><?php the_title();?></a>
 						</li>
 					<?php endwhile;	endif;?>
-					<?php wp_reset_postdata();?>
+					<?php wp_reset_postdata();?>				
 				</ul>
-				<!--  -->
 
-				<?php pagination();?>
+				<?php pagination($the_query->max_num_pages);?>
 			</article>
 		</section>
 	</section><!-- / コンテンツ -->

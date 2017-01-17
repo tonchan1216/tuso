@@ -27,7 +27,7 @@
 				<?php $the_query = new WP_Query( $arg );?>
 				<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<div class="elem col-md-3 col-sm-4 col-xs-6">
-						<a href="<?php get_the_permalink();?>" title="<?php echo get_the_title();?>">
+						<a href="<?php echo get_the_permalink();?>" title="<?php echo get_the_title();?>">
 							<img alt="" src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'full')[0];?>"><br>
 							<?php the_title();?>
 						</a>

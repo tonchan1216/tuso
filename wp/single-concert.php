@@ -23,7 +23,9 @@
 					<article id="concert">
 						<div class="row">
 							<div class="col-sm-4 col-sm-push-8">
-								<!-- <img alt="" class="posterimg frame" src="images/poster/167.jpg" width="240" height="320"> -->
+								<?php if (get_post_thumbnail_id()):?>
+								<img alt="" class="posterimg frame" src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'full')[0];?>" width="240" height="320">
+								<?php endif;?>
 							</div>
 
 							<div class="col-sm-8 col-sm-pull-4">
