@@ -81,8 +81,8 @@ function create_post_type_2() {
   register_post_type( 'memberonly',
     array(
       'labels' => array(
-        'name' => __( '団員専用ファイル' ),
-        'singular_name' => __( '団員専用ファイル' )
+        'name' => __( '団員専用' ),
+        'singular_name' => __( '団員専用' )
         ),
       'public' => true,
       'exclude_from_search' => true,
@@ -98,8 +98,8 @@ function create_post_type_2() {
     array(
       'hierarchical' => true, 
       'update_count_callback' => '_update_post_term_count',
-      'label' => 'ファイルカテゴリ',
-      'singular_label' => 'ファイルカテゴリ',
+      'label' => 'カテゴリ',
+      'singular_label' => 'カテゴリ',
       'public' => true,
       'show_ui' => true
       )

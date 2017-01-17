@@ -16,71 +16,24 @@
 	<section id="main">
 		<section class="content container-fluid">
 			<h3 class="heading">過去の演奏会一覧</h3>
-
 			<div id="gallery" class="row">
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/166.html" title="sample"><img alt="" height="270" src="images/poster/166.jpg" width="180"><br>第166回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/165.html" title="sample"><img alt="" height="270" src="images/poster/165.jpg" width="180"><br>第165回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/164.html" title="sample"><img alt="" height="270" src="images/poster/164.jpg" width="180"><br>第164回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/163.html" title="sample"><img alt="" height="270" src="images/poster/163.jpg" width="180"><br>第163回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/162.html" title="sample"><img alt="" height="270" src="images/poster/162.jpg" width="180"><br>第162回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/161.html" title="sample"><img alt="" height="270" src="images/poster/161.jpg" width="180"><br>第161回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/160.html" title="sample"><img alt="" height="270" src="images/poster/160.jpg" width="180"><br>第160回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/159.html" title="sample"><img alt="" height="270" src="images/poster/159.jpg" width="180"><br>第159回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/158.html" title="sample"><img alt="" height="270" src="images/poster/158.jpg" width="180"><br>第158回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/157.html" title="sample"><img alt="" height="270" src="images/poster/157.jpg" width="180"><br>第157回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/156.html" title="sample"><img alt="" height="270" src="images/poster/156.jpg" width="180"><br>第156回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/155.html" title="sample"><img alt="" height="270" src="images/poster/155.jpg" width="180"><br>第155回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/154.html" title="sample"><img alt="" height="270" src="images/poster/154.jpg" width="180"><br>第154回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/153.html" title="sample"><img alt="" height="270" src="images/poster/153.jpg" width="180"><br>第153回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/152.html" title="sample"><img alt="" height="270" src="images/poster/152.jpg" width="180"><br>第152回定期演奏会</a>
-				</div>
-
-				<div class="elem col-md-3 col-sm-4 col-xs-6">
-					<a href="past/151.html" title="sample"><img alt="" height="270" src="images/poster/151.jpg" width="180"><br>第151回定期演奏会</a>
-				</div>
+				<?php $arg = array(
+					'post_type' => 'concert',
+					'posts_per_page' => 16,
+					'tax_query' => array(
+						array('taxonomy' => 'concert-cat', 'field' => 'slug', 'terms' => 'past')
+						)
+						);?> 
+				<?php $the_query = new WP_Query( $arg );?>
+				<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+					<div class="elem col-md-3 col-sm-4 col-xs-6">
+						<a href="<?php get_the_permalink();?>" title="<?php echo get_the_title();?>">
+							<img alt="" src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'full')[0];?>"><br>
+							<?php the_title();?>
+						</a>
+					</div>
+				<?php endwhile;	endif;?>
+				<?php wp_reset_postdata();?>
 			</div>
 
 		</section>
@@ -91,34 +44,22 @@
 			<p>それ以前の演奏会は<a class="readmore">こちらから</a></p>
 			<div class="slideList">
 				<table id="concertRecord" class="table table-striped table-condensed" summary="過去の演奏会" width="100%">
-					<tr data-href="past/166.html"><th>166回</th><td>2016年7月16日</td><td>チャイコフスキー 交響曲第6番「悲愴」他</td><td>星出 豊</td></tr>
-					<tr data-href="past/165.html"><th>165回</th><td>2015年12月5日</td><td>ドヴォルザーク 交響曲第8番 他</td><td>高橋信雄</td></tr>
-					<tr data-href="past/164.html"><th>164回</th><td>2015年6月20日</td><td>ブラームス 交響曲第4番 他</td><td>石川善美</td></tr>
-					<tr data-href="past/163.html"><th>163回</th><td>2014年11月29日</td><td>チャイコフスキー 交響曲第5番 他</td><td>菊地健夫</td></tr>
-					<tr data-href="past/162.html"><th>162回</th><td>2014年6月14日</td><td>ドヴォルザーク 交響曲9番「新世界より」他</td><td>石川善美</td></tr>
-					<tr data-href="past/161.html"><th>161回</th><td>2013年12月7日</td><td>メンデルスゾーン 交響曲第3番「スコットランド」他</td><td>高橋信雄</td></tr>
-					<tr data-href="past/160.html"><th>160回</th><td>2013年6月15日</td><td>ヴェルディ レクイエム 他</td><td>岡崎光治</td></tr>
-					<tr data-href="past/159.html"><th>159回</th><td>2012年12月1日</td><td>チャイコフスキー 交響曲第4番 他</td><td>石川善美</td></tr>
-					<tr data-href="past/158.html"><th>158回</th><td>2012年7月15日</td><td>ブラームス 交響曲第1番 他</td><td>高橋信雄</td></tr>
-					<tr data-href="past/157.html"><th>157回</th><td>2011年12月10日</td><td>チャイコフスキー 交響曲第6番「悲愴」他</td><td>菊地健夫</td></tr>
-					<tr data-href="past/156.html"><th>156回</th><td>2011年6月25日</td><td>シベリウス 交響曲第2番 他</td><td>石川善美</td></tr>
-					<tr data-href="past/155.html"><th>155回</th><td>2010年12月11日</td><td>ムソルグスキー 展覧会の絵 他</td><td>ローマン・コフマン</td></tr>
-					<tr data-href="past/154.html"><th>154回</th><td>2010年6月26日</td><td>チャイコフスキー 交響曲第5番 他</td><td>石川善美、高橋信雄</td></tr>
-					<tr data-href="past/153.html"><th>153回</th><td>2009年12月5日</td><td>ベルリオーズ 幻想交響曲 他</td><td>石川善美</td></tr>
-					<tr data-href="past/152.html"><th>152回</th><td>2009年6月27日</td><td>ドヴォルザーク 交響曲第8番 他</td><td>星出豊</td></tr>
-					<tr data-href="past/151.html"><th>151回</th><td>2008年12月6日</td><td>ラフマニノフ 交響曲第2番 他</td><td>菊地健夫</td></tr>
-					<tr data-href="past/150.html"><th>150回</th><td>2008年6月21日</td><td>ベートーヴェン　交響曲第9番「合唱」他</td><td>石川善美</td></tr>
-					<tr data-href="past/149.html"><th>149回</th><td>2007年12月1日</td><td>ブラームス 交響曲第3番 他</td><td>星出豊</td></tr>
-					<tr data-href="past/148.html"><th>148回</th><td>2007年6月16日</td><td>メンデルスゾーン 交響曲第3番「スコットランド」他</td><td>石川善美</td></tr>
-					<tr data-href="past/147.html"><th>147回</th><td>2006年11月25日</td><td>ベートーヴェン 交響曲第6番「田園」他</td><td>石川善美</td></tr>
-					<tr data-href="past/146.html"><th>146回</th><td>2006年6月17日</td><td>ドヴォルザーク 交響曲第9番「新世界より」他</td><td>菊地健夫</td></tr>
-					<tr data-href="past/145.html"><th>145回</th><td>2005年12月3日</td><td>チャイコフスキー 交響曲第6番「悲愴」他</td><td>イーゴリ・ブラジュコフ</td></tr>
-					<tr data-href="past/144.html"><th>144回</th><td>2005年7月2日</td><td>ベートーヴェン 交響曲第3番「英雄」他</td><td>石川善美</td></tr>
-					<tr data-href="past/143.html"><th>143回</th><td>2004年11月27日</td><td>チャイコフスキー 交響曲第5番 他</td><td>イーゴリ・ブラジュコフ</td></tr>
-					<tr data-href="past/142.html"><th>142回</th><td>2004年6月26日</td><td>ブラームス 交響曲第2番 他</td><td>石川善美</td></tr>
-					<tr data-href="past/141.html"><th>141回</th><td>2003年11月29日</td><td>ドヴォルザーク 交響曲8番 他</td><td>ヨルダン・ダフォフ</td></tr>
-					<tr data-href="past/140.html"><th>140回</th><td>2003年6月21日</td><td>ベートーヴェン 交響曲第9番「合唱」他</td><td>石川善美</td></tr>
-					<tr data-href="past/139.html"><th>139回</th><td>2002年11月23日</td><td>チャイコフスキー 交響曲第4番 他</td><td>ヨルダン・ダフォフ</td></tr>
+
+					<?php $arg = array(
+						'post_type' => 'concert',
+						'nopaging' => true,
+						'tax_query' => array(
+							array('taxonomy' => 'concert-cat', 'field' => 'slug', 'terms' => 'past')
+							)
+							);?> 
+					<?php $the_query = new WP_Query( $arg );?>
+					<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<tr data-href="<?php echo get_the_permalink();?>">
+							<?php the_field('excert_text');?>
+						</tr>
+					<?php endwhile;	endif;?>
+					<?php wp_reset_postdata();?>
+					
 					<tr><th>138回</th><td>2002年6月29日</td><td>ブラームス 交響曲第1番 他</td><td>ローマン・コフマン</td></tr>
 					<tr><th>137回</th><td>2001年12月1日</td><td>ラフマニノフ 交響曲第2番 他</td><td>石川善美</td></tr>
 					<tr><th>136回</th><td>2001年6月16日</td><td>ブルックナー 交響曲第4番「ロマンティック」他</td><td>ヨルダン・ダフォフ</td></tr>

@@ -63,12 +63,20 @@
 								</dl>	 -->							
 
 								<dl>
-									<dt>
-										練習場予約システム
-									</dt>
-									<dd>
-										<a href="http://www.r326.com/b/main.aspx?id=tuso">りざぶ郎</a>
-									</dd>
+									<?php $arg = array(
+										'post_type' => 'memberonly',
+										'tax_query' => array(
+											array('taxonomy' => 'member-cat', 'field' => 'slug', 'terms' => 'link')
+											)
+											);?> 
+									<?php $the_query = new WP_Query( $arg );?>
+									<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+										<dt><?php the_title();?></dt>
+										<dd>
+											<a href="<?php echo get_field('link');?>"><?php the_field('link_title');?></a>
+										</dd>
+									<?php endwhile;	endif;?>
+									<?php wp_reset_postdata();?>
 								</dl>
 							</article>
 						</div>
@@ -298,21 +306,20 @@
 
 						<div id="tab-other" class="tabbox tab-pane fade">
 							<article class="container-fluid">
-								<section class="content">
-									<h3>鍵の管理</h3>
-									<ol>
-										<li>
-											鍵を警備員室から借りたら、倉庫内のキーボックスに入る<br>
-											（倉庫内のキーボックスの仕切りには鍵の名前が書いてあるので、それぞれに入れて下さい。倉庫の鍵は倉庫外のキーボックスに入れます）。
-										</li>
-										<li>
-											【重要】倉庫内のキーボックスに鍵が５本そろっていたら、警備員室に鍵を返却する。<br>
-											鍵が全て倉庫にある（倉庫内に５本、倉庫外に1本）時点で、必ず警備員室に返却して下さい。
-										</li>
-										<li>鍵の管理表は今まで通り使用する。</li>
-									</ol>
-									間違った鍵を借りない、鍵は必ず返却することを徹底して下さい。
-								</section>
+								<?php $arg = array(
+									'post_type' => 'memberonly',
+									'tax_query' => array(
+										array('taxonomy' => 'member-cat', 'field' => 'slug', 'terms' => 'other')
+										)
+										);?> 
+								<?php $the_query = new WP_Query( $arg );?>
+								<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+									<section class="content">
+										<h3><?php the_title();?></h3>
+										<?php the_field('contents');?>
+									</section>
+								<?php endwhile;	endif;?>
+								<?php wp_reset_postdata();?>
 							</article>
 						</div>
 					</article>

@@ -29,7 +29,7 @@
 							</li>
 
 							<li>
-								<a href="memberonly/member.html">団員専用ページ</a>
+								<a href="<?php echo home_url('/member/');?>">団員専用ページ</a>
 							</li>
 						</ul>
 					</div>

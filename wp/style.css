@@ -256,7 +256,9 @@ body {
 }
 
 #gallery img {
-	max-width:100%
+	height: 270px;
+	width: 180px;
+	max-width:100%;
 }
 
 #gallery img, img.frame {

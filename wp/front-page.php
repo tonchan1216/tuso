@@ -71,13 +71,22 @@
 				<article class="container-fluid">
 					<div id="contents-link" class="row">
 						<div class="col-sm-4">
-						<a href="concert.html"><img src="<?php echo get_template_directory_uri(); ?>/images/top_image2.jpg" alt=""><p id="link-c">演奏会にお越しの方</p></a>
+							<a href="<?php echo home_url('/concert/');?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/top_image2.jpg" alt="">
+								<p id="link-c">演奏会にお越しの方</p>
+							</a>
 						</div>
 						<div class="col-sm-4">
-							<a href="join.html"><img src="<?php echo get_template_directory_uri(); ?>/images/top_image3.jpg" alt=""><p id="link-j">入団希望の方</p></a>
+							<a href="<?php echo home_url('/join/');?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/top_image3.jpg" alt="">
+								<p id="link-j">入団希望の方</p>
+							</a>
 						</div>
 						<div class="col-sm-4">
-							<a href="memberonly/member.html"><img src="<?php echo get_template_directory_uri(); ?>/images/top_image1.jpg" alt=""><p id="link-m">団員の方</p></a>
+							<a href="<?php echo home_url('/member/');?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/top_image1.jpg" alt="">
+								<p id="link-m">団員の方</p>
+							</a>
 						</div>
 					</div>
 				</article>
@@ -86,30 +95,14 @@
 				<article id="news-list" class="container-fluid">
 					<!-- ニュース -->
 					<ul>
-						<li>
-							<span>2016/10/02</span>
-							<a href="concert.html">第167回定期演奏会の情報を掲載しました。</a>
-						</li>
-						<li>
-							<span>2016/04/06</span>
-							<a href="news/2016-04-06.html">平成28年度新歓行事を掲載しました。</a>
-						</li>
-						<li>
-							<span>2015/12/17</span>
-							<a href="concert.html">第166回定期演奏会の情報を掲載しました。</a>
-						</li>
-						<li>
-							<span>2015/12/17</span>
-							<a href="news/2015-12-17.html">ホームページをリニューアルしました。</a>
-						</li>
-						<li>
-							<span>2015/12/05</span>
-							<a href="past/165.html">第165回定期演奏会を行いました。ご来場ありがとうございました。</a>
-						</li>
-						<li>
-							<span>2015/09/25</span>
-							<a href="">第165回定期演奏会の情報を掲載しました。</a>
-						</li>
+						<?php $the_query = new WP_Query( array('paged' => get_query_var('page'),'posts_per_page' => 10) );?>
+						<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							<li>
+								<span><?php the_time('Y/m/d');?></span>
+								<a href="<?php echo get_the_permalink();?>"><?php the_title();?></a>
+							</li>
+						<?php endwhile;	endif;?>
+						<?php wp_reset_postdata();?>
 					</ul>
 					<!--  -->
 				</article>
