@@ -37,10 +37,6 @@
 					</li>
 
 					<li>
-						<a data-toggle="tab" href="#tab-cal">スケジュール</a>
-					</li>
-
-					<li>
 						<a data-toggle="tab" href="#tab-gal">ギャラリー</a>
 					</li>
 
@@ -133,14 +129,6 @@
 									</li>
 								</ul>
 							</article>
-						</div>
-
-						<div id="tab-cal" class="tabbox tab-pane fade">
-							<div class="cal_wrapper">
-								<div class="googlecal">
-									<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tohokuunivorchhomepage%40gmail.com&amp;color=%23AB8B00&amp;ctz=Asia%2FTokyo" style=" border-width:0 " height="600" frameborder="0" scrolling="no"></iframe>
-								</div>
-							</div>
 						</div>
 
 						<div id="tab-gal" class="tabbox tab-pane fade">
