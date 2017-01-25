@@ -1,6 +1,14 @@
 <?php 
 add_theme_support('post-thumbnails');
 
+function add_scripts() {
+	wp_enqueue_script( 'lightbox-script', get_template_directory_uri() . '/js/lightbox.js', array( 'jquery' ), '20170125', true );
+}
+function add_files() {
+	wp_enqueue_style( 'lightbox-style', get_template_directory_uri() . '/css/lightbox.css', "", '20170125' );
+}
+
+
 //ページャ
 //Pagenation
 function pagination($pages = '', $range = 2){

@@ -1,5 +1,8 @@
 <?php if ( !is_user_logged_in()) auth_redirect();?>
-
+<?php 	
+	add_action( 'wp_enqueue_scripts', 'add_files' );
+	add_action('wp_print_scripts', 'add_scripts');
+	?>
 <?php get_header();?>
 
 <!-- サブ画像 -->
@@ -87,165 +90,20 @@
 								<h3>ファイルダウンロード</h3>
 
 								<dl>
-									<dt>
-										2016/09/12
-									</dt>
-									<dd>
-										<a href="asset/166-anser_sheet.xlsx">第166回定期演奏会　アンケート集計結果</a>
-									</dd>
-								</dl>
-
-								<dl>
-									<dt>
-										2016/08/22
-									</dt>
-									<dd>
-										<a href="asset/H28kawauchi-bus.xlsx">H28年度川内合宿　バス割り</a>
-									</dd>									
-									<dd>
-										<a href="asset/H28kawauchi-kakari.xlsx">H28年度川内合宿　係一覧</a>
-									</dd>
-									<dd>
-										<a href="asset/H28kawauchi-notice.docx">H28年度川内合宿　諸連絡</a>
-									</dd>
-									<dd>
-										<a href="asset/H28kawauchi-time_table.xlsx">H28年度川内合宿　タイムテーブル</a>
-									</dd>
-									<dd>
-										<a href="asset/H28kawauchi-notes.docx">H28年度川内合宿　注意事項</a>
-									</dd>
-									<dd>
-										<a href="asset/H28kawauchi-cover.docx">H28年度川内合宿　しおり表紙</a>
-									</dd>
-									<dd>
-										<a href="asset/H28kawauchi-room.xlsx">H28年度川内合宿　部屋割り</a>
-									</dd>
-								</dl>								
-
-								<dl>
-									<dt>
-										2016/08/07
-									</dt>
-									<dd>
-										<a href="asset/H28kawauchi-budget.pdf">H28年度川内合宿予算</a>
-									</dd>									
-									<dd>
-										<a href="asset/H28kawauchi-inquiry.pdf">H28年度川内合宿アンケート集計</a>
-									</dd>
-								</dl>
-
-								<dl>
-									<dt>
-										2016/06/28
-									</dt>
-									<dd>
-										<a href="asset/images.pdf" target="_blank">楽譜　仮面舞踏会(pdf版)</a>
-									</dd>									
-									<dd>
-										<a href="asset/1467119593193.jpg" target="_blank">楽譜　仮面舞踏会(画像1)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119594969.jpg" target="_blank">楽譜　仮面舞踏会(画像2)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119596448.jpg" target="_blank">楽譜　仮面舞踏会(画像3)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119597872.jpg" target="_blank">楽譜　仮面舞踏会(画像4)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119600975.jpg" target="_blank">楽譜　仮面舞踏会(画像5)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119602388.jpg" target="_blank">楽譜　仮面舞踏会(画像6)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119604046.jpg" target="_blank">楽譜　仮面舞踏会(画像7)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119605484.jpg" target="_blank">楽譜　仮面舞踏会(画像8)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119611058.jpg" target="_blank">楽譜　仮面舞踏会(画像9)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119612542.jpg" target="_blank">楽譜　仮面舞踏会(画像10)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119613919.jpg" target="_blank">楽譜　仮面舞踏会(画像11)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119615155.jpg" target="_blank">楽譜　仮面舞踏会(画像12)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119617211.jpg" target="_blank">楽譜　仮面舞踏会(画像13)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119619333.jpg" target="_blank">楽譜　仮面舞踏会(画像14)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119620569.jpg" target="_blank">楽譜　仮面舞踏会(画像15)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119621700.jpg" target="_blank">楽譜　仮面舞踏会(画像16)</a>
-									</dd>
-									<dd>
-										<a href="asset/1467119623889.jpg" target="_blank">楽譜　仮面舞踏会(画像17)</a>
-									</dd>
-								</dl>								
-
-								<dl>
-									<dt>
-										2016/01/21
-									</dt>
-									<dd>
-										<a href="asset/165-impression.docx">印象に残った理由(docx)</a>
-									</dd>
-								</dl>
-
-								<dl>
-									<dt>
-										2016/01/21
-									</dt>
-									<dd>
-										<a href="asset/165-opinion.docx">ご意見・ご感想・聞きたい曲(docx)</a>
-									</dd>
-								</dl>
-
-								<dl>
-									<dt>
-										2016/01/21
-									</dt>
-									<dd>
-										<a href="asset/165-anser_sheet.xlsx">165アンケート集計表(xlsx)</a>
-									</dd>
-								</dl>
-
-								<dl>
-									<dt>
-										2015/9/25
-									</dt>
-									<dd>
-										<a href="asset/ininjyo_2013.pdf">委任状</a>
-									</dd>
-								</dl>
-
-								<dl>
-									<dt>
-										2015/9/25
-									</dt>
-									<dd>
-										<a href="asset/164kessan.pdf">第164回定期演奏会決算（最終版）</a>
-									</dd>
-								</dl>
-
-								<dl>
-									<dt>
-										2015/9/25
-									</dt>
-									<dd>
-										<a href="asset/twitter_kisoku.pdf">団twitter運用規則</a>
-									</dd>
+									<?php $arg = array(
+										'post_type' => 'memberonly',
+										'tax_query' => array(
+											array('taxonomy' => 'member-cat', 'field' => 'slug', 'terms' => 'file')
+											)
+											);?> 
+									<?php $the_query = new WP_Query( $arg );?>
+									<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+										<dt><?php the_date('Y/m/d');?></dt>
+										<dd>
+											<a href="<?php echo get_field('file');?>"><?php the_title();?></a>
+										</dd>
+									<?php endwhile;	endif;?>
+									<?php wp_reset_postdata();?>
 								</dl>
 
 							</article>
@@ -289,16 +147,19 @@
 							<section class="content container-fluid">
 								<h3>ギャラリー</h3>
 								<div class="row">
-									<a class="col-sm-3 col-xs-6" href="../images/image1.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image1.jpg" /></a>
-									<a class="col-sm-3 col-xs-6" href="../images/image2.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image2.jpg" /></a>
-									<a class="col-sm-3 col-xs-6" href="../images/image3.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image3.jpg" /></a>
-									<a class="col-sm-3 col-xs-6" href="../images/image4.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image4.jpg" /></a>
-									<a class="col-sm-3 col-xs-6" href="../images/image5.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image5.jpg" /></a>
-									<a class="col-sm-3 col-xs-6" href="../images/image6.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image6.jpg" /></a>
-									<a class="col-sm-3 col-xs-6" href="../images/image7.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image7.jpg" /></a>
-									<a class="col-sm-3 col-xs-6" href="../images/image8.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image8.jpg" /></a>
-									<a class="col-sm-3 col-xs-6" href="../images/image9.jpg" data-lightbox="gall" data-title="ここに説明文を入れる"><img src="../images/image9.jpg" /></a>
-
+									<?php $arg = array(
+										'post_type' => 'memberonly',
+										'tax_query' => array(
+											array('taxonomy' => 'member-cat', 'field' => 'slug', 'terms' => 'gallery')
+											)
+											);?> 
+									<?php $the_query = new WP_Query( $arg );?>
+									<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+										<dd>
+											<a class="col-sm-3 col-xs-6" href="<?php echo get_field('image');?>" data-lightbox="gall" data-title="<?php echo get_the_title();?>"><img src="<?php echo get_field('image');?>" /></a>
+										</dd>
+									<?php endwhile;	endif;?>
+									<?php wp_reset_postdata();?>
 								</div>
 
 							</section>
