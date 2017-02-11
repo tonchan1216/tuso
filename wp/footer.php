@@ -35,9 +35,6 @@
 					</div>
 
 					<div class="col-md-3 text-a-r">
-
-						<p><a href="http://validator.w3.org/check?uri=referer"><img alt="Valid XHTML 1.0 Transitional" height="31" src="http://www.w3.org/Icons/valid-xhtml10" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border:0;width:88px;height:31px"></a></p>
-
 						<p></p>
 					</div>
 				</div>

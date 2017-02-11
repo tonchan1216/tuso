@@ -1,5 +1,5 @@
 <?php if ( !is_user_logged_in()) auth_redirect();?>
-<?php 	
+<?php
 	add_action( 'wp_enqueue_scripts', 'add_files' );
 	add_action('wp_print_scripts', 'add_scripts');
 	?>
