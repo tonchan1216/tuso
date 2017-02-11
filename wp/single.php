@@ -17,7 +17,7 @@
 		<section id="news" class="content container-fluid">
 			<h4 class="news-data"><?php the_time('Y/m/d');?></h4>
 
-			<h3 class="news-title"><?php the_title();?></h3>
+			<h3 class="news-title heading"><?php the_title();?></h3>
 
 			<article class="news-content">
 				<?php while ( have_posts() ) : the_post(); ?>

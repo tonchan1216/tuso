@@ -8,7 +8,7 @@
 	<meta content="東北,大学,学友会,交響楽,オケ,オーケストラ" name="keywords">
 
 	<title>Tohoku University Symphony Orchestra</title>
-	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" >
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo-1.png" >
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri(); ?>/style.css" media="screen" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]>

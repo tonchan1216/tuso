@@ -95,14 +95,26 @@
 				<article id="news-list" class="container-fluid">
 					<!-- ニュース -->
 					<ul>
-						<?php $the_query = new WP_Query( array('paged' => get_query_var('page'),'posts_per_page' => 10) );?>
+						<?php $arg = array(
+							'post_type'=> array('post','concert'),
+							'paged' => get_query_var('page'),
+							'posts_per_page' => 10,
+							'date_query' => array(
+								array('after' => array('year' => 2014))
+								)
+							);?>
+						<?php $the_query = new WP_Query($arg);?>
 						<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 							<li>
 								<span><?php the_time('Y/m/d');?></span>
-								<a href="<?php echo get_the_permalink();?>"><?php the_title();?></a>
+								<?php if ($post->post_type == 'concert') :?>
+									<a href="<?php echo get_the_permalink();?>"><?php the_title();?>の情報を掲載しました。</a>
+								<?php else:?>
+									<a href="<?php echo get_the_permalink();?>"><?php the_title();?></a>
+								<?php endif;?>
 							</li>
 						<?php endwhile;	endif;?>
-						<?php wp_reset_postdata();?>
+						<?php wp_reset_postdata();?>				
 					</ul>
 					<!--  -->
 				</article>
