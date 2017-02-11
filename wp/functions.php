@@ -108,3 +108,11 @@ function create_post_type_2() {
       )
     );
 }
+
+function custom_login() {
+	$files = '<link rel="stylesheet" href="'.get_template_directory_uri().'/css/login.css" />
+	<script src="'.get_template_directory_uri().'/js/jquery.js"></script>
+	<script src="'.get_template_directory_uri().'/js/login.js"></script>';
+	echo $files;
+}
+add_action( 'login_enqueue_scripts', 'custom_login' );

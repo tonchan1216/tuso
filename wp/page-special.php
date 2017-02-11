@@ -28,7 +28,7 @@
 					<?php $the_query = new WP_Query( $arg );?>
 					<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<tr data-href="<?php echo get_the_permalink();?>">
-							<th><?php the_field('カテゴリ');?></th>
+							<th><?php the_field('special_category');?></th>
 							<td><?php the_time('Y年m月d日');?></td>
 							<td><?php the_title();?></td>
 						</tr>
