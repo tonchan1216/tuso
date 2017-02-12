@@ -1,6 +1,8 @@
 <?php 
+//サムネイル有効
 add_theme_support('post-thumbnails');
 
+//団員専用ページ　スクリプト読み込み
 function add_scripts() {
 	wp_enqueue_script( 'lightbox-script', get_template_directory_uri() . '/js/lightbox.js', array( 'jquery' ), '20170125', true );
 }
@@ -8,8 +10,6 @@ function add_files() {
 	wp_enqueue_style( 'lightbox-style', get_template_directory_uri() . '/css/lightbox.css', "", '20170125' );
 }
 
-
-//ページャ
 //Pagenation
 function pagination($pages = '', $range = 2){
   $showitems = ($range * 2)+1;//表示するページ数（５ページを表示）
@@ -48,6 +48,7 @@ function pagination($pages = '', $range = 2){
   }
 }
 
+//演奏会ページ　カスタム投稿
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
   register_post_type( 'concert',
@@ -79,6 +80,7 @@ function create_post_type() {
     );
 }
 
+//団員専用ページ　カスタム投稿
 add_action( 'init', 'create_post_type_2' );
 function create_post_type_2() {
   register_post_type( 'memberonly',
@@ -109,8 +111,20 @@ function create_post_type_2() {
     );
 }
 
+//ログインページカスタム
+add_action( 'login_enqueue_scripts', 'custom_login' );
 function custom_login() {
 	$files = '<link rel="stylesheet" href="'.get_template_directory_uri().'/css/login.css" />';
 	echo $files;
 }
-add_action( 'login_enqueue_scripts', 'custom_login' );
+
+//特定のページでステータス404を返す
+add_action( 'template_redirect', 'status404' ); 
+function status404() { 
+  if ( is_attachment() or is_singular('memberonly')) {
+    //メディアページ　or 団員専用の投稿ページ
+    global $wp_query;
+    $wp_query->set_404();
+    status_header(404);
+  }
+}

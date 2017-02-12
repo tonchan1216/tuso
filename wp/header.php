@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-	<meta content="東北大学交響楽団" name="description">
+	<meta content="<?php bloginfo('description'); ?>" name="description">
 	<meta content="東北,大学,学友会,交響楽,オケ,オーケストラ" name="keywords">
 
-	<title>Tohoku University Symphony Orchestra</title>
+	<title><?php bloginfo('name'); ?></title>
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo-1.png" >
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri(); ?>/style.css" media="screen" rel="stylesheet" type="text/css">
