@@ -1,3 +1,5 @@
+<?php if ( is_parent_slug() == 'member' and !is_user_logged_in()) auth_redirect();?>
+
 <?php get_header();?>
 <?php while ( have_posts() ) : the_post(); ?>
 
