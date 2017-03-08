@@ -108,7 +108,7 @@
 							<li>
 								<span><?php the_time('Y/m/d');?></span>
 								<?php if ($post->post_type == 'concert') :?>
-									<a href="<?php echo get_the_permalink();?>"><?php the_title();?>の情報を掲載しました。</a>
+									<a href="<?php echo (is_object_in_term($post->ID, 'concert-cat','new'))? home_url('/concert/') : get_the_permalink();?>"><?php the_title();?>の情報を掲載しました。</a>
 								<?php else:?>
 									<a href="<?php echo get_the_permalink();?>"><?php the_title();?></a>
 								<?php endif;?>
