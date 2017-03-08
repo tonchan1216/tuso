@@ -15,6 +15,7 @@
 
 	<section id="main">
 		<section id="news" class="content container-fluid">
+			<?php get_template_part('sns'); ?>
 			<h4 class="news-data"><?php the_time('Y/m/d');?></h4>
 
 			<h3 class="news-title heading"><?php the_title();?></h3>
