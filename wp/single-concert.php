@@ -4,7 +4,13 @@
 	<div id="banner">
 		<img alt="" src="<?php echo get_template_directory_uri(); ?>/images/image3.jpg">
 		<div class="slogan">
-			<h2>過去の演奏会</h2>
+			<?php if( has_term( 'new', 'concert-cat' ) ):?>
+				<h2>最新の演奏会</h2>
+			<?php elseif( has_term( 'special', 'concert-cat' ) ):?>
+				<h2>特別演奏会</h2>
+			<?php else:?>
+				<h2>過去の演奏会</h2>
+			<?php endif;?>
 
 			<h3><?php the_title();?>のお知らせです。</h3>
 		</div>
