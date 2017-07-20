@@ -22,7 +22,8 @@
 					<?php $arg = array(
 						'post_type' => 'concert',
 						'tax_query' => array(
-							array('taxonomy' => 'concert-cat', 'field' => 'slug', 'terms' => 'special')
+							array('taxonomy' => 'concert-cat', 'field' => 'slug', 'terms' => 'special'),
+							array('taxonomy' => 'concert-cat', 'field' => 'slug', 'terms' => 'new', 'operator' => 'not in')
 							)
 							);?> 
 					<?php $the_query = new WP_Query( $arg );?>

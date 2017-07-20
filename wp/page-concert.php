@@ -14,7 +14,6 @@
 		<!-- コンテンツ -->
 		<?php $arg = array(
 			'post_type' => 'concert',
-			'posts_per_page' => 1,
 			'tax_query' => array(
 				array(
 					'taxonomy' => 'concert-cat',
